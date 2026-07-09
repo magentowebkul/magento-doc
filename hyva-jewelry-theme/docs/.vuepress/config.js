@@ -5,12 +5,15 @@ import { webpackBundler } from "@vuepress/bundler-webpack";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
+const siteBase = process.env.VUEPRESS_BASE || "/";
+const withBase = (path) => `${siteBase.replace(/\/$/, "")}${path}`;
+
 export default defineUserConfig({
-    base: "/",
+    base: siteBase,
     lang: "en-US",
     shouldPrefetch: false,
     head: [
-        ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+        ["link", { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") }],
         ["meta", { name: "theme-color", content: "#b0894a" }],
         [
             "script",

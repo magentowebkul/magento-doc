@@ -48,7 +48,7 @@
 <li>(Optional) Configure <strong>Agent Readiness</strong>.</li>
 <li>Click <strong>Save Configuration</strong>.</li>
 </ol>
-<p>Continue with <a href="/chrome/building-menu">Building the Menu</a>.</p>
+<p>Continue with <a href="/chrome/building-menu" target="_blank" rel="noopener noreferrer">Building the Menu</a>.</p>
 </div></template>
 
 

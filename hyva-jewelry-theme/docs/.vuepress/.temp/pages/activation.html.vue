@@ -24,15 +24,15 @@
 <tbody>
 <tr>
 <td>Change the homepage content</td>
-<td><RouteLink to="/homepage/overview.html">Homepage Configurator -&gt; Sections</RouteLink></td>
+<td><a href="/homepage/overview.html" target="_blank" rel="noopener noreferrer">Homepage Configurator -&gt; Sections</a></td>
 </tr>
 <tr>
 <td>Change the navigation or mega menu</td>
-<td><RouteLink to="/chrome/overview.html">Header &amp; Footer Builder</RouteLink></td>
+<td><a href="/chrome/overview.html" target="_blank" rel="noopener noreferrer">Header &amp; Footer Builder</a></td>
 </tr>
 <tr>
 <td>Edit header or footer text</td>
-<td><RouteLink to="/chrome/header-footer.html">Header &amp; Footer Settings</RouteLink></td>
+<td><a href="/chrome/header-footer.html" target="_blank" rel="noopener noreferrer">Header &amp; Footer Settings</a></td>
 </tr>
 <tr>
 <td>Need design changes beyond Admin settings</td>

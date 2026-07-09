@@ -8,7 +8,7 @@
     "npx-update": "npx npm-check-updates -u",
     "npm_install": "npm install --force",
     "build": "vuepress build docs --clean-cache --clean-temp",
-    "deploy:cloudflare": "npm run build && npx wrangler pages deploy docs/.vuepress/dist --project-name magento-doc",
+    "deploy:cloudflare": "cd .. && npm run deploy:cloudflare",
     "start": "vuepress dev docs --clean-cache --clean-temp -p 8097",
     "docs": "vuepress dev docs --clean-cache --clean-temp",
     "clean": "rm -rf docs/.vuepress/.cache docs/.vuepress/.temp docs/.vuepress/dist",

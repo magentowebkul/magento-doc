@@ -1,0 +1,13 @@
+{
+  "name": "magento-doc",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-pages.mjs",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy dist --project-name magento-doc --branch main --commit-dirty=true"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  }
+}

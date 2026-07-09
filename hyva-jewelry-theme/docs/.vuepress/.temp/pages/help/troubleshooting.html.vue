@@ -37,7 +37,7 @@
 <li>If the old content still appears, ask your Magento technical team to publish storefront assets again.</li>
 </ul>
 <h2 id="still-stuck" tabindex="-1"><a class="header-anchor" href="#still-stuck"><span>Still stuck?</span></a></h2>
-<p>See the <a href="/help/faq">FAQ</a> or contact <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer">Webkul support</a>.</p>
+<p>See the <a href="/help/faq" target="_blank" rel="noopener noreferrer">FAQ</a> or contact <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer">Webkul support</a>.</p>
 </div></template>
 
 

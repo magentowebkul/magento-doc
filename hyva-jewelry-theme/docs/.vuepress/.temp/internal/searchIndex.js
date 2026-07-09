@@ -158,6 +158,70 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "FAQ",
+    "headers": [],
+    "path": "/help/faq.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Troubleshooting",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Theme not applied",
+        "slug": "theme-not-applied",
+        "link": "#theme-not-applied",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Styles look unstyled / missing",
+        "slug": "styles-look-unstyled-missing",
+        "link": "#styles-look-unstyled-missing",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Homepage is empty",
+        "slug": "homepage-is-empty",
+        "link": "#homepage-is-empty",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Mega menu not showing",
+        "slug": "mega-menu-not-showing",
+        "link": "#mega-menu-not-showing",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Links broken in the menu",
+        "slug": "links-broken-in-the-menu",
+        "link": "#links-broken-in-the-menu",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Changes not visible after editing",
+        "slug": "changes-not-visible-after-editing",
+        "link": "#changes-not-visible-after-editing",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Still stuck?",
+        "slug": "still-stuck",
+        "link": "#still-stuck",
+        "children": []
+      }
+    ],
+    "path": "/help/troubleshooting.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Agent Readiness",
     "headers": [
       {
@@ -1029,70 +1093,6 @@ export const SEARCH_INDEX = [
       }
     ],
     "path": "/pages/search.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "FAQ",
-    "headers": [],
-    "path": "/help/faq.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Troubleshooting",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Theme not applied",
-        "slug": "theme-not-applied",
-        "link": "#theme-not-applied",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Styles look unstyled / missing",
-        "slug": "styles-look-unstyled-missing",
-        "link": "#styles-look-unstyled-missing",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Homepage is empty",
-        "slug": "homepage-is-empty",
-        "link": "#homepage-is-empty",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Mega menu not showing",
-        "slug": "mega-menu-not-showing",
-        "link": "#mega-menu-not-showing",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Links broken in the menu",
-        "slug": "links-broken-in-the-menu",
-        "link": "#links-broken-in-the-menu",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Changes not visible after editing",
-        "slug": "changes-not-visible-after-editing",
-        "link": "#changes-not-visible-after-editing",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Still stuck?",
-        "slug": "still-stuck",
-        "link": "#still-stuck",
-        "children": []
-      }
-    ],
-    "path": "/help/troubleshooting.html",
     "pathLocale": "/",
     "extraFields": []
   },

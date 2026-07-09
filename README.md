@@ -1,40 +1,31 @@
 # Magento Docs
 
-This repository contains deployable documentation projects.
+This repository publishes multiple Magento product guides under one docs domain.
 
-## Hyva Jewelry Theme docs
+## URL Structure
 
-The Magento 2 Hyva Jewelry Theme user guide is inside:
+- Main docs index: `https://magento-doc.webkul.com/`
+- Hyvä Jewellery Theme: `https://magento-doc.webkul.com/hyva-jewelry-theme/`
 
-```text
-hyva-jewelry-theme/
-```
+## Cloudflare Pages
 
-## Cloudflare Pages setup
-
-Connect this GitHub repository to Cloudflare Pages and use these settings:
+Use these settings for the `magento-doc` Pages project:
 
 | Setting | Value |
 | --- | --- |
-| Project name | `magento-doc` |
-| Production branch | `livewine` |
-| Root directory | `hyva-jewelry-theme` |
-| Build command | `npm ci && npm run build` |
-| Build output directory | `docs/.vuepress/dist` |
+| Production branch | `main` |
+| Root directory | `/` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
 | Node version | `22` |
 
-The folder also includes the current built output at:
+The root build script builds each product guide with its folder base path and copies it into `dist/<product-folder>/`.
 
-```text
-hyva-jewelry-theme/docs/.vuepress/dist/
-```
+## Auto Deploy
 
-If you want Cloudflare to deploy without rebuilding, use:
+This repo includes `.github/workflows/cloudflare-pages.yml` for direct Cloudflare Pages deployment on every push to `main`.
 
-| Setting | Value |
-| --- | --- |
-| Root directory | `hyva-jewelry-theme` |
-| Build command | `exit 0` |
-| Build output directory | `docs/.vuepress/dist` |
+Required GitHub secrets:
 
-The normal recommended setup is still `npm ci && npm run build`, because Cloudflare will rebuild the docs after each GitHub push.
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`

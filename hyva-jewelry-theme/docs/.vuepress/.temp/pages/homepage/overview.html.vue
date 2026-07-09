@@ -135,17 +135,17 @@
 </ul>
 <h2 id="next-guides" tabindex="-1"><a class="header-anchor" href="#next-guides"><span>Next guides</span></a></h2>
 <ul>
-<li><RouteLink to="/homepage/sections.html">Section Types</RouteLink></li>
-<li><RouteLink to="/homepage/hero-banner.html">Hero Banner</RouteLink></li>
-<li><RouteLink to="/homepage/category-grid.html">Category Grid</RouteLink></li>
-<li><RouteLink to="/homepage/product-carousel.html">Product Carousel</RouteLink></li>
-<li><RouteLink to="/homepage/collection-banners.html">Collection Banners</RouteLink></li>
-<li><RouteLink to="/homepage/split-content.html">Split Content</RouteLink></li>
-<li><RouteLink to="/homepage/promo-banner.html">Promo Banner</RouteLink></li>
-<li><RouteLink to="/homepage/luxury-grid.html">Luxury Grid</RouteLink></li>
-<li><RouteLink to="/homepage/cta-banner.html">CTA Banner</RouteLink></li>
-<li><RouteLink to="/homepage/instagram-feed.html">Instagram Feed</RouteLink></li>
-<li><RouteLink to="/homepage/trust-badges.html">Trust Badges</RouteLink></li>
+<li><a href="/homepage/sections.html" target="_blank" rel="noopener noreferrer">Section Types</a></li>
+<li><a href="/homepage/hero-banner.html" target="_blank" rel="noopener noreferrer">Hero Banner</a></li>
+<li><a href="/homepage/category-grid.html" target="_blank" rel="noopener noreferrer">Category Grid</a></li>
+<li><a href="/homepage/product-carousel.html" target="_blank" rel="noopener noreferrer">Product Carousel</a></li>
+<li><a href="/homepage/collection-banners.html" target="_blank" rel="noopener noreferrer">Collection Banners</a></li>
+<li><a href="/homepage/split-content.html" target="_blank" rel="noopener noreferrer">Split Content</a></li>
+<li><a href="/homepage/promo-banner.html" target="_blank" rel="noopener noreferrer">Promo Banner</a></li>
+<li><a href="/homepage/luxury-grid.html" target="_blank" rel="noopener noreferrer">Luxury Grid</a></li>
+<li><a href="/homepage/cta-banner.html" target="_blank" rel="noopener noreferrer">CTA Banner</a></li>
+<li><a href="/homepage/instagram-feed.html" target="_blank" rel="noopener noreferrer">Instagram Feed</a></li>
+<li><a href="/homepage/trust-badges.html" target="_blank" rel="noopener noreferrer">Trust Badges</a></li>
 </ul>
 </div></template>
 

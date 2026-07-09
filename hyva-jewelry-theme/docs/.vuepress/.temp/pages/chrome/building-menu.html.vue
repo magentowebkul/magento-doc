@@ -57,7 +57,7 @@
 </tr>
 <tr>
 <td>Submenu template</td>
-<td>See <a href="/chrome/submenu-templates">Submenu Templates</a></td>
+<td>See <a href="/chrome/submenu-templates" target="_blank" rel="noopener noreferrer">Submenu Templates</a></td>
 </tr>
 <tr>
 <td>Right Promo Images</td>

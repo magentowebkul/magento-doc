@@ -15,32 +15,32 @@
 <tr>
 <td>Requirements</td>
 <td>Check the store requirements before setup.</td>
-<td><RouteLink to="/requirements.html">Open requirements</RouteLink></td>
+<td><a href="/requirements.html" target="_blank" rel="noopener noreferrer">Open requirements</a></td>
 </tr>
 <tr>
 <td>Installation</td>
 <td>Add the theme to the Magento store and prepare it for use.</td>
-<td><RouteLink to="/installation.html">Open installation</RouteLink></td>
+<td><a href="/installation.html" target="_blank" rel="noopener noreferrer">Open installation</a></td>
 </tr>
 <tr>
 <td>Activation</td>
 <td>Select the theme for the correct store view from Magento Admin.</td>
-<td><RouteLink to="/activation.html">Open activation</RouteLink></td>
+<td><a href="/activation.html" target="_blank" rel="noopener noreferrer">Open activation</a></td>
 </tr>
 <tr>
 <td>Homepage</td>
 <td>Show the hero banner, category carousel, new arrivals, and featured products.</td>
-<td><RouteLink to="/homepage/overview.html">Open homepage guide</RouteLink></td>
+<td><a href="/homepage/overview.html" target="_blank" rel="noopener noreferrer">Open homepage guide</a></td>
 </tr>
 <tr>
 <td>Header and footer</td>
 <td>Manage the top bar, logo area, menu, search, cart, language, currency, and footer.</td>
-<td><RouteLink to="/chrome/overview.html">Open header and footer guide</RouteLink></td>
+<td><a href="/chrome/overview.html" target="_blank" rel="noopener noreferrer">Open header and footer guide</a></td>
 </tr>
 <tr>
 <td>Store pages</td>
 <td>Review category, search, product, cart, and checkout pages.</td>
-<td><RouteLink to="/pages/category.html">Open store pages guide</RouteLink></td>
+<td><a href="/pages/category.html" target="_blank" rel="noopener noreferrer">Open store pages guide</a></td>
 </tr>
 <tr>
 <td>Agent Ready</td>
@@ -65,11 +65,11 @@
 <h2 id="getting-started" tabindex="-1"><a class="header-anchor" href="#getting-started"><span>Getting started</span></a></h2>
 <p>Follow these pages in order:</p>
 <ol>
-<li>Read the <RouteLink to="/requirements.html">Requirements</RouteLink>.</li>
-<li>Complete the <RouteLink to="/installation.html">Installation</RouteLink>.</li>
-<li>Activate the theme from <RouteLink to="/activation.html">Activate the Theme</RouteLink>.</li>
+<li>Read the <a href="/requirements.html" target="_blank" rel="noopener noreferrer">Requirements</a>.</li>
+<li>Complete the <a href="/installation.html" target="_blank" rel="noopener noreferrer">Installation</a>.</li>
+<li>Activate the theme from <a href="/activation.html" target="_blank" rel="noopener noreferrer">Activate the Theme</a>.</li>
 <li>Open the storefront and check the homepage, category page, search page, product page, cart, and checkout.</li>
-<li>If something does not look right, open <RouteLink to="/help/troubleshooting.html">Troubleshooting</RouteLink>.</li>
+<li>If something does not look right, open <a href="/help/troubleshooting.html" target="_blank" rel="noopener noreferrer">Troubleshooting</a>.</li>
 </ol>
 <h2 id="after-activation" tabindex="-1"><a class="header-anchor" href="#after-activation"><span>After activation</span></a></h2>
 <p>After the theme is active, check these storefront areas:</p>
@@ -112,7 +112,7 @@
 </tbody>
 </table>
 <h2 id="need-help" tabindex="-1"><a class="header-anchor" href="#need-help"><span>Need help</span></a></h2>
-<p>Use the <RouteLink to="/help/troubleshooting.html">Troubleshooting</RouteLink> page for common setup issues. Use the <RouteLink to="/help/faq.html">FAQ</RouteLink> page for quick answers about the theme.</p>
+<p>Use the <a href="/help/troubleshooting.html" target="_blank" rel="noopener noreferrer">Troubleshooting</a> page for common setup issues. Use the <a href="/help/faq.html" target="_blank" rel="noopener noreferrer">FAQ</a> page for quick answers about the theme.</p>
 </div></template>
 
 

@@ -15,7 +15,7 @@
 <li>Open <strong>Content -&gt; Homepage Configurator -&gt; Sections</strong>.</li>
 <li>Confirm the default homepage sections are available.</li>
 </ol>
-<p>Continue with <RouteLink to="/activation.html">Activate the Theme</RouteLink>.</p>
+<p>Continue with <a href="/activation.html" target="_blank" rel="noopener noreferrer">Activate the Theme</a>.</p>
 </div></template>
 
 
