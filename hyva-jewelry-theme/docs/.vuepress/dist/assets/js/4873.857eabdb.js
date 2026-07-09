@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmagento2_hyva_jewellery_theme_docs=self.webpackChunkmagento2_hyva_jewellery_theme_docs||[]).push([[4873],{4873(e,c,t){t.d(c,{createArchitectureServices:()=>a.b});var a=t(5572);t(8548),t(9218),t(6259),t(8517),t(8840)}}]);

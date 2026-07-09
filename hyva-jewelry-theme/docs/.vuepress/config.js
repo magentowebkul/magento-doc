@@ -134,6 +134,11 @@ export default defineUserConfig({
 
     bundler: webpackBundler({
         configureWebpack: () => ({
+            // Salt content hashes so asset filenames change when the parent
+            // repo's post-build URL rewrite changes (assets are cached immutable).
+            output: process.env.VUEPRESS_HASH_SALT
+                ? { hashSalt: process.env.VUEPRESS_HASH_SALT }
+                : {},
             ignoreWarnings: [/Deprecation Warning/, /sass-loader/],
         }),
         devServer: {

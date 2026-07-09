@@ -1,3 +1,0 @@
-import comp from "/home/users/anikesh.kumar/Documents/magento-doc/hyva-jewelry-theme/docs/.vuepress/.temp/pages/help/faq.html.vue"
-const data = JSON.parse("{\"path\":\"/help/faq.html\",\"title\":\"FAQ\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[],\"git\":{\"contributors\":[{\"name\":\"anikesh kumar\",\"username\":\"\",\"email\":\"anikesh.kumar204@webkul.in\",\"commits\":1}],\"changelog\":[{\"hash\":\"65ee1538c72e98b02c838952f96993746b91fe68\",\"time\":1783608557000,\"email\":\"anikesh.kumar204@webkul.in\",\"author\":\"anikesh kumar\",\"message\":\"init\"}]},\"filePathRelative\":\"help/faq.md\"}")
-export { comp, data }

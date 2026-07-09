@@ -1,10 +1,21 @@
 import { spawnSync } from "node:child_process";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "dist");
+
+// Assets are served with immutable cache headers, but rewriteProductUrls mutates
+// chunk contents AFTER webpack computes filename hashes. Salting the hashes with
+// this script's own content forces new filenames whenever the rewrite logic
+// changes, so edge/browser caches can never serve a stale chunk under an old name.
+const hashSalt = crypto
+  .createHash("sha256")
+  .update(fs.readFileSync(fileURLToPath(import.meta.url)))
+  .digest("hex")
+  .slice(0, 12);
 
 const products = [
   {
@@ -61,8 +72,8 @@ const rewriteProductUrls = (dir, slug) => {
 
     const current = fs.readFileSync(file, "utf8");
     const rewritten = current.replace(
-      new RegExp(`(["'(=])/(?!${slug}/|/|#|https?:|mailto:|tel:)(${starters})(?=[/."'?)#])`, "g"),
-      `$1/${slug}/$2`
+      new RegExp(`\\b(href|src)=(["'])/(?!${slug}/|/|#|https?:|mailto:|tel:)(${starters})(?=[/."'?)#])`, "g"),
+      `$1=$2/${slug}/$3`
     );
 
     if (rewritten !== current) {
@@ -97,6 +108,7 @@ for (const product of products) {
     env: {
       ...process.env,
       VUEPRESS_BASE: `/${product.slug}/`,
+      VUEPRESS_HASH_SALT: hashSalt,
     },
   });
 
