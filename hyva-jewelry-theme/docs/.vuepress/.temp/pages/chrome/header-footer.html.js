@@ -1,0 +1,3 @@
+import comp from "/home/users/anikesh.kumar/Documents/magento-doc/hyva-jewelry-theme/docs/.vuepress/.temp/pages/chrome/header-footer.html.vue"
+const data = JSON.parse("{\"path\":\"/chrome/header-footer.html\",\"title\":\"Header & Footer Settings\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Header settings\",\"slug\":\"header-settings\",\"link\":\"#header-settings\",\"children\":[]},{\"level\":2,\"title\":\"Footer settings\",\"slug\":\"footer-settings\",\"link\":\"#footer-settings\",\"children\":[]},{\"level\":2,\"title\":\"After saving\",\"slug\":\"after-saving\",\"link\":\"#after-saving\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"chrome/header-footer.md\"}")
+export { comp, data }

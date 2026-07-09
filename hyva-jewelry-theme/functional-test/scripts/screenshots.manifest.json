@@ -1,0 +1,43 @@
+{
+  "defaults": {
+    "viewport": { "width": 1920, "height": 1200 },
+    "deviceScaleFactor": 2,
+    "formats": [
+      { "suffix": "",    "width": 1920, "quality": 95 },
+      { "suffix": "@1x", "width": 1480, "quality": 92 }
+    ]
+  },
+  "screenshots": [
+    { "id": "onboarding-step-1", "spec": "onboarding", "step": 1 },
+    { "id": "onboarding-step-2", "spec": "onboarding", "step": 2 },
+    { "id": "onboarding-step-3", "spec": "onboarding", "step": 3 },
+
+    { "id": "api-settings",               "spec": "settings-tabs", "tab": "wkcft_api" },
+    { "id": "general-settings",           "spec": "settings-tabs", "tab": "wkcft_general" },
+    { "id": "woocommerce-settings",       "spec": "settings-tabs", "tab": "wkcft_woocommerce" },
+    { "id": "woocommerce-forms-settings", "spec": "settings-tabs", "tab": "wkcft_woocommerce_form" },
+    { "id": "wordpress-settings",         "spec": "settings-tabs", "tab": "wkcft_wordpress" },
+    { "id": "per-form-config",            "spec": "settings-tabs", "tab": "wkcft_per_form_config" },
+    { "id": "notifications",              "spec": "settings-tabs", "tab": "wkcft_notifications" },
+
+    { "id": "design-studio-full",       "spec": "settings-tabs", "tab": "wkcft_design_studio" },
+    { "id": "design-studio-cloudflare", "spec": "settings-tabs", "tab": "wkcft_design_studio", "type": "element", "locator": "[data-ds-section='cloudflare']" },
+    { "id": "design-studio-layout",     "spec": "settings-tabs", "tab": "wkcft_design_studio", "type": "element", "locator": "[data-ds-section='layout']" },
+    { "id": "design-studio-container",  "spec": "settings-tabs", "tab": "wkcft_design_studio", "type": "element", "locator": "[data-ds-section='container']" },
+    { "id": "design-studio-labels",     "spec": "settings-tabs", "tab": "wkcft_design_studio", "type": "element", "locator": "[data-ds-section='labels']" },
+    { "id": "design-studio-preview",    "spec": "settings-tabs", "tab": "wkcft_design_studio", "type": "element", "locator": ".wkcft-ds-preview" },
+
+    { "id": "conditional-rules-general-skip",      "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='0'] table.wkcft-form-table tr:nth-child(1)", "endSelector": ".wkcft-capture-section[data-idx='0'] table.wkcft-form-table tr:nth-child(3)" },
+    { "id": "conditional-rules-general-threshold", "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='0'] table.wkcft-form-table tr:nth-child(3)", "endSelector": ".wkcft-capture-section[data-idx='0'] table.wkcft-form-table tr:nth-child(5)" },
+    { "id": "conditional-rules-general-counter",   "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='0'] table.wkcft-form-table tr:nth-child(5)" },
+    { "id": "conditional-rules-ip",                "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='1']" },
+    { "id": "conditional-rules-abuse",   "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='2']" },
+    { "id": "conditional-rules-country", "spec": "settings-tabs", "tab": "wkcft_conditions", "type": "range", "prep": "wrapConditionsSections", "startSelector": ".wkcft-capture-section[data-idx='3']" },
+
+    { "id": "analytics-kpis",     "spec": "wp-admin", "page": "wp-admin/admin.php?page=wkcft-analytics", "type": "element", "locator": ".wkcft-kpi-grid" },
+    { "id": "analytics-trend",    "spec": "wp-admin", "page": "wp-admin/admin.php?page=wkcft-analytics", "type": "element", "locator": ".wkcft-trend-card" },
+    { "id": "analytics-insights", "spec": "wp-admin", "page": "wp-admin/admin.php?page=wkcft-analytics", "type": "range", "startSelector": ".wkcft-chart-card:not(.wkcft-trend-card)" },
+
+    { "id": "settings-hero", "spec": "wp-admin", "page": "wp-admin/admin.php?page=wkcft-settings&tab=wkcft_api", "type": "hero" }
+  ]
+}

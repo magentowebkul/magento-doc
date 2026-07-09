@@ -1,0 +1,43 @@
+<template><div><h1 id="troubleshooting" tabindex="-1"><a class="header-anchor" href="#troubleshooting"><span>Troubleshooting</span></a></h1>
+<p>Common issues and how to resolve them.</p>
+<h2 id="theme-not-applied" tabindex="-1"><a class="header-anchor" href="#theme-not-applied"><span>Theme not applied</span></a></h2>
+<ul>
+<li>Confirm <strong>Adornment Jewelry Theme</strong> is set under <strong>Content → Design → Configuration</strong> for the correct store view.</li>
+<li>Clear Magento cache and refresh the storefront.</li>
+</ul>
+<h2 id="styles-look-unstyled-missing" tabindex="-1"><a class="header-anchor" href="#styles-look-unstyled-missing"><span>Styles look unstyled / missing</span></a></h2>
+<ul>
+<li>Clear Magento cache and refresh the storefront.</li>
+<li>Confirm the correct theme is applied to the store view.</li>
+<li>If the issue stays, ask your Magento technical team to redeploy the theme assets.</li>
+</ul>
+<h2 id="homepage-is-empty" tabindex="-1"><a class="header-anchor" href="#homepage-is-empty"><span>Homepage is empty</span></a></h2>
+<ul>
+<li>Check <strong>Homepage Configurator → Sections</strong>.</li>
+<li>At least one section must be <strong>Enabled</strong>.</li>
+<li>Make sure each visible section has a <strong>Sort Order</strong>.</li>
+<li>If no default sections are available, ask your Magento technical team to check the installation.</li>
+</ul>
+<h2 id="mega-menu-not-showing" tabindex="-1"><a class="header-anchor" href="#mega-menu-not-showing"><span>Mega menu not showing</span></a></h2>
+<ul>
+<li>Open <strong>Header &amp; Footer Builder</strong> and confirm the menu has saved items, then <strong>Save Configuration</strong>.</li>
+<li>Preview does not publish changes. Click <strong>Save Configuration</strong>.</li>
+<li>Clear Magento cache after saving if the old menu still appears.</li>
+</ul>
+<h2 id="links-broken-in-the-menu" tabindex="-1"><a class="header-anchor" href="#links-broken-in-the-menu"><span>Links broken in the menu</span></a></h2>
+<ul>
+<li>Internal links should use the store page path, such as <code v-pre>jewelry/rings.html</code>.</li>
+<li>External links should start with <code v-pre>https://</code>.</li>
+<li>Avoid adding the wrong store domain in internal links.</li>
+</ul>
+<h2 id="changes-not-visible-after-editing" tabindex="-1"><a class="header-anchor" href="#changes-not-visible-after-editing"><span>Changes not visible after editing</span></a></h2>
+<ul>
+<li>Clear Magento cache.</li>
+<li>Refresh the storefront in a private browser window.</li>
+<li>If the old content still appears, ask your Magento technical team to publish storefront assets again.</li>
+</ul>
+<h2 id="still-stuck" tabindex="-1"><a class="header-anchor" href="#still-stuck"><span>Still stuck?</span></a></h2>
+<p>See the <a href="/help/faq">FAQ</a> or contact <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer">Webkul support</a>.</p>
+</div></template>
+
+

@@ -1,0 +1,69 @@
+<template><div><h1 id="cta-banner" tabindex="-1"><a class="header-anchor" href="#cta-banner"><span>CTA Banner</span></a></h1>
+<p>The <strong>CTA Banner</strong> section asks shoppers to take one clear action. Use it for booking an appointment, visiting a store, contacting support, or opening a special collection.</p>
+<p>CTA means <strong>call to action</strong>.</p>
+<h2 id="add-a-cta-banner" tabindex="-1"><a class="header-anchor" href="#add-a-cta-banner"><span>Add a CTA Banner</span></a></h2>
+<ol>
+<li>Go to <strong>Content -&gt; Homepage Configurator -&gt; Sections</strong>.</li>
+<li>Click <strong>Add New Section</strong>.</li>
+<li>Enter a <strong>Title</strong>, for example <code v-pre>Private Styling Appointment</code>.</li>
+<li>Set <strong>Section Type</strong> to <strong>CTA Banner</strong>.</li>
+<li>Set <strong>Enabled</strong> to <strong>Yes</strong>.</li>
+<li>Use a <strong>Sort Order</strong> so it appears in the right place on the homepage.</li>
+<li>Fill the <strong>CTA Banner Configuration</strong> fields.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<h2 id="main-settings" tabindex="-1"><a class="header-anchor" href="#main-settings"><span>Main settings</span></a></h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Background Image</strong></td>
+<td>Upload a wide image. Recommended size is <strong>1920 x 600 px</strong>. Maximum file size is <strong>4 MB</strong>.</td>
+</tr>
+<tr>
+<td><strong>Overlay Color</strong></td>
+<td>Color placed above the image. Example: <code v-pre>rgba(0,0,0,0.45)</code>.</td>
+</tr>
+<tr>
+<td><strong>Heading</strong></td>
+<td>Main CTA text.</td>
+</tr>
+<tr>
+<td><strong>Subheading</strong></td>
+<td>Short text below the heading.</td>
+</tr>
+<tr>
+<td><strong>Button Label</strong></td>
+<td>Button text, such as <code v-pre>Book Appointment</code>.</td>
+</tr>
+<tr>
+<td><strong>Button URL</strong></td>
+<td>Link for the button.</td>
+</tr>
+<tr>
+<td><strong>Button Style</strong></td>
+<td>Choose <strong>Filled</strong> or <strong>Outline</strong>.</td>
+</tr>
+<tr>
+<td><strong>Text Alignment</strong></td>
+<td>Choose <strong>Left</strong>, <strong>Center</strong>, or <strong>Right</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="storefront-result" tabindex="-1"><a class="header-anchor" href="#storefront-result"><span>Storefront result</span></a></h2>
+<p><img src="/screenshots/cta-banner-storefront-result.png" alt="CTA banner on the storefront"></p>
+<h2 id="good-practice" tabindex="-1"><a class="header-anchor" href="#good-practice"><span>Good practice</span></a></h2>
+<ul>
+<li>Use one action only.</li>
+<li>Use a darker overlay on bright images.</li>
+<li>Keep the button label short.</li>
+<li>Link the button to a real page, not <code v-pre>#</code>.</li>
+</ul>
+</div></template>
+
+

@@ -1,0 +1,120 @@
+<template><div><h1 id="section-types" tabindex="-1"><a class="header-anchor" href="#section-types"><span>Section Types</span></a></h1>
+<p>The Homepage Configurator has <strong>10 section types</strong>. Choose the section type first. After that, Magento Admin shows the fields for that section.</p>
+<h2 id="general-fields" tabindex="-1"><a class="header-anchor" href="#general-fields"><span>General fields</span></a></h2>
+<p>Every section has these fields at the top:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What to enter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Title</strong></td>
+<td>A clear Admin name, like <code v-pre>Shop by Category</code>.</td>
+</tr>
+<tr>
+<td><strong>Section Type</strong></td>
+<td>The type of homepage block you want to create.</td>
+</tr>
+<tr>
+<td><strong>Enabled</strong></td>
+<td>Choose <strong>Yes</strong> to show it on the storefront. Choose <strong>No</strong> to hide it.</td>
+</tr>
+<tr>
+<td><strong>Sort Order</strong></td>
+<td>A number for the order on the homepage. Lower numbers show first.</td>
+</tr>
+<tr>
+<td><strong>Store ID</strong></td>
+<td>Use <code v-pre>0</code> for all stores. Use a store view ID only if needed.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/screenshots/homepage-new-section-form.png" alt="Magento Admin New Section form for Homepage Configurator"></p>
+<h2 id="all-section-types" tabindex="-1"><a class="header-anchor" href="#all-section-types"><span>All section types</span></a></h2>
+<table>
+<thead>
+<tr>
+<th>Section Type</th>
+<th>Best use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hero Banner</strong></td>
+<td>A large top banner for the main sale, collection, or brand message.</td>
+</tr>
+<tr>
+<td><strong>Category Grid</strong></td>
+<td>A &quot;Shop by Category&quot; area with rings, earrings, necklaces, bracelets, and more.</td>
+</tr>
+<tr>
+<td><strong>Collection Banners</strong></td>
+<td>Two or more image banners for seasonal collections or offers.</td>
+</tr>
+<tr>
+<td><strong>Product Carousel</strong></td>
+<td>A row of products, such as Trending Products, New Arrivals, Bestsellers, or Sale items.</td>
+</tr>
+<tr>
+<td><strong>Split Content</strong></td>
+<td>An image with text beside it. Good for brand story or one featured collection.</td>
+</tr>
+<tr>
+<td><strong>Promo Banner</strong></td>
+<td>A strong sale or gift banner with images and a button.</td>
+</tr>
+<tr>
+<td><strong>Luxury Grid</strong></td>
+<td>Premium cards for special collections, services, or jewellery qualities.</td>
+</tr>
+<tr>
+<td><strong>CTA Banner</strong></td>
+<td>A button section, such as Book Appointment or Contact Us.</td>
+</tr>
+<tr>
+<td><strong>Instagram Feed</strong></td>
+<td>A photo gallery from your brand or customers.</td>
+</tr>
+<tr>
+<td><strong>Trust Badges</strong></td>
+<td>Short trust messages, such as Free Shipping, Secure Payment, Easy Returns, and Support.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/screenshots/homepage-sections-grid.png" alt="Magento Admin Homepage Sections grid showing section types"></p>
+<h2 id="which-section-should-i-choose" tabindex="-1"><a class="header-anchor" href="#which-section-should-i-choose"><span>Which section should I choose?</span></a></h2>
+<ul>
+<li>Choose <strong>Hero Banner</strong> for the first section of the homepage.</li>
+<li>Choose <strong>Category Grid</strong> when shoppers need quick links to product categories.</li>
+<li>Choose <strong>Product Carousel</strong> when you want to show products directly.</li>
+<li>Choose <strong>Collection Banners</strong>, <strong>Promo Banner</strong>, or <strong>CTA Banner</strong> for campaigns.</li>
+<li>Choose <strong>Trust Badges</strong> near the bottom of the page to build trust.</li>
+</ul>
+<h2 id="before-you-save" tabindex="-1"><a class="header-anchor" href="#before-you-save"><span>Before you save</span></a></h2>
+<p>Check these points before clicking <strong>Save</strong>:</p>
+<ul>
+<li>The section is <strong>Enabled</strong>.</li>
+<li>The <strong>Sort Order</strong> is correct.</li>
+<li>The image looks clear on desktop and mobile.</li>
+<li>Button text is short.</li>
+<li>Button links go to the right page.</li>
+</ul>
+<h2 id="detailed-guides" tabindex="-1"><a class="header-anchor" href="#detailed-guides"><span>Detailed guides</span></a></h2>
+<ul>
+<li><RouteLink to="/homepage/hero-banner.html">Hero Banner</RouteLink></li>
+<li><RouteLink to="/homepage/category-grid.html">Category Grid</RouteLink></li>
+<li><RouteLink to="/homepage/product-carousel.html">Product Carousel</RouteLink></li>
+<li><RouteLink to="/homepage/collection-banners.html">Collection Banners</RouteLink></li>
+<li><RouteLink to="/homepage/split-content.html">Split Content</RouteLink></li>
+<li><RouteLink to="/homepage/promo-banner.html">Promo Banner</RouteLink></li>
+<li><RouteLink to="/homepage/luxury-grid.html">Luxury Grid</RouteLink></li>
+<li><RouteLink to="/homepage/cta-banner.html">CTA Banner</RouteLink></li>
+<li><RouteLink to="/homepage/instagram-feed.html">Instagram Feed</RouteLink></li>
+<li><RouteLink to="/homepage/trust-badges.html">Trust Badges</RouteLink></li>
+</ul>
+</div></template>
+
+

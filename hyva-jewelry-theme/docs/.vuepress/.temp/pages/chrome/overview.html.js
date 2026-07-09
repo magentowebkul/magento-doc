@@ -1,0 +1,3 @@
+import comp from "/home/users/anikesh.kumar/Documents/magento-doc/hyva-jewelry-theme/docs/.vuepress/.temp/pages/chrome/overview.html.vue"
+const data = JSON.parse("{\"path\":\"/chrome/overview.html\",\"title\":\"Header, Footer & Mega Menu Builder\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"What it controls\",\"slug\":\"what-it-controls\",\"link\":\"#what-it-controls\",\"children\":[]},{\"level\":2,\"title\":\"Workflow at a glance\",\"slug\":\"workflow-at-a-glance\",\"link\":\"#workflow-at-a-glance\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"chrome/overview.md\"}")
+export { comp, data }

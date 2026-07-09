@@ -1,0 +1,4 @@
+sku,name,regular_price,sale_price,stock_quantity,description,short_description,categories,tags,status,product_type
+DEMO-001,Demo T-Shirt,29.99,19.99,120,"Premium cotton tee.","Soft cotton tee.","Apparel,T-Shirts","tee,cotton",publish,simple
+DEMO-002,Demo Mug,12.50,9.99,300,"Ceramic 12oz mug.","Ceramic mug.","Drinkware","mug,ceramic",publish,simple
+DEMO-003,Demo Hoodie,59.00,49.00,80,"Zip hoodie.","Warm zip hoodie.","Apparel,Hoodies","hoodie",publish,simple
