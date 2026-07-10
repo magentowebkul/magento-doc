@@ -157,7 +157,7 @@ const productHeaderRules = products
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
 
-/${product.slug}/service-worker*
+/${product.slug}/service-worker.js
   ! Cache-Control
   Cache-Control: no-cache
 `
