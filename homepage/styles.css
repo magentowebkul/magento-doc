@@ -230,6 +230,64 @@ body {
 
 .card:hover .card-cta { text-decoration: underline; }
 
+/* ---------- Trust strip ---------- */
+
+.trust {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 44px;
+  row-gap: 24px;
+  padding: 36px 0;
+}
+
+.trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.trust-item img {
+  height: 34px;
+  width: auto;
+}
+
+.trust-text {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.trust-text strong {
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+a.trust-item:hover .trust-text strong { color: var(--accent-ink); }
+
+.rating-line { white-space: nowrap; }
+
+.rating-score {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stars {
+  color: #f6a723;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {

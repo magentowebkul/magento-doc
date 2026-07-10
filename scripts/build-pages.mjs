@@ -136,7 +136,7 @@ const homepage = fs
 fs.writeFileSync(path.join(outDir, "index.html"), homepage);
 for (const file of fs.readdirSync(homepageDir)) {
   if (file === "index.html") continue;
-  fs.copyFileSync(path.join(homepageDir, file), path.join(outDir, file));
+  fs.cpSync(path.join(homepageDir, file), path.join(outDir, file), { recursive: true });
 }
 
 fs.writeFileSync(
