@@ -235,13 +235,24 @@ fs.writeFileSync(
   `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found</title><body style="font-family:system-ui,sans-serif;margin:48px"><h1>Page not found</h1><p><a href="/">Go to Magento documentation</a></p></body></html>`
 );
 
+const productHeaderRules = products
+  .map(
+    (product) => `
+/${product.slug}/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/${product.slug}/service-worker*
+  ! Cache-Control
+  Cache-Control: no-cache
+`
+  )
+  .join("");
+
 fs.writeFileSync(
   path.join(outDir, "_headers"),
   `/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-
-/hyva-jewelry-theme/assets/*
-  Cache-Control: public, max-age=31536000, immutable
-`
+  Cache-Control: public, max-age=86400
+${productHeaderRules}`
 );
