@@ -129,9 +129,15 @@ const cards = products
   .join("");
 
 const homepageDir = path.join(root, "homepage");
+const homepageStyleHash = crypto
+  .createHash("sha256")
+  .update(fs.readFileSync(path.join(homepageDir, "styles.css")))
+  .digest("hex")
+  .slice(0, 10);
 const homepage = fs
   .readFileSync(path.join(homepageDir, "index.html"), "utf8")
-  .replace("<!-- PRODUCT_CARDS -->", cards.trim());
+  .replace("<!-- PRODUCT_CARDS -->", cards.trim())
+  .replace('href="/styles.css"', `href="/styles.css?v=${homepageStyleHash}"`);
 
 fs.writeFileSync(path.join(outDir, "index.html"), homepage);
 for (const file of fs.readdirSync(homepageDir)) {
