@@ -114,6 +114,7 @@ for (const product of products) {
 
   fs.cpSync(productDist, targetDir, { recursive: true });
   rewriteProductUrls(targetDir, product.slug);
+  fs.rmSync(path.join(targetDir, "_headers"), { force: true });
 }
 
 const cards = products
