@@ -1,8 +1,8 @@
 ---
 home: true
 title: Magento 2 Hyvä Jewellery Theme
-heroText: Install, activate, and verify your jewellery storefront
-tagline: One guided pathway from a fresh Magento store to a fully-working Hyvä jewellery storefront. Twelve short chapters.
+heroText: Magento 2 Hyvä Jewellery Theme
+tagline: Install, activate, and verify your jewellery storefront with one guided path from a fresh Magento store to a working Hyvä jewellery experience.
 actions:
   - text: Start User Guide
     link: /introduction.html
