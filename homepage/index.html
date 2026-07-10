@@ -14,12 +14,11 @@
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Webkul Magento Docs home">
         <img class="brand-logo" src="/webkul-logo.png" alt="" width="30" height="20">
-        <span class="brand-name">webkul</span>
+        <span class="brand-name">Webkul</span>
         <span class="brand-divider" aria-hidden="true"></span>
         <span class="brand-context">Magento Docs</span>
       </a>
       <nav class="header-nav" aria-label="External links">
-        <a href="https://webkul.com" target="_blank" rel="noopener noreferrer">Webkul.com</a>
         <a href="https://store.webkul.com/" target="_blank" rel="noopener noreferrer">Store</a>
         <a href="https://webkul.uvdesk.com/" target="_blank" rel="noopener noreferrer" class="nav-cta">Support</a>
       </nav>
@@ -31,14 +30,14 @@
       <div class="container hero-inner">
         <div class="hero-copy">
           <p class="hero-label">Documentation</p>
-          <h1>Magento Product<br>Documentation</h1>
+          <h1>Magento Extensions <br>Documentation</h1>
           <p class="hero-sub">Everything you need to install, configure, customize and run Webkul Magento extensions.</p>
           <div class="hero-actions" aria-label="Primary documentation links">
             <a class="hero-button hero-button-primary" href="#products">
               <span>Browse Documentation</span>
               <span class="button-icon" aria-hidden="true">-&gt;</span>
             </a>
-            <a class="hero-button hero-button-secondary" href="#products">
+            <a class="hero-button hero-button-secondary" href="https://store.webkul.com/Magento-2.html" target="_blank" rel="noopener noreferrer">
               <span>View Products</span>
               <span class="button-icon" aria-hidden="true">-&gt;</span>
             </a>
@@ -64,28 +63,24 @@
                 <svg viewBox="0 0 24 24"><path d="M5 7.5 12 3l7 4.5v9L12 21l-7-4.5v-9Z"/><path d="m8.5 9.5 3.5 2 3.5-2M12 12v5"/></svg>
               </span>
               <span>Extensions</span>
-              <strong>124</strong>
             </a>
             <a class="hero-category" href="#products">
               <span class="category-icon category-icon-purple" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M7 5h10l3 4-8 10L4 9l3-4Z"/><path d="M8.5 9h7M12 5l2 4-2 10-2-10 2-4Z"/></svg>
               </span>
               <span>Themes</span>
-              <strong>18</strong>
             </a>
             <a class="hero-category" href="#products">
               <span class="category-icon category-icon-green" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M5 9h14l-1 11H6L5 9Z"/><path d="M8 9V7a4 4 0 0 1 8 0v2M9 13h6"/></svg>
               </span>
               <span>Marketplace</span>
-              <strong>34</strong>
             </a>
             <a class="hero-category" href="#products">
               <span class="category-icon category-icon-orange" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6.6 6.6l3.5 3.5M13.9 13.9l3.5 3.5M17.4 6.6l-3.5 3.5M10.1 13.9l-3.5 3.5"/><circle cx="12" cy="12" r="3"/></svg>
               </span>
               <span>Integrations</span>
-              <strong>62</strong>
             </a>
           </div>
           <a class="hero-panel-link" href="#products">
@@ -151,7 +146,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; Webkul Software Pvt. Ltd.</p>
+      <p>&copy; Copyright 2010-<span id="copyright-year">2026</span></p>
       <nav aria-label="Footer links">
         <a href="https://webkul.com" target="_blank" rel="noopener noreferrer">Company</a>
         <a href="https://store.webkul.com/" target="_blank" rel="noopener noreferrer">Extensions Store</a>
@@ -160,5 +155,8 @@
     </div>
   </footer>
 
+  <script>
+    document.getElementById("copyright-year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

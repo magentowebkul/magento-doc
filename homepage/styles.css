@@ -355,7 +355,7 @@ body {
 
 .hero-category {
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr) auto;
+  grid-template-columns: 36px minmax(0, 1fr);
   align-items: center;
   gap: 11px;
   min-height: 50px;
@@ -388,20 +388,6 @@ body {
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.hero-category strong {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 35px;
-  height: 24px;
-  padding: 0 8px;
-  border-radius: 999px;
-  background: #f4f7ff;
-  color: var(--accent-ink);
-  font-size: 12px;
-  font-weight: 800;
 }
 
 .category-icon {
@@ -754,7 +740,7 @@ a.trust-item:focus-visible .trust-text strong {
     padding-right: 12px;
   }
   .hero-category {
-    grid-template-columns: 34px minmax(0, 1fr) auto;
+    grid-template-columns: 34px minmax(0, 1fr);
     min-height: 48px;
   }
   .hero-category span:not(.category-icon) {
