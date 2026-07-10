@@ -1,6 +1,6 @@
-# Magento Docs by Webkul
+# Webkul Magento 2 Extensions Guides
 
-Magento Docs is Webkul's public documentation hub for Magento 2 and Adobe Commerce product guides. It publishes focused user guides under one domain, starting with the Magento 2 Hyva Jewellery Theme documentation.
+This repository is Webkul's public documentation hub for Magento 2 extension guides. It brings installation, configuration, and usage documentation together under one domain for merchants, developers, and implementation teams.
 
 Webkul is a Magento 2 and Adobe Commerce development company with deep experience in storefront engineering, marketplace platforms, custom extensions, integrations, migration, performance optimization, support, and enterprise commerce workflows.
 
