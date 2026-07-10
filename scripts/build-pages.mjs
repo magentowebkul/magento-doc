@@ -154,6 +154,7 @@ const productHeaderRules = products
   .map(
     (product) => `
 /${product.slug}/assets/*
+  ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
 
 /${product.slug}/service-worker*
@@ -168,6 +169,18 @@ fs.writeFileSync(
   `/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Cache-Control: public, max-age=86400
+  Cache-Control: no-cache
+
+/trust/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/webkul-logo.png
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/styles.css
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
 ${productHeaderRules}`
 );
