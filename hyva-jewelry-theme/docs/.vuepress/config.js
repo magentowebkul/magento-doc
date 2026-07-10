@@ -2,7 +2,6 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { webpackBundler } from "@vuepress/bundler-webpack";
-import { pwaPlugin } from "@vuepress/plugin-pwa";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 const siteBase = process.env.VUEPRESS_BASE || "/";
@@ -35,6 +34,11 @@ export default defineUserConfig({
                     url: "https://webkul.com",
                 },
             }),
+        ],
+        [
+            "script",
+            {},
+            'if ("serviceWorker" in navigator) { window.addEventListener("load", function () { navigator.serviceWorker.getRegistrations().then(function (registrations) { registrations.forEach(function (registration) { registration.unregister(); }); }); if ("caches" in window) { caches.keys().then(function (keys) { keys.forEach(function (key) { caches.delete(key); }); }); } }); }',
         ],
     ],
     title: "Hyvä Jewellery Theme",
@@ -161,7 +165,6 @@ export default defineUserConfig({
                 "/",
             ],
         }),
-        pwaPlugin(),
         mdEnhancePlugin({
             mermaid: true,
         }),
