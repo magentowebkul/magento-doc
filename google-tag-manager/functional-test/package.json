@@ -1,0 +1,22 @@
+{
+  "name": "wkgtm-doc-screenshots",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Headless Playwright screenshot capture for the Magento 2 Google Tag Manager documentation.",
+  "type": "module",
+  "scripts": {
+    "install:browsers": "playwright install chromium",
+    "capture": "playwright test --project=docs-screenshots",
+    "capture:debug": "PWDEBUG=1 playwright test --project=docs-screenshots --headed",
+    "process": "node scripts/process-screenshots.mjs",
+    "validate": "node scripts/validate-images.mjs",
+    "docs-layout": "playwright test --config=playwright.docs.config.js",
+    "all": "npm run capture && npm run process && npm run validate",
+    "clean": "rm -rf artifacts test-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "jimp": "^0.22.12",
+    "sharp": "^0.33.5"
+  }
+}

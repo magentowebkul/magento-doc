@@ -24,6 +24,12 @@ const products = [
     title: "Magento 2 Hyvä Jewellery Theme",
     description: "User guide for installing, activating, and managing the Hyvä Jewellery Theme.",
   },
+  {
+    slug: "google-tag-manager",
+    dir: "google-tag-manager",
+    title: "Magento 2 Google Tag Manager",
+    description: "User guide for installing, configuring, and managing the Google Tag Manager extension — events, destinations, consent, and container export.",
+  },
 ];
 
 const run = (command, args, options = {}) => {

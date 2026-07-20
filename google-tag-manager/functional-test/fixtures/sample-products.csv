@@ -1,0 +1,6 @@
+sku,name,price,type,attribute_set,qty,is_in_stock
+GTM-DEMO-01,Joust Duffle Bag,34.00,simple,Default,100,1
+GTM-DEMO-02,Strive Shoulder Pack,32.00,simple,Default,100,1
+GTM-DEMO-03,Crown Summit Backpack,38.00,simple,Default,100,1
+GTM-DEMO-04,Wayfarer Messenger Bag,45.00,simple,Default,100,1
+GTM-DEMO-05,Rival Field Messenger,45.00,simple,Default,100,1

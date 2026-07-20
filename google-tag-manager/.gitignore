@@ -1,0 +1,23 @@
+node_modules/
+.DS_Store
+.agents/
+.codex/
+.claude/
+.playwright-mcp/
+.lock-wscript
+.project
+.vscode/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VuePress build output
+docs/.vuepress/.cache/
+docs/.vuepress/.temp/
+docs/.vuepress/dist/
+
+# Playwright harness artifacts
+functional-test/artifacts/
+functional-test/.auth/
+functional-test/test-results/

@@ -1,0 +1,5 @@
+node_modules/
+artifacts/
+.auth/
+test-results/
+.DS_Store

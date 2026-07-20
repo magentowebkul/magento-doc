@@ -1,0 +1,74 @@
+{
+  "defaults": {
+    "viewport": { "width": 1920, "height": 1200 },
+    "deviceScaleFactor": 2,
+    "formats": [
+      { "suffix": "",    "width": 1920, "quality": 95 },
+      { "suffix": "@1x", "width": 1480, "quality": 92 }
+    ]
+  },
+
+  "comment": "spec 'settings-config' shots are captured automatically from the Magento admin config section (Stores > Configuration > Webkul > Google Tag Manager). spec 'manual' shots live in third-party UIs (tagmanager.google.com, GA4, Google Ads, Meta Events Manager) or need GTM Preview mode + a storefront; capture those by hand, drop the PNG in artifacts/ with the matching id, then run `npm run process`. Group fieldset ids use comma-fallback locators because tuning/customer_data/events may be nested under general depending on the Magento version.",
+
+  "screenshots": [
+    { "id": "general-settings",     "spec": "settings-config", "group": "general",                       "type": "element", "locator": "#google_tag_manager_general, [id$='_general']" },
+    { "id": "shopper-actions",      "spec": "settings-config", "group": "events",         "type": "element", "locator": "#google_tag_manager_general_events, #google_tag_manager_events, [id$='_events']" },
+    { "id": "data-tuning",          "spec": "settings-config", "group": "tuning",         "type": "element", "locator": "#google_tag_manager_general_tuning, #google_tag_manager_tuning, [id$='_tuning']" },
+    { "id": "consent-pii",          "spec": "settings-config", "group": "customer_data",  "type": "element", "locator": "#google_tag_manager_general_customer_data, #google_tag_manager_customer_data, [id$='_customer_data']" },
+    { "id": "developer",            "spec": "settings-config", "group": "developer",      "type": "element", "locator": "#google_tag_manager_developer, [id$='_developer']" },
+
+    { "id": "destinations",         "spec": "settings-config", "group": "destinations",   "type": "element", "locator": "#google_tag_manager_destinations, [id$='_destinations']" },
+    { "id": "sgtm-server-url",      "spec": "settings-config", "group": "destinations",   "type": "element", "locator": "#row_google_tag_manager_destinations_server_container_url, [id$='_server_container_url']" },
+    { "id": "ga4-settings",         "spec": "settings-config", "group": "destinations_ga4",        "type": "element", "locator": "#google_tag_manager_destinations_ga4, [id$='_destinations_ga4']" },
+    { "id": "google-ads-settings",  "spec": "settings-config", "group": "destinations_google_ads", "type": "element", "locator": "#google_tag_manager_destinations_google_ads, [id$='_destinations_google_ads']" },
+    { "id": "meta-pixel-settings",  "spec": "settings-config", "group": "destinations_meta_pixel", "type": "element", "locator": "#google_tag_manager_destinations_meta_pixel, [id$='_destinations_meta_pixel']" },
+    { "id": "container-export",     "spec": "settings-config", "group": "container_export",        "type": "element", "locator": "#google_tag_manager_container_export, [id$='_container_export']" },
+
+    { "id": "category-tracking",     "spec": "manual", "note": "Storefront category page with GTM Preview / Tag Assistant open." },
+    { "id": "product-tracking",      "spec": "manual", "note": "Storefront product page with GTM Preview / Tag Assistant open." },
+    { "id": "cart-tracking",         "spec": "manual", "note": "Storefront cart / add-to-cart with GTM Preview / Tag Assistant open." },
+
+    { "id": "howto-container-id",    "spec": "manual", "note": "tagmanager.google.com — container workspace showing GTM-XXXXXXX." },
+    { "id": "howto-ga4-id",          "spec": "manual", "note": "analytics.google.com — Admin > Data Streams > web stream Measurement ID." },
+    { "id": "howto-ads-conversion",  "spec": "manual", "note": "ads.google.com — Tools > Conversions > conversion action > Tag setup (GTM)." },
+    { "id": "howto-meta-id",         "spec": "manual", "note": "business.facebook.com Events Manager — pixel Settings > Pixel ID." },
+    { "id": "howto-verify-events",   "spec": "manual", "note": "GTM Tag Assistant debug panel showing dataLayer events firing on the storefront." },
+
+    { "id": "gtm-signup",            "spec": "manual", "note": "tagmanager.google.com — Create Account form (account name, country, container name, Web platform)." },
+    { "id": "gtm-accept-terms",      "spec": "manual", "note": "GTM Terms of Service acceptance screen." },
+    { "id": "gtm-import-container",  "spec": "manual", "note": "GTM Admin > Import Container — choose the exported container file." },
+    { "id": "gtm-import-as-new",     "spec": "manual", "note": "GTM import — Workspace: New, Import Option: Overwrite." },
+    { "id": "gtm-submit",            "spec": "manual", "note": "GTM workspace Submit button (top-right)." },
+    { "id": "gtm-publish-version",   "spec": "manual", "note": "GTM Publish and Create Version dialog — version name/description." },
+    { "id": "gtm-published",         "spec": "manual", "note": "GTM container published confirmation." },
+    { "id": "gtm-accounts-list",     "spec": "manual", "note": "GTM accounts list showing container IDs." },
+
+    { "id": "ga4-home",              "spec": "manual", "note": "analytics.google.com — Admin section navigation." },
+    { "id": "ga4-create-account",    "spec": "manual", "note": "GA4 Create Account — account name." },
+    { "id": "ga4-account-details",   "spec": "manual", "note": "GA4 account details entry." },
+    { "id": "ga4-property-details",  "spec": "manual", "note": "GA4 property details — name, time zone, currency." },
+    { "id": "ga4-describe-business", "spec": "manual", "note": "GA4 describe business — industry category and business size." },
+    { "id": "ga4-objectives",        "spec": "manual", "note": "GA4 business objectives selection." },
+    { "id": "ga4-accept-terms",      "spec": "manual", "note": "GA4 Terms of Service acceptance." },
+    { "id": "ga4-start-collecting",  "spec": "manual", "note": "GA4 start collecting data — platform selection (Web)." },
+    { "id": "ga4-data-stream",       "spec": "manual", "note": "GA4 web data stream setup — website URL and stream name." },
+
+    { "id": "ads-signin",            "spec": "manual", "note": "ads.google.com sign-in page." },
+    { "id": "ads-tools-menu",        "spec": "manual", "note": "Google Ads Tools and settings menu." },
+    { "id": "ads-add-conversion",    "spec": "manual", "note": "Google Ads Conversions > Add conversion." },
+    { "id": "ads-website-setup",     "spec": "manual", "note": "Google Ads — select Website conversion source." },
+    { "id": "ads-domain",            "spec": "manual", "note": "Google Ads — enter domain name for conversion tracking." },
+    { "id": "ads-manual-action",     "spec": "manual", "note": "Google Ads — Add a conversion action manually." },
+    { "id": "ads-conversion-details","spec": "manual", "note": "Google Ads — conversion action details form." },
+    { "id": "ads-save-continue",     "spec": "manual", "note": "Google Ads — Save and continue dialog." },
+    { "id": "ads-created",           "spec": "manual", "note": "Google Ads — newly created conversion action." },
+    { "id": "ads-tag-setup",         "spec": "manual", "note": "Google Ads — Tag setup > Use Google Tag Manager (Conversion ID & Label)." },
+
+    { "id": "meta-events-manager",   "spec": "manual", "note": "business.facebook.com — Meta Events Manager home." },
+    { "id": "meta-connect-source",   "spec": "manual", "note": "Meta — Connect Data, select Web data source." },
+    { "id": "meta-create-dataset",   "spec": "manual", "note": "Meta — Create new dataset dialog." },
+    { "id": "meta-recommended-setup","spec": "manual", "note": "Meta — Recommended setup, choose Set up manually." },
+    { "id": "meta-pixel-only",       "spec": "manual", "note": "Meta — Meta Pixel only connection method." },
+    { "id": "meta-advanced-matching","spec": "manual", "note": "Meta — Automatic Advanced Matching (optional)." }
+  ]
+}
