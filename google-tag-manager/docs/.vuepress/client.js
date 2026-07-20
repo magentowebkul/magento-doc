@@ -1775,7 +1775,7 @@ const exportAsPdf = async () => {
       <div class="meta">
         <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
         <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-        <div><strong>Publisher:</strong> Adornment Jewelry Theme · User Guide</div>
+        <div><strong>Publisher:</strong> Magento 2 Google Tag Manager · User Guide</div>
       </div>
     `;
     root.appendChild(cover);
@@ -1968,14 +1968,14 @@ const exportAsDocx = async () => {
         <div class="meta">
           <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
           <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-          <div><strong>Publisher:</strong> Adornment Jewelry Theme · User Guide</div>
+          <div><strong>Publisher:</strong> Magento 2 Google Tag Manager · User Guide</div>
         </div>
       </section>
     `;
 
     const footer = `
       <footer class="doc-export-footer">
-        <p>Document exported from Adornment Jewelry Theme documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
+        <p>Document exported from Magento 2 Google Tag Manager documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
       </footer>
     `;
 

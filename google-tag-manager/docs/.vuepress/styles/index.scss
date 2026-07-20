@@ -2383,7 +2383,7 @@ main.vp-home .vp-features .vp-feature {
 
 /* ============================================================
    FINAL VERCEL DOCS LAYOUT PASS
-   Strong source-level overrides for the Adornment docs shell.
+   Strong source-level overrides for the Google Tag Manager docs shell.
    ============================================================ */
 
 :root {
@@ -3691,7 +3691,7 @@ main.vp-home > header.vp-hero {
 }
 
 main.vp-home > header.vp-hero::before {
-  content: "MAGENTO 2 \00B7  HYV\00C4  THEME \00B7  USER GUIDE";
+  content: "MAGENTO 2 \00B7  GOOGLE TAG MANAGER \00B7  USER GUIDE";
   display: block;
   margin: 0 auto 22px;
   color: #2563eb;
