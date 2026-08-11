@@ -30,12 +30,6 @@ const products = [
     title: "Magento 2 Google Tag Manager",
     description: "User guide for installing, configuring, and managing the Google Tag Manager extension — events, destinations, consent, and container export.",
   },
-  {
-    slug: "demo-blog",
-    dir: "demo-blog",
-    title: "Magento 2 Demo Blog",
-    description: "User guide for installing, activating, and managing the Demo Blog extension — posts, categories, and comment moderation.",
-  },
 ];
 
 const run = (command, args, options = {}) => {
