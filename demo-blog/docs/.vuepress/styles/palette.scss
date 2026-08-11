@@ -1,0 +1,32 @@
+:root {
+  --vp-c-accent: #111111;
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafafa;
+  --vp-c-text: #171717;
+  --vp-c-text-mute: #666666;
+  --vp-c-border: #eaeaea;
+
+  // theme-default rc.88 fills buttons, links and badges from these, not from
+  // --vp-c-accent alone. Without them the accent stays the theme's green.
+  --vp-c-accent-bg: #111111;
+  --vp-c-accent-hover: #333333;
+  --vp-c-accent-soft: rgba(17, 17, 17, 0.08);
+  --vp-c-accent-text: #ffffff;
+}
+
+// theme-default rc.88 toggles `data-theme="dark"` on <html>; `html.dark` is the
+// older beta selector. Both are listed so the palette survives either.
+html.dark,
+html[data-theme="dark"] {
+  --vp-c-accent: #ededed;
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: #0a0a0a;
+  --vp-c-text: #ededed;
+  --vp-c-text-mute: #a1a1a1;
+  --vp-c-border: #2a2a2a;
+
+  --vp-c-accent-bg: #ededed;
+  --vp-c-accent-hover: #c4c4c4;
+  --vp-c-accent-soft: rgba(237, 237, 237, 0.12);
+  --vp-c-accent-text: #000000;
+}
