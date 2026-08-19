@@ -8,7 +8,7 @@ Before installing and configuring the **Webkul Magento 2 Canva Connector** exten
 
 | Requirement | Supported Versions | Notes |
 |---|---|---|
-| **Magento** | `2.4.4` to `2.4.7+` | Open Source, Adobe Commerce, and B2B Editions |
+| **Magento** | `2.4.4` to `2.4.9+` | Open Source, Adobe Commerce, and B2B Editions |
 | **PHP** | `8.1`, `8.2`, `8.3`, `8.4` | `ext-json`, `ext-curl`, `ext-openssl`, `ext-gd` or `ext-imagick` |
 | **Node.js** | `18.x`, `20.x`, `22.x` | Required to build and run the Canva Frontend Node app |
 | **npm** | `9.x` or `10.x` | Package manager for Node dependencies |
