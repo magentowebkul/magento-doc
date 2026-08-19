@@ -6,9 +6,7 @@ Connecting Magento 2 with Canva requires setting up two distinct components insi
 Canva Developer Portal
 ├── 1. Canva App (Sidebar UI)
 │   ├── Runs in Canva Editor left sidebar
-│   ├── Provides the "Magento 2 Connect" interface
-│   ├── Connects to your frontend service (e.g. http://localhost:8083)
-│   └── Requires Canva App ID (e.g. AAHOGAGCvn4)
+│   └── Requires Canva App ID from Developer Portal
 │
 └── 2. Canva Connect Integration (REST API & OAuth)
     ├── Handles server-to-server API calls

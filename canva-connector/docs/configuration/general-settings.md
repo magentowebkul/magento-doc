@@ -9,8 +9,8 @@ The **General Settings** section manages extension enablement, authentication cr
 | Field | Type | Default | Description |
 |---|---|---|---|
 | **Enable Module** | Select (`Yes` / `No`) | `No` | Master switch to enable or disable Canva Connector features across Admin and Catalog. |
-| **Canva App ID** | Text | Empty | The App ID (e.g. `AAHOGAGCvn4`) from your Canva App in the Canva Developer Portal. |
-| **Client ID** | Text | Empty | The Client ID (e.g. `OC-AaATlhMbRH5_`) from your Canva Connect Integration. |
+| **Canva App ID** | Text | Empty | The App ID from your Canva App in the Canva Developer Portal. |
+| **Client ID** | Text | Empty | The Client ID from your Canva Connect Integration. |
 | **Client Secret** | Obscure (Encrypted) | Empty | The Client Secret from your Canva Connect Integration. Stored encrypted in Magento database. |
 | **Redirect URI** | Read-only Display | Auto-generated | The OAuth 2.0 callback URL to register in Canva Developer Portal: `{base_url}/canva/auth/callback`. |
 | **Return Navigation URI** | Read-only Display | Auto-generated | The Return Navigation URL to register in Canva Developer Portal: `{base_url}/canva/auth/return`. |

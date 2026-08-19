@@ -54,7 +54,7 @@ Click **Save Changes**.
 ### Step 4: Copy Client ID & Secret
 
 1. Under **Client credentials**, locate your:
-   - **Client ID** (e.g. `OC-AaATlhMbRH5_`)
+   - **Client ID**
    - **Client Secret**
 2. Copy both values.
 3. In Magento Admin, paste them into **Stores > Configuration > Webkul > Canva Connect Settings** under **Client ID** and **Client Secret**.

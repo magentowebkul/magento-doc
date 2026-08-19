@@ -43,5 +43,5 @@ If `canva:design:content:write` or `canva:design:content:read` are not checked, 
 ### Step 4: Copy the App ID
 
 1. Return to the app **Overview** or **Basic info** screen.
-2. Locate the **App ID** (e.g. `AAHOGAGCvn4`).
+2. Locate the **App ID**.
 3. Copy this App ID — you will paste it into Magento Admin under **Stores > Configuration > Webkul > Canva Connect Settings > Canva App ID**.
