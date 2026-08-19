@@ -5,7 +5,7 @@ Frequently asked questions regarding the Webkul Magento 2 Canva Connector extens
 ---
 
 ### Q: Which Magento versions are supported?
-**A:** The extension supports **Magento Open Source, Adobe Commerce, and B2B Editions from 2.4.4 through 2.4.9+** running on PHP 8.1, 8.2, 8.3, or 8.4.
+**A:** The extension supports **Magento Open Source, Adobe Commerce, and B2B Editions from 2.4.4 through 2.4.9+** running on PHP 8.1, 8.2, 8.3, 8.4, or 8.5.
 
 ---
 
