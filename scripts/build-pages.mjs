@@ -30,6 +30,12 @@ const products = [
     title: "Magento 2 Google Tag Manager",
     description: "User guide for installing, configuring, and managing the Google Tag Manager extension — events, destinations, consent, and container export.",
   },
+  {
+    slug: "ai-chatbot",
+    dir: "aichatbot",
+    title: "Magento 2 AI Chatbot using Open Source LLM",
+    description: "Magento 2 AI Chatbot using Open Source LLM adds a smart virtual assistant to your Adobe Commerce store.",
+  }
 ];
 
 const run = (command, args, options = {}) => {
