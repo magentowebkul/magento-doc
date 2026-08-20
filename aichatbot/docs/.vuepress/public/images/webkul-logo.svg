@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48" role="img" aria-label="Webkul">
+  <rect x="0" y="8" width="32" height="32" rx="8" fill="#2f5bff"/>
+  <path d="M8 16h4l2.6 10.2L17.3 16h3.4l2.7 10.2L26 16h4l-4.7 16h-3.8l-2.8-10.3L16 32h-3.8z" fill="#ffffff"/>
+  <text x="40" y="30" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Webkul</text>
+</svg>
