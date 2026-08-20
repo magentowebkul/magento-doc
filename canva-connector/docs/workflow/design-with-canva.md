@@ -23,8 +23,10 @@ Magento Admin
 
 ### 2. Click "Design with Canva"
 
-1. In the product grid, locate the desired product (e.g. *Driven Backpack* or *Hero Hoodie*).
+1. In the product grid, locate the desired product (e.g. *Driven Backpack* or *Compete Track Tote*).
 2. Under the thumbnail column, click the **Design with Canva** button.
+
+![Magento Catalog Products Grid with Design with Canva Action Button](/images/workflow/magento-catalog-products-grid.webp)
 
 ---
 

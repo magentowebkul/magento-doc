@@ -12,6 +12,8 @@ The **Product Image Import Settings** section controls how exported Canva design
 | **Auto Replace Product Image** | Select (`Yes` / `No`) | `Yes` | When enabled, newly exported designs automatically overwrite existing default image roles. |
 | **Allowed Formats** | Multiselect | `JPG`, `PNG`, `WebP` | Permitted image file formats accepted when saving designs to Magento. |
 
+![Product Image Import Settings Configuration in Magento Admin](/images/magento/magento-config-image-settings.webp)
+
 ---
 
 ## How Media Roles Are Handled

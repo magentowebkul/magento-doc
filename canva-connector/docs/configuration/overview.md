@@ -4,6 +4,8 @@ All configuration options for the Canva Connector extension are located in the M
 
 **Stores > Configuration > Webkul > Canva Connect Settings**
 
+![Magento Admin Canva Connector Menu and Support Navigation](/images/magento/magento-menu-support.webp)
+
 ---
 
 ## Configuration Sections

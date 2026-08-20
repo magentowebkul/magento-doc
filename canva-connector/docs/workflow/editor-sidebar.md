@@ -19,19 +19,14 @@ At the top of the sidebar, the app automatically detects and highlights the acti
 - **Product Thumbnail & Title**: Displays the product image and catalog name.
 - **SKU & Price**: Displays the primary SKU and currency-formatted price.
 - **Quick Action Buttons**:
+  - **Add Base Image**: Adds the product's primary featured image asset to the canvas.
   - **Add Name**: Inserts formatted product title text directly onto the active canvas.
   - **Add Price**: Inserts the formatted product price tag onto the canvas.
+  - **Add SKU**: Inserts the product SKU on the canvas.
   - **Add Description**: Inserts the product's short or full description as text.
+  - **Save Design to Magento 2**: Saves and exports the active design to the Magento product gallery.
 
-```
-+----------------------------------------------------+
-| ● Currently Selected Product                       |
-| [Img] Driven Backpack (24-WB03)                   |
-| Price: $36.00                                      |
-|                                                    |
-| [ + Add Name ]  [ + Add Price ]  [ + Add Desc ]    |
-+----------------------------------------------------+
-```
+![Canva Editor with Magento 2 Connect Sidebar and Active Product](/images/workflow/canva-editor-product.webp)
 
 ---
 
@@ -50,5 +45,7 @@ If the active product is a Configurable Product with child variations (such as c
 
 Below the active product card:
 - A live **Search Bar** allows searching across the entire Magento product catalog by name or SKU.
-- A paginated grid displays products with infinite scrolling or page navigation.
-- Click on any catalog item to inspect its details or insert its assets onto the canvas.
+- A **Page Size** dropdown (10, 20, 50, 100) controls the number of products displayed per page.
+- Click **Select for Design** or **Add Image** on any catalog item to load assets directly onto the design canvas.
+
+![Canva In-Editor Catalog Browser and Search](/images/workflow/canva-editor-catalog.webp)

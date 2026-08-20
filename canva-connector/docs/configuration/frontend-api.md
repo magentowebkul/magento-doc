@@ -18,6 +18,8 @@ The **Canva App Frontend & API Configuration** section connects Magento with the
 | **Active Product Context Endpoint** | Text | `/rest/V1/canva/context` | REST endpoint for fetching active product context based on design token. |
 | **Design Save / Export Endpoint** | Text | `/rest/V1/canva/export/save` | REST endpoint for saving exported design image data to product gallery. |
 
+![Canva App Frontend and API Configuration in Magento Admin](/images/magento/magento-config-frontend-api.webp)
+
 ---
 
 ## Automated `.env` Synchronization

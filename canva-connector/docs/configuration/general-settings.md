@@ -15,6 +15,8 @@ The **General Settings** section manages extension enablement, authentication cr
 | **Redirect URI** | Read-only Display | Auto-generated | The OAuth 2.0 callback URL to register in Canva Developer Portal: `{base_url}/canva/auth/callback`. |
 | **Return Navigation URI** | Read-only Display | Auto-generated | The Return Navigation URL to register in Canva Developer Portal: `{base_url}/canva/auth/return`. |
 
+![Magento 2 Canva Connect General Settings Configuration](/images/magento/magento-config-general-settings.webp)
+
 ---
 
 ## Detailed Explanations
