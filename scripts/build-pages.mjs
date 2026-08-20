@@ -31,11 +31,17 @@ const products = [
     description: "User guide for installing, configuring, and managing the Google Tag Manager extension — events, destinations, consent, and container export.",
   },
   {
+    slug: "canva-connector",
+    dir: "canva-connector",
+    title: "Magento 2 Canva Connector",
+    description: "User guide for installing, configuring, and using the Canva Connector extension — design product graphics in Canva and export directly to the Magento 2 product gallery.",
+  },
+  {
     slug: "ai-chatbot",
     dir: "aichatbot",
     title: "Magento 2 AI Chatbot using Open Source LLM",
     description: "Magento 2 AI Chatbot using Open Source LLM adds a smart virtual assistant to your Adobe Commerce store.",
-  }
+  },
 ];
 
 const run = (command, args, options = {}) => {
