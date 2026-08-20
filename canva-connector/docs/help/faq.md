@@ -20,7 +20,7 @@ Frequently asked questions regarding the Webkul Magento 2 Canva Connector extens
 ---
 
 ### Q: How does multi-page export work?
-**A:** When designing multi-page graphics or multi-angle product banners:
+**A:** When exporting multi-page designs from Canva:
 - **Page 1**: Automatically assigned as the primary product image (`Base`, `Small`, `Thumbnail`).
 - **Pages 2 through N**: Saved into the product's additional media gallery slider.
 

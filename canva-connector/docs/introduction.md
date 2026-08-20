@@ -1,6 +1,6 @@
 # Introduction
 
-**Magento 2 Canva Connector** by Webkul bridges your Magento 2 e-commerce catalog with Canva's visual design suite. It empowers store administrators, marketing teams, and catalog managers to design product graphics, banner overlays, social promotional cards, and multi-angle product highlights directly inside Canva, and export finished high-resolution artwork into the Magento 2 product gallery with a single click.
+**Magento 2 Canva Connector** by Webkul bridges your Magento 2 e-commerce catalog with Canva's visual design editor. It empowers store administrators and catalog managers to import product images directly into Canva, edit and enhance them using Canva tools, and export the finished artwork straight back into the Magento 2 product gallery with a single click.
 
 ---
 

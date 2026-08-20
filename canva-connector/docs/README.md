@@ -2,7 +2,7 @@
 home: true
 title: Magento 2 Canva Connector
 heroText: Magento 2 Canva Connector
-tagline: Seamlessly integrate Canva design workflows directly into Magento 2 catalog management — design product graphics, customize banners with live catalog variations, and export high-resolution media straight into the product gallery.
+tagline: Seamlessly integrate Canva design workflows into Magento 2 — import product catalog images into Canva, edit them directly in the visual editor, and export updated images straight back into the Magento product gallery.
 actions:
   - text: Start User Guide
     link: /introduction.html

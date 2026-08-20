@@ -27,12 +27,12 @@ When you export a design from Canva:
 
 2. **Multi-Page Designs**:
    - **Page 1**: Assigned the configured media roles (`Base Image`, `Small Image`, `Thumbnail`).
-   - **Pages 2 through N**: Saved into the product's additional media gallery (without replacing primary roles) so customers can view multi-angle designs or informational slide graphics in the gallery slider.
+   - **Pages 2 through N**: Saved into the product's additional media gallery slider as supplementary product images.
 
 ---
 
 ## Allowed Formats
 
 - **PNG**: Recommended for high-resolution graphics, transparency, and crisp product typography.
-- **JPG**: Recommended for photographic banners and compressed catalog images.
+- **JPG**: Standard compressed format suitable for product catalog photos.
 - **WebP**: Modern high-efficiency format delivering smaller file sizes for fast storefront loading.
