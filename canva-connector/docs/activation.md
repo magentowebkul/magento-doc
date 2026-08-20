@@ -16,6 +16,8 @@ Once the Magento extension and Canva Developer Portal applications are created, 
 4. Copy the automatically generated **Redirect URI** and **Return Navigation URI** displayed on the screen and verify they match your Canva Developer Portal settings exactly.
 5. Click **Save Config**.
 
+![Magento 2 Canva Connect General Settings Configuration](/images/magento/magento-config-general-settings.webp)
+
 ```
 Stores > Configuration > Webkul > Canva Connect Settings
 ├── General Settings
@@ -47,6 +49,9 @@ Whenever you modify backend URLs or ports in Magento Admin and click **Save Conf
 
 1. Navigate to **Catalog > Products**.
 2. Locate any product with an image and click the **Design with Canva** button in the thumbnail column.
+
+![Magento Catalog Products Grid with Design with Canva Action Button](/images/workflow/magento-catalog-products-grid.webp)
+
 3. Magento initiates the OAuth 2.0 PKCE flow and redirects you to Canva's authorization screen.
 4. Click **Allow / Approve** on Canva's consent screen.
 5. Canva redirects back to Magento (`/canva/auth/callback`), stores the rotating refresh token securely, uploads the product image asset, creates a design, and launches the Canva editor.

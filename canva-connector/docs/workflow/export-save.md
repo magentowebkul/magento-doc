@@ -7,8 +7,9 @@ Once you have completed your design in Canva, export and persist the artwork dir
 ## 1. Trigger Export from Sidebar
 
 1. In the **Magento 2 Connect** Canva sidebar, click the **Save Design to Magento 2** button at the bottom of the active product card.
-2. Canva's native export confirmation dialog opens, asking to confirm the export.
-3. Click **Export**.
+2. Canva renders the canvas and calls the Magento REST Web API. Upon completion, a success confirmation is displayed at the top of the sidebar.
+
+![Canva Editor Save Design to Magento 2 Action and Confirmation](/images/workflow/canva-editor-product.webp)
 
 ---
 

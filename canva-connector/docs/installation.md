@@ -76,6 +76,8 @@ Module is enabled
 ```
 
 In your Magento Admin Panel, you will now see:
-- A new top-level or sidebar navigation item: **Canva Connector**.
+- A new sidebar navigation item: **Canva Connector** with links to Configuration and Support.
 - Configuration settings under **Stores > Configuration > Webkul > Canva Connect Settings**.
 - A **Design with Canva** action button in **Catalog > Products**.
+
+![Magento Admin Canva Connector Menu Navigation](/images/magento/magento-menu-support.webp)
