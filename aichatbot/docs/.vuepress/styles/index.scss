@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global Font & Body */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   NavBar & Brand Styling
+   ========================================================================== */
+.vp-navbar {
+  border-bottom: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg);
+}
+
+.vp-site-logo {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+  object-fit: contain;
+}
+
+.vp-site-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text);
+}
+
+/* --------------------------------------------------------------------------
+   Search Box Positioning:
+   - On doc pages: positioned on the LEFT of navbar items (next to brand/sidebar)
+   - On home page: positioned on the RIGHT side with proper alignment and width
+   -------------------------------------------------------------------------- */
+.search-box {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+
+  input {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 0.85rem 0 2rem;
+    font-size: 0.84rem;
+    font-family: inherit;
+    border-radius: 8px;
+    border: 1px solid var(--vp-c-border);
+    background: var(--vp-c-bg-alt);
+    color: var(--vp-c-text);
+    width: 13rem;
+    transition: width 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    box-sizing: border-box;
+
+    &:focus {
+      width: 17rem;
+      border-color: var(--vp-c-accent);
+      background: var(--vp-c-bg);
+      outline: none;
+    }
+  }
+
+  .suggestions {
+    border: 1px solid var(--vp-c-border);
+    border-radius: 8px;
+    background: var(--vp-c-bg-elv);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Doc Pages (Non-home): search box lives in the sidebar, hide navbar one */
+.vp-theme-container:not(.no-sidebar) {
+  .vp-navbar-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: 1.5rem;
+
+    .search-box {
+      display: none;
+    }
+  }
+}
+
+/* Home Page: Keep search box on the right, wider input */
+.vp-theme-container.no-sidebar {
+  .vp-navbar-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+
+    .search-box {
+      order: 2;
+      margin-left: 0.75rem;
+
+      input {
+        width: 15rem;
+        padding-inline: 2.1rem 0.9rem;
+        background-position: 0.7rem center;
+
+        &:focus {
+          width: 19rem;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar (User Guide pages) — mirrors reference layout:
+   search on top, then navbar links, then collapsible groups
+   -------------------------------------------------------------------------- */
+.vp-sidebar {
+  display: flex;
+  flex-direction: column;
+
+  .vp-navbar-items {
+    display: block;
+    padding: 0.5rem 0 0.75rem;
+    border-bottom: 1px solid var(--vp-c-gutter);
+  }
+}
+
+.sidebar-search {
+  order: -1;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--vp-c-border);
+
+  .search-box {
+    display: block;
+    width: 100%;
+    margin: 0;
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding-inline: 2.1rem 0.9rem;
+      background-position: 0.7rem center;
+
+      &:focus {
+        width: 100%;
+      }
+    }
+
+    .suggestions {
+      width: 100%;
+      inset-inline-end: 0;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+  }
+}
+
+/* ==========================================================================
+   Home Page Hero & Sections
+   ========================================================================== */
+.vp-home {
+  padding-bottom: 2rem;
+}
+
+.vp-home .vp-hero {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 3.5rem 1.25rem 0;
+  text-align: center;
+}
+
+.vp-home .vp-hero h1 {
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0.35rem 0 1rem;
+  font-weight: 700;
+  color: var(--vp-c-text);
+}
+
+.vp-home .vp-hero-description {
+  color: var(--vp-c-text-mute);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 740px;
+}
+
+.vp-home .vp-hero-actions {
+  gap: 0.75rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vp-home .vp-hero-action-button {
+  border-radius: 8px;
+  min-width: 148px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+
+  &.primary {
+    background: var(--vp-c-accent-bg);
+    color: var(--vp-c-accent-text);
+    border: 1px solid var(--vp-c-accent);
+
+    &:hover {
+      background: var(--vp-c-accent-hover);
+    }
+  }
+
+  &.secondary {
+    background: var(--vp-c-bg-alt);
+    color: var(--vp-c-text);
+    border: 1px solid var(--vp-c-border);
+
+    &:hover {
+      border-color: var(--vp-c-accent);
+      background: var(--vp-c-bg);
+    }
+  }
+}
+
+.home-kicker {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin: 0 0 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Home Trust Badges Section
+   ========================================================================== */
+.home-trust {
+  margin: 2.25rem auto 3.5rem;
+  max-width: 1140px;
+  padding: 0 1rem;
+}
+
+.home-trust-panel {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 auto;
+  width: 100%;
+}
+
+.home-trust-badge,
+.home-trust-review {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  color: var(--vp-c-text);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  min-height: 58px;
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  text-decoration: none !important;
+  background: var(--vp-c-bg-alt);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+
+  * {
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    border-color: var(--vp-c-accent);
+    text-decoration: none !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  img {
+    display: block;
+    flex: none;
+    height: 28px;
+    max-width: 36px;
+    margin: 0;
+    object-fit: contain;
+    width: auto;
+  }
+
+  span {
+    font-size: 0.78rem;
+    line-height: 1.25;
+    white-space: normal;
+    overflow-wrap: break-word;
+    color: var(--vp-c-text);
+    text-decoration: none !important;
+  }
+
+  strong {
+    font-weight: 700;
+    color: var(--vp-c-text);
+  }
+}
+
+.home-trust > p#home-trust-title {
+  color: var(--vp-c-text-mute);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  margin: 1.25rem 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Home 3 Guide Cards Section
+   ========================================================================== */
+.home-learn {
+  margin: 2.5rem auto 3.5rem;
+  max-width: 1140px;
+  padding: 0 1rem;
+}
+
+.home-learn-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.home-guide-card {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 14px;
+  background: var(--vp-c-bg-alt);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: var(--vp-c-border-dark);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.home-guide-card__head {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.home-guide-card__number {
+  align-items: center;
+  background: var(--vp-c-accent);
+  border-radius: 999px;
+  color: var(--vp-c-accent-text);
+  display: inline-flex;
+  height: 1.85rem;
+  justify-content: center;
+  width: 1.85rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex: none;
+}
+
+.home-guide-card h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--vp-c-text);
+  border: none;
+}
+
+.home-guide-card p {
+  color: var(--vp-c-text-mute);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+.home-guide-card nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: auto;
+  border-top: 1px solid var(--vp-c-border);
+  padding-top: 1rem;
+}
+
+.home-guide-card nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--vp-c-text);
+  text-decoration: none !important;
+  padding: 0.25rem 0;
+  transition: color 0.15s ease, transform 0.15s ease;
+
+  * {
+    text-decoration: none !important;
+  }
+
+  &::after {
+    content: "→";
+    font-size: 0.85rem;
+    opacity: 0.45;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover {
+    color: #2563eb;
+    text-decoration: none !important;
+    transform: translateX(3px);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+/* ==========================================================================
+   Footer Page Navigation (.vp-page-nav)
+   ========================================================================== */
+.vp-page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.75rem 0 2.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--vp-c-border);
+
+  a.route-link {
+    display: flex;
+    flex-direction: column;
+    padding: 0.85rem 1.25rem;
+    border: 1px solid var(--vp-c-border);
+    border-radius: 10px;
+    background: var(--vp-c-bg-alt);
+    color: var(--vp-c-text);
+    text-decoration: none !important;
+    min-width: 160px;
+    max-width: 280px;
+    transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+
+    * {
+      text-decoration: none !important;
+    }
+
+    &:hover {
+      border-color: var(--vp-c-accent);
+      text-decoration: none !important;
+      transform: translateY(-1px);
+      background: var(--vp-c-bg);
+    }
+
+    .hint {
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--vp-c-text-mute);
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--vp-c-text);
+      text-decoration: none !important;
+    }
+
+    .external-link {
+      text-decoration: none !important;
+    }
+  }
+
+  .next {
+    margin-left: auto;
+    text-align: right;
+
+    .hint {
+      justify-content: flex-end;
+    }
+  }
+
+  .prev {
+    margin-right: auto;
+    text-align: left;
+
+    .hint {
+      justify-content: flex-start;
+    }
+  }
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .home-trust-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-learn-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .vp-home .vp-hero {
+    padding-inline: 1rem;
+    padding-top: 2rem;
+  }
+
+  .vp-home .vp-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+
+  .home-trust-panel,
+  .home-learn-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-trust-badge,
+  .home-trust-review {
+    min-height: 52px;
+  }
+
+  .vp-page-nav {
+    flex-direction: column;
+    align-items: stretch;
+
+    a.route-link {
+      max-width: 100%;
+    }
+  }
+}
+
+/* Document typography */
+.vp-doc h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--vp-c-border);
+  padding-bottom: 0.4rem;
+}
+
+.vp-doc h3 {
+  margin-top: 1.5rem;
+}
+
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Sidebar — non-collapsible, compact text matching global size
+   ========================================================================== */
+.vp-sidebar {
+  font-size: 0.9rem;
+
+  /* remove navbar links (Live Demo / Buy Now / Support) from sidebar */
+  .vp-navbar-items {
+    display: none;
+  }
+
+  .vp-sidebar-item {
+    font-size: 1em;
+    line-height: 1.4;
+    color: var(--vp-c-text-mute);
+  }
+
+  .vp-sidebar-heading {
+    font-size: 1.05em;
+    font-weight: 700;
+    cursor: default;
+    color: var(--vp-c-text-mute);
+
+    .vp-arrow,
+    [aria-hidden='true'] {
+      display: none;
+    }
+  }
+
+  .vp-sidebar-item.active {
+    color: var(--vp-c-accent);
+  }
+}
+
+/* ==========================================================================
+   Mermaid Diagrams — fit to container, no horizontal scroll
+   ========================================================================== */
+.mermaid-wrapper {
+  overflow-x: visible;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 719px) {
+  .mermaid-wrapper {
+    margin: 0;
+    padding: 0.6em 0.4em;
+  }
+}
+
