@@ -13,15 +13,19 @@ The **Canva App** provides the interactive side panel inside the Canva design ed
 3. Enter your app name (e.g. `Magento 2 Connect`).
 4. Click **Create**.
 
+![Your apps in Canva Developer Portal](/images/canva/canva-your-apps.webp)
+
 ---
 
 ### Step 2: Configure App Source URL
 
-1. In your app management menu, go to **App source**.
+1. In your app management menu, go to **App source** (or **Code upload**).
 2. Set the **Development URL** to your frontend service URL:
-   - For local development: `http://localhost:8083`
+   - For local development: `http://localhost:8083/`
    - For production hosting: `https://your-canva-frontend.yourdomain.com`
 3. Click **Save Changes**.
+
+![Configure Canva App Development URL](/images/canva/canva-app-source.webp)
 
 ---
 
@@ -33,6 +37,8 @@ The **Canva App** provides the interactive side panel inside the Canva design ed
    - **`canva:design:content:read`**: Allows the app to read and export the finished high-resolution canvas design.
 3. Click **Save Changes**.
 
+![Configure Canva App Scopes](/images/canva/canva-app-scopes.webp)
+
 ::: danger Missing Permission Error
 If `canva:design:content:write` or `canva:design:content:read` are not checked, Canva will display the runtime error:
 `[missing_permission]: Some required permissions were not set in app config`. Always ensure both scopes are active.
@@ -42,6 +48,6 @@ If `canva:design:content:write` or `canva:design:content:read` are not checked, 
 
 ### Step 4: Copy the App ID
 
-1. Return to the app **Overview** or **Basic info** screen.
-2. Locate the **App ID**.
+1. Return to the app **Overview** or **Your apps** screen.
+2. Locate the **App ID** next to your app name.
 3. Copy this App ID — you will paste it into Magento Admin under **Stores > Configuration > Webkul > Canva Connect Settings > Canva App ID**.

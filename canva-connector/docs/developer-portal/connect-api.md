@@ -8,10 +8,12 @@ The **Canva Connect Integration** handles the backend server-to-server connectio
 
 ### Step 1: Create an Integration
 
-1. In the [Canva Developer Portal](https://www.canva.com/developers/apps), select **Integrations / Canva Connect APIs** from the navigation.
+1. In the [Canva Developer Portal](https://www.canva.com/developers/apps), select **Your integrations** (under Canva Connect APIs) from the top navigation.
 2. Click **Create an integration**.
-3. Enter an Integration Name (e.g. `Magento 2 Store Integration`).
+3. Enter an Integration Name (e.g. `magento 2 connect`).
 4. Click **Create**.
+
+![Your Integrations in Canva Developer Portal](/images/canva/canva-your-integrations.webp)
 
 ---
 
@@ -28,6 +30,8 @@ Under the **Authentication / OAuth 2.0** settings:
    https://your-magento-domain.com/canva/auth/return
    ```
 3. Click **Save Changes**.
+
+![Configuring Authorized Redirects in Canva Integration](/images/canva/canva-integration-oauth.webp)
 
 ::: warning URL Matching
 The Redirect URI and Return Navigation URI must match your Magento store domain exactly (including `https://` protocol and path). Mismatches will cause OAuth error `redirect_uri_mismatch`.
@@ -49,13 +53,17 @@ Under **Permissions / Scopes**, enable the following required scopes:
 
 Click **Save Changes**.
 
+![Setting Scopes for Canva Connect Integration](/images/canva/canva-integration-scopes.webp)
+
 ---
 
 ### Step 4: Copy Client ID & Secret
 
-1. Under **Client credentials**, locate your:
+1. Under **Configuration > Credentials**, locate your:
    - **Client ID**
-   - **Client Secret**
+   - **Client secret**
 2. Copy both values.
 3. In Magento Admin, paste them into **Stores > Configuration > Webkul > Canva Connect Settings** under **Client ID** and **Client Secret**.
 4. Click **Save Config**.
+
+![Canva Connect Integration Credentials Client ID and Secret](/images/canva/canva-integration-credentials.webp)
