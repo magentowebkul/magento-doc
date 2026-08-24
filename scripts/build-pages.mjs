@@ -42,6 +42,12 @@ const products = [
     title: "Magento 2 AI Chatbot using Open Source LLM",
     description: "Magento 2 AI Chatbot using Open Source LLM adds a smart virtual assistant to your Adobe Commerce store.",
   },
+  {
+    slug: "instafeed",
+    dir: "instafeed",
+    title: "Magento 2 Instafeed",
+    description: "User guide for installing, configuring, and running the Instafeed extension — Instagram sync, moderation, grid and slider feeds, shoppable product tagging, and revenue analytics.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
