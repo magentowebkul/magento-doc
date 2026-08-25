@@ -48,6 +48,12 @@ const products = [
     title: "Magento 2 Instagram Feeds",
     description: "User guide for installing, configuring, and running the Instagram Feeds extension — Instagram sync, moderation, grid and slider feeds, shoppable product tagging, and revenue analytics.",
   },
+  {
+    slug: "restrict-vendor-product",
+    dir: "restrict-vendor-product",
+    title: "Magento 2 Marketplace Restrict Vendor Product",
+    description: "User guide for installing, configuring, and running the Restrict Vendor Product extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
