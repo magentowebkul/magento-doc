@@ -26,7 +26,7 @@ If your theme uses a different container name, set the feed's
 
 **Content → Widgets → Add Widget**
 
-![The new widget screen with Instagram Feed selected as the widget type](/images/instafeed/widget-new.webp)
+![The new widget screen with Instagram Feed selected as the widget type](/images/instagram-feeds/widget-new.webp)
 
 1. Choose **Instagram Feed** as the widget type and your theme as the design.
 2. Add a **Layout Update**: pick where it appears (all pages, a category, a

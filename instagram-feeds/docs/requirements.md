@@ -1,6 +1,6 @@
 ---
 title: Requirements
-description: What you need before installing Instafeed for Magento 2.
+description: What you need before installing Instagram Feeds for Magento 2.
 ---
 
 # Requirements

@@ -1,6 +1,6 @@
 ---
 title: Upgrade
-description: Upgrading Instafeed safely.
+description: Upgrading Instagram Feeds safely.
 ---
 
 # Upgrade

@@ -20,9 +20,9 @@ a working **Shop Now** button, with optional hotspots pinned to the photo.
 Hotspots are stored as percentages of the image, so a pin lands in the same place
 whatever size the storefront renders at.
 
-![A hotspot placed on the post, with its coordinates shown as percentages against the tagged product](/images/instafeed/media-hotspot.webp)
+![A hotspot placed on the post, with its coordinates shown as percentages against the tagged product](/images/instagram-feeds/media-hotspot.webp)
 
-![The Tag Products screen with the post on the left and its tagged products listed on the right, each with hotspot state and a Remove button](/images/instafeed/media-tag-products.webp)
+![The Tag Products screen with the post on the left and its tagged products listed on the right, each with hotspot state and a Remove button](/images/instagram-feeds/media-tag-products.webp)
 
 ## Which products can be tagged
 
@@ -66,9 +66,9 @@ happens in place — the shopper stays in the popup.
 Product data loads in a separate request when the popup opens, which is what
 keeps the feed itself in the full-page cache.
 
-![The popup with the product panel on the right, each card carrying a Shop Now button, and the hotspot visible on the media](/images/instafeed/storefront-popup-side.webp)
+![The popup with the product panel on the right, each card carrying a Shop Now button, and the hotspot visible on the media](/images/instagram-feeds/storefront-popup-side.webp)
 
-![The storefront popup showing a post with three product cards overlaid at the bottom, each with image, name and price](/images/instafeed/storefront-popup-shoppable.webp)
+![The storefront popup showing a post with three product cards overlaid at the bottom, each with image, name and price](/images/instagram-feeds/storefront-popup-shoppable.webp)
 
 ## Product and category feeds
 
@@ -80,4 +80,4 @@ Turn the relationship around:
 
 Both are set per feed under **Source Type**; no per-page setup.
 
-![A Shop this look feed on a product page showing the post tagged with that product](/images/instafeed/storefront-product-feed.webp)
+![A Shop this look feed on a product page showing the post tagged with that product](/images/instagram-feeds/storefront-product-feed.webp)

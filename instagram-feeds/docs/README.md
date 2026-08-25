@@ -1,7 +1,7 @@
 ---
 home: true
-title: Magento 2 Instafeed
-heroText: Magento 2 Instafeed
+title: Magento 2 Instagram Feeds
+heroText: Magento 2 Instagram Feeds
 tagline: Turn your Instagram account into a shoppable gallery on your Magento storefront — sync posts on a schedule, moderate what goes live, tag products on any post, and measure the revenue the gallery earns.
 actions:
   - text: Start User Guide

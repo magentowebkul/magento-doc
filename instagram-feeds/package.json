@@ -1,6 +1,6 @@
 {
-  "name": "magento2-instafeed-docs",
-  "description": "User guide documentation for the Webkul Magento 2 Instafeed extension.",
+  "name": "magento2-instagram-feeds-docs",
+  "description": "User guide documentation for the Webkul Magento 2 Instagram Feeds extension.",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -8,7 +8,7 @@
     "npx-update": "npx npm-check-updates -u",
     "npm_install": "npm install --force",
     "build": "vuepress build docs --clean-cache --clean-temp",
-    "build:site": "VUEPRESS_BASE=/instafeed/ vuepress build docs --clean-cache --clean-temp",
+    "build:site": "VUEPRESS_BASE=/instagram-feeds/ vuepress build docs --clean-cache --clean-temp",
     "deploy:cloudflare": "npm run build:site && npx wrangler pages deploy docs/.vuepress/dist --project-name magento-doc --branch main --commit-dirty=true",
     "start": "vuepress dev docs --clean-cache --clean-temp -p 8099",
     "docs": "vuepress dev docs --clean-cache --clean-temp",

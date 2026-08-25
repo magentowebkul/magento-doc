@@ -10,7 +10,7 @@ description: Create feeds, choose where their posts come from, and preview befor
 A **feed** is one gallery: which posts it shows, how it looks, and where it
 appears. Create as many as you need.
 
-![The Feeds grid listing two feeds with their code, layout, source type and status](/images/instafeed/feed-list.webp)
+![The Feeds grid listing two feeds with their code, layout, source type and status](/images/instagram-feeds/feed-list.webp)
 
 ## Create a feed
 
@@ -24,11 +24,11 @@ appears. Create as many as you need.
    [with a widget](./placement.md).
 7. Set **Status** to Enabled and save.
 
-![The New Instagram Feed form with empty title and code fields and an empty preview pane](/images/instafeed/feed-new.webp)
+![The New Instagram Feed form with empty title and code fields and an empty preview pane](/images/instagram-feeds/feed-new.webp)
 
 ## Fields
 
-![The General section of the feed form with title, code, enabled toggle, store view, Show On pages, source type and accounts](/images/instafeed/feed-edit-general.webp)
+![The General section of the feed form with title, code, enabled toggle, store view, Show On pages, source type and accounts](/images/instagram-feeds/feed-edit-general.webp)
 
 | Field | What it does |
 | --- | --- |
@@ -71,7 +71,7 @@ The feed form has a **Preview** pane that renders your unsaved settings through
 the same code the storefront uses — so what you see is what shoppers get.
 Toggle **Mobile / Desktop** to check both.
 
-![The live preview pane rendering the feed in mobile width beside the form](/images/instafeed/feed-live-preview.webp)
+![The live preview pane rendering the feed in mobile width beside the form](/images/instagram-feeds/feed-live-preview.webp)
 
 ## After saving
 

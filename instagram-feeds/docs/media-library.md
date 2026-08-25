@@ -11,7 +11,7 @@ prev: /recipes.html
 Every synced or uploaded post lands here first. Nothing reaches the storefront
 that you have not allowed.
 
-![The Media Library grid with thumbnails, account, type, source, caption, moderation state and per-row actions](/images/instafeed/media-library.webp)
+![The Media Library grid with thumbnails, account, type, source, caption, moderation state and per-row actions](/images/instagram-feeds/media-library.webp)
 
 ## The grid
 
@@ -40,9 +40,9 @@ Per post from the **Select** menu, or in bulk with the checkboxes:
 | **Pin / Unpin** | Pinned posts sort to the front of every feed |
 | **Delete** | Removes the post and its mirrored files |
 
-![The Select menu on a media row showing Tag Products, Hide, Pin and Delete](/images/instafeed/media-row-actions.webp)
+![The Select menu on a media row showing Tag Products, Hide, Pin and Delete](/images/instagram-feeds/media-row-actions.webp)
 
-![The Actions menu above the grid with two rows selected, offering Hide, Approve, Reject and Delete](/images/instafeed/media-mass-actions.webp)
+![The Actions menu above the grid with two rows selected, offering Hide, Approve, Reject and Delete](/images/instagram-feeds/media-mass-actions.webp)
 
 ::: tip Rejection is enforced in the query
 Filtering happens where feeds are built, not in the template — a rejected post
@@ -59,12 +59,16 @@ cannot slip through a widget, a cached page or a custom theme.
 | Maximum size | 20 MB |
 | URL import | HTTPS only |
 
-![The Upload Media screen with a file picker above an Import From URL field](/images/instafeed/media-upload.webp)
+![The Upload Media screen with a file picker above an Import From URL field](/images/instagram-feeds/media-upload.webp)
 
 Uploads are validated twice: the extension must be allowed *and* the sniffed MIME
 type must match it, so a script renamed to `.jpg` is rejected. URL imports are
 fetched with redirects disabled, a hard byte ceiling, and address validation that
 blocks requests to internal hosts.
+
+An upload is stamped with the moment you added it, so it takes its place among your
+synced posts by date — add one today and it leads the feed, which is what makes
+uploads usable for a campaign or a promotion rather than an archive.
 
 Uploaded posts are never purged by retention and can be tagged like any other.
 

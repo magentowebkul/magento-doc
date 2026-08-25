@@ -10,7 +10,7 @@ next: /configuration.html
 
 Two ways in. Use OAuth if you can — it renews itself.
 
-![The Connect Instagram Account screen showing the redirect URI, the Connect with Instagram button and the long-lived token field](/images/instafeed/account-connect.webp)
+![The Connect Instagram Account screen showing the redirect URI, the Connect with Instagram button and the long-lived token field](/images/instagram-feeds/account-connect.webp)
 
 ## Option 1 — Connect with Instagram (recommended)
 
@@ -36,7 +36,7 @@ days beforehand so you can paste a fresh one.
 
 ## After connecting
 
-![The Accounts grid listing one connected business account with its status, token expiry in days and last sync time](/images/instafeed/account-list.webp)
+![The Accounts grid listing one connected business account with its status, token expiry in days and last sync time](/images/instagram-feeds/account-list.webp)
 
 | Action | What it does |
 | --- | --- |
@@ -44,7 +44,7 @@ days beforehand so you can paste a fresh one.
 | **Disconnect** | Keeps synced posts, stops future syncing |
 | **Delete** | Removes the account **and all of its posts** |
 
-![The Select menu on an account row showing Sync Now, Disconnect and Delete](/images/instafeed/account-actions.webp)
+![The Select menu on an account row showing Sync Now, Disconnect and Delete](/images/instagram-feeds/account-actions.webp)
 
 ::: danger Deleting removes the posts too
 Posts are tied to their account by a foreign key, so deleting an account deletes
