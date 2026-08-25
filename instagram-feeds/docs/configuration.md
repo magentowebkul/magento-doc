@@ -1,6 +1,6 @@
 ---
 title: General Settings
-description: Every global setting for Instafeed, with its default.
+description: Every global setting for Instagram Feeds, with its default.
 prev: /access-token.html
 ---
 
@@ -11,7 +11,7 @@ prev: /access-token.html
 These are global settings. Anything about *how a feed looks* lives on the feed
 itself — see [Design & Layout](./design.md).
 
-![The Instagram Feed configuration section with the General, Synchronization and Automatic Product Tagging groups expanded](/images/instafeed/configuration.webp)
+![The Instagram Feed configuration section with the General, Synchronization and Automatic Product Tagging groups expanded](/images/instagram-feeds/configuration.webp)
 
 ## General
 

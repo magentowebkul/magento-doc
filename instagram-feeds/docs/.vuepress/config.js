@@ -20,7 +20,7 @@ export default defineUserConfig({
             JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "SoftwareApplication",
-                name: "Magento 2 Instafeed",
+                name: "Magento 2 Instagram Feeds",
                 operatingSystem: "Magento 2.4.x",
                 applicationCategory: "BusinessApplication",
                 offers: {
@@ -41,9 +41,9 @@ export default defineUserConfig({
             'if ("serviceWorker" in navigator) { window.addEventListener("load", function () { navigator.serviceWorker.getRegistrations().then(function (registrations) { registrations.forEach(function (registration) { registration.unregister(); }); }); if ("caches" in window) { caches.keys().then(function (keys) { keys.forEach(function (key) { caches.delete(key); }); }); } }); }',
         ],
     ],
-    title: "Magento 2 Instafeed",
+    title: "Magento 2 Instagram Feeds",
     description:
-        "User guide for the Webkul Magento 2 Instafeed extension: sync Instagram posts, moderate the media library, build grid and slider feeds, tag products for shoppable popups, and measure impressions through to revenue.",
+        "User guide for the Webkul Magento 2 Instagram Feeds extension: sync Instagram posts, moderate the media library, build grid and slider feeds, tag products for shoppable popups, and measure impressions through to revenue.",
     theme: defaultTheme({
         logo: "/images/webkul-logo.png",
         repo: null,

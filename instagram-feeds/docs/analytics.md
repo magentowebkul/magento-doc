@@ -10,7 +10,7 @@ next: /feed-sync.html
 
 Answers the question merchants actually ask: *is this gallery making money?*
 
-![The Analytics screen with a date range, an overview row of impressions, clicks, popup opens and revenue, and breakdowns by feed, post and product](/images/instafeed/analytics-dashboard.webp)
+![The Analytics screen with a date range, an overview row of impressions, clicks, popup opens and revenue, and breakdowns by feed, post and product](/images/instagram-feeds/analytics-dashboard.webp)
 
 ## Metrics
 

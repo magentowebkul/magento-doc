@@ -1580,7 +1580,7 @@ const exportAsPdf = async () => {
       <div class="meta">
         <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
         <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-        <div><strong>Publisher:</strong> Magento 2 Instafeed · User Guide</div>
+        <div><strong>Publisher:</strong> Magento 2 Instagram Feeds · User Guide</div>
       </div>
     `;
     root.appendChild(cover);
@@ -1773,14 +1773,14 @@ const exportAsDocx = async () => {
         <div class="meta">
           <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
           <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-          <div><strong>Publisher:</strong> Magento 2 Instafeed · User Guide</div>
+          <div><strong>Publisher:</strong> Magento 2 Instagram Feeds · User Guide</div>
         </div>
       </section>
     `;
 
     const footer = `
       <footer class="doc-export-footer">
-        <p>Document exported from Magento 2 Instafeed documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
+        <p>Document exported from Magento 2 Instagram Feeds documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
       </footer>
     `;
 

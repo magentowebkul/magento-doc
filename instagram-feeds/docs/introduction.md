@@ -3,13 +3,13 @@ title: Introduction
 description: Sync your Instagram posts into Magento, curate them, tag products and measure what they earn.
 ---
 
-# Instafeed for Magento 2
+# Instagram Feeds for Magento 2
 
 Turn your Instagram account into a shoppable gallery on your storefront. Posts
 sync on a schedule, you decide what goes live, tag products on any post, and see
 what the gallery earns.
 
-![A four-column Instagram grid on a Magento home page, two rows of posts with a Follow link](/images/instafeed/storefront-grid.webp)
+![A four-column Instagram grid on a Magento home page, two rows of posts with a Follow link](/images/instagram-feeds/storefront-grid.webp)
 
 - **Automatic sync** — Posts, Reels and carousels arrive on your schedule and are mirrored to your own media folder.
 - **You approve first** — Approve, reject, hide, pin and reorder. Nothing reaches the storefront unless you allow it.
@@ -28,7 +28,7 @@ what the gallery earns.
 
 ## How it fits together
 
-![Posts travel from Instagram through sync into the media library, then into a feed and onto the storefront; you control the media library and the feed](/images/instafeed/feed-pipeline.svg)
+![Posts travel from Instagram through sync into the media library, then into a feed and onto the storefront; you control the media library and the feed](/images/instagram-feeds/feed-pipeline.svg)
 
 - **Media Library** is everything the module knows about — one row per post.
 - **A feed** is a selection of those posts, with a look and a place on the site.

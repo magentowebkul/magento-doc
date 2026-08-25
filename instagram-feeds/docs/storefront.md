@@ -14,7 +14,7 @@ width). Hovering a tile fades in the Instagram glyph — a link to the post when
 Optional overlays: caption, username, like and comment counts, and a tag badge
 when the post has products.
 
-![A four-column storefront grid with a tag badge on the posts that have products](/images/instafeed/storefront-grid.webp)
+![A four-column storefront grid with a tag badge on the posts that have products](/images/instagram-feeds/storefront-grid.webp)
 
 ## Slider
 
@@ -22,7 +22,7 @@ A horizontal track with arrows, snap points, and click-and-drag scrolling on
 desktop. Touch devices scroll natively with momentum. The next tile is
 deliberately left part-visible so shoppers know the row continues.
 
-![A storefront slider with arrow controls and the next tile partly visible at the edge](/images/instafeed/storefront-slider.webp)
+![A storefront slider with arrow controls and the next tile partly visible at the edge](/images/instagram-feeds/storefront-slider.webp)
 
 ## Popup
 
@@ -37,7 +37,7 @@ means:
 It shows the media, optional caption, date and permalink, and the product cards
 with **Add to Cart**.
 
-![The popup open over the page with product cards below the media](/images/instafeed/storefront-popup-shoppable.webp)
+![The popup open over the page with product cards below the media](/images/instagram-feeds/storefront-popup-shoppable.webp)
 
 ## Video
 
@@ -50,7 +50,14 @@ Column counts switch at the theme's own breakpoints, so a four-column desktop
 grid becomes the two columns you set for mobile. Sliders scroll with native
 touch momentum and keep their arrows for anyone using a pointer.
 
-![The same feed at mobile width, two tiles per row with the slider arrows overlaid](/images/instafeed/storefront-mobile.webp)
+**Swipe between posts.** The popup's previous and next controls are hidden on
+narrow screens, so a horizontal swipe across the photo moves to the neighbouring
+post instead. A swipe has to travel about 15% of the width to commit — a shorter
+drag springs back, and a mostly-vertical gesture is left to the page so the popup
+can still be scrolled and dismissed. Pointer, keyboard and the on-screen arrows
+keep working unchanged on desktop.
+
+![The same feed at mobile width, two tiles per row with the slider arrows overlaid](/images/instagram-feeds/storefront-mobile.webp)
 
 ## Accessibility
 

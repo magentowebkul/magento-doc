@@ -1,12 +1,12 @@
 ---
 title: Installation
-description: Install Instafeed from the extension archive, verify it, and set admin permissions.
+description: Install Instagram Feeds from the extension archive, verify it, and set admin permissions.
 next: /meta-app-setup.html
 ---
 
 # Installation
 
-Instafeed is delivered as a ZIP archive from your Webkul account. Everything below
+Instagram Feeds is delivered as a ZIP archive from your Webkul account. Everything below
 runs from the Magento root directory, as the user that owns the files.
 
 ::: tip Back up first
