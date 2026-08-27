@@ -21,6 +21,7 @@ customisation.
 | `FeedRepositoryInterface` | Feeds and their store scope |
 | `MediaProductRepositoryInterface` | Product tags |
 | `StatRepositoryInterface` | Analytics rows |
+| `ProductGalleryAssignmentManagementInterface` | Attaching and detaching posts on a product's media gallery |
 
 Each supports `save`, `getById`, `delete`, `deleteById` and
 `getList(SearchCriteriaInterface)`, plus a few domain finders such as
@@ -108,6 +109,7 @@ attached — useful for tests and for CSS that should apply only when enhanced.
 | `wk_instagram_media_category` | Category links |
 | `wk_instagram_stat` | Daily analytics rows |
 | `wk_instagram_sync_log` | Sync history |
+| `wk_instagram_hashtag` | Tracked hashtags — populated by the schema, not yet driven by any admin screen |
 
 Deletes cascade: removing an account removes its posts; removing a feed removes
 its sources and curation.

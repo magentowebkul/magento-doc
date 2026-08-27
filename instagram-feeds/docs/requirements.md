@@ -13,6 +13,12 @@ description: What you need before installing Instagram Feeds for Magento 2.
 | PHP | 8.2, 8.3 or 8.4 |
 | Database | MySQL 8.0 / MariaDB 10.6 or newer |
 | Theme | Luma or any Luma-based theme |
+| Companion module | **Webkul_Base**, shipped with the extension |
+
+**Webkul_Base** carries the licence registry every Webkul extension shares. It
+is in the archive alongside `Webkul_InstagramFeed`; enable both or the module
+will not compile. One copy serves every Webkul extension on the install, so if
+you already run one, you already have it.
 
 Magento **cron** and the **message queue consumers** must be running. Without
 them nothing syncs, media is never mirrored locally, and analytics never

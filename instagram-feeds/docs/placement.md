@@ -11,16 +11,33 @@ Three ways, from easiest to most precise.
 
 On the feed form, tick pages under **Show On**:
 
-- **Home**
-- **Category**
-- **Product**
-- **CMS pages**
+- **Home Page**
+- **Category Pages**
+- **Product Pages**
+- **CMS Pages**
+- **Shopping Cart Page**
 
-The feed inserts itself into the theme's `content` container on those pages. No
-code, no layout XML.
+Then pick a **Placement Container** — where on those pages the feed is appended:
 
-If your theme uses a different container name, set the feed's
-`placement_container` to that name.
+| Container | Where it lands |
+| --- | --- |
+| **Main content** | Inside the page's content column (the default) |
+| **Left sidebar** | The `sidebar.main` column |
+| **Right sidebar** | The `sidebar.additional` column |
+| **Above content** | Between the header and the content |
+| **Below content** | Between the content and the footer |
+| **End of page** | Last thing before `</body>` |
+
+No code, no layout XML.
+
+::: warning A sidebar has to exist on that page
+The container must be present in that page's layout. The right sidebar only
+exists on 2-columns-right and 3-columns pages; the left sidebar only on
+2-columns-left and 3-columns. Choose one the page does not have and the feed
+renders nowhere, silently.
+:::
+
+Leave **Show On** empty to place the feed yourself with a widget or layout XML.
 
 ## 2. Widget — exact position, still no code
 

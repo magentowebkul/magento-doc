@@ -30,7 +30,7 @@ Show posts featuring *this* product, right under the buy box.
 2. **Source Type** → **Product Context**. No account selection needed — the
    product on the page decides the posts.
 3. **Layout** Slider, Post Limit 12.
-4. **Click Behaviour** Popup, **Product Panel** *Beside the media*.
+4. **Click Behaviour** Popup, **Product Cards** *Side panel (right)*.
 5. **Show On** → Product.
 6. Tag products on your posts — see [Shoppable posts](./shoppable.md).
 

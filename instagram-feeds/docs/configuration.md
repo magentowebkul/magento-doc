@@ -27,17 +27,30 @@ itself — see [Design & Layout](./design.md).
 | Field | Purpose | Default |
 | --- | --- | --- |
 | **Sync Frequency** | Every 15 minutes, Hourly, or Daily. Rewrites the sync cron schedule when saved. | Hourly |
-| **Posts Per Account** | How many posts each sync requests, max 200 | 50 |
-| **Store Media Locally** | Mirrors images and video into your media folder | Yes |
+| **Posts Per Account** | How many posts each sync requests, max 200. Higher values consume more of your Instagram API quota. | 50 |
+| **Store Media Locally** | Mirrors images and video into your media folder | No |
 | **Keep Posts For (days)** | Retention window; `0` keeps everything | 365 |
 
-::: tip Leave "Store Media Locally" on
-Instagram's CDN links expire in about a day. Without a local copy your tiles
-break shortly after syncing.
+::: warning Turn "Store Media Locally" on for production
+It ships **off**, so feeds render Instagram's CDN link directly. Those links
+expire in about a day, and tiles break once they do. Mirroring copies each file
+into your own media folder, which costs disk but survives expiry.
 :::
 
 Retention never deletes pinned posts, product-tagged posts, posts curated into a
 manual feed, or anything you uploaded yourself.
+
+## Product Gallery
+
+Instagram posts can be attached to a product's own media gallery, so a shot of
+the item being worn sits beside the studio photography on the product page.
+Attaching is done per product — see [Product gallery](./product-gallery.md).
+
+| Field | Purpose | Default |
+| --- | --- | --- |
+| **Posts Per Selector Page** | How many posts the media picker loads per page | 24 |
+| **Autoplay Video** | Plays an attached Instagram video when it becomes the active gallery item | Yes |
+| **Loop Video** | Restarts an attached video when it ends | Yes |
 
 ## Automatic Product Tagging
 

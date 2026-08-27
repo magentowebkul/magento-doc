@@ -10,10 +10,9 @@ description: What this version does not do, stated plainly.
 | Area | Detail |
 | --- | --- |
 | **Hyvä themes** | Hyvä replaces RequireJS with Alpine, so the interactive layer never boots. Markup and images render; popup, slider drag and analytics do not. A compatibility module is planned. |
-| **Hashtag feeds** | The data model supports hashtag sources; there is no admin screen to add them. |
+| **Hashtag feeds** | The data model supports hashtag sources, and hashtags drive automatic product tagging, but a feed cannot be sourced *by* hashtag from the UI. |
 | **Tagged (UGC) feeds** | Tagged posts sync and can be approved, but a feed cannot be sourced *by* tagged media from the UI. |
 | **Mixed source feeds** | Selectable; behaves like Account today. |
-| **Manual feed curation** | A manual feed renders exactly what is assigned to it, but assigning is not yet in the admin. |
 | **Instagram Stories** | Needs Meta App Review permissions beyond the basic scope. |
 | **Brand colours in admin** | Layout, spacing and radius are configurable; colours, fonts and hover effects need theme CSS. |
 | **GraphQL / headless** | The data layer is separated to make this straightforward, but no resolvers ship yet. |

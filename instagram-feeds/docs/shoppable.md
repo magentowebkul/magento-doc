@@ -66,9 +66,9 @@ happens in place — the shopper stays in the popup.
 Product data loads in a separate request when the popup opens, which is what
 keeps the feed itself in the full-page cache.
 
-![The popup with the product panel on the right, each card carrying a Shop Now button, and the hotspot visible on the media](/images/instagram-feeds/storefront-popup-side.webp)
+![The popup with tagged product cards stacked in a side panel to the right of the media](/images/instagram-feeds/storefront-popup-side.webp)
 
-![The storefront popup showing a post with three product cards overlaid at the bottom, each with image, name and price](/images/instagram-feeds/storefront-popup-shoppable.webp)
+![A shoppable popup: the post on the left, tagged products with price and a Shop Now button on the right](/images/instagram-feeds/storefront-popup-shoppable.webp)
 
 ## Product and category feeds
 
