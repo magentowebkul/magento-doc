@@ -16,7 +16,20 @@ usually be faster than a ticket.
 - **Support desk:** [webkul.uvdesk.com](https://webkul.uvdesk.com/en/customer/create-ticket/)
 - **Magento 2 extensions:** [store.webkul.com](https://store.webkul.com/Magento-2.html)
 
-The admin's **Support** menu links to both.
+The admin's **Support** menu links to both, and to four more destinations:
+
+| Menu item | Goes to |
+| --- | --- |
+| **User Guide** | This documentation |
+| **Store Extension** | The extension's page on the Webkul store |
+| **Ticket/Customisations** | The UVdesk support desk, for bugs and custom work |
+| **Services** | Webkul's Magento development services |
+| **Reviews** | Leave a review on the store listing |
+
+All five open in a new tab. Their targets ship as defaults in the module's
+`config.xml` under `webkul_instagramfeed/support/*` and have no admin field, so
+an agency wanting to repoint them at its own desk must override those config
+paths.
 
 ## What to include
 

@@ -6,7 +6,9 @@ next: /meta-app-setup.html
 
 # Installation
 
-Instagram Feeds is delivered as a ZIP archive from your Webkul account. Everything below
+Instagram Feeds is delivered as a ZIP archive from your Webkul account. It
+contains two modules: `Webkul_InstagramFeed` and the shared `Webkul_Base`
+licence module. Both must be enabled. Everything below
 runs from the Magento root directory, as the user that owns the files.
 
 ::: tip Back up first

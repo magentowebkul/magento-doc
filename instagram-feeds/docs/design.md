@@ -15,7 +15,7 @@ feeds on one store can look completely different.
 | Setting | Options | Default |
 | --- | --- | --- |
 | **Layout** | Grid, Slider, Masonry, Highlight | Grid |
-| **Column Mode** | Fixed, Auto | Fixed |
+| **Column Mode** | Fixed column counts, Auto (fit to minimum tile width) | Fixed column counts |
 | **Columns (Desktop)** | 1–8 | 4 |
 | **Columns (Tablet)** | 1–6 | 3 |
 | **Columns (Mobile)** | 1–4 | 2 |
@@ -51,7 +51,7 @@ button. Without JavaScript the shopper simply keeps the whole feed.
 
 | Setting | Options | Default |
 | --- | --- | --- |
-| **Aspect Ratio** | 1:1, 4:5, 9:16, original | 4:5 |
+| **Aspect Ratio** | Square (1:1), Portrait (4:5), Story (9:16), Original | Portrait (4:5) |
 | **Gap (px)** | px | 8 |
 | **Corner Radius (px)** | px | 0 |
 | **Link Hover Icon To Instagram** | on / off | on |
@@ -63,6 +63,8 @@ button. Without JavaScript the shopper simply keeps the whole feed.
 | **Autoplay Video** | on / off | on |
 | **Only Shoppable Posts** | on / off | off |
 | **Slider Speed (ms)** | ms | theme default |
+| **Show Product Name On Tile** | on / off | off |
+| **Post Order** | Most Recent, Most Engagement | Most Recent |
 
 `4:5` is Instagram's own portrait crop and what most reference storefronts use.
 `original` keeps each post's proportions — authentic, but a ragged grid.
@@ -77,14 +79,22 @@ than one at a time.
 **Only Shoppable Posts** drops every post with no tagged product, which turns a
 general gallery into a buyable one without curating by hand.
 
+**Show Product Name On Tile** prints the tagged product's name over the tile, so
+the feed reads as a shop rather than a gallery. It only appears on tiles that
+have a tag.
+
+**Post Order** sorts by recency or by engagement — likes plus comments as
+captured at sync time. Pinned posts lead in either case, so a launch shot stays
+first while the rest of the feed reorders around it.
+
 ## Click behaviour
 
 | Option | Result |
 | --- | --- |
-| **Popup** | Opens the shoppable popup (default) |
-| **Instagram** | Goes straight to the post on Instagram |
-| **Product** | Goes to the tagged product page |
-| **None** | Decorative gallery, no click |
+| **Open Popup** | Opens the shoppable popup (default) |
+| **Open on Instagram** | Goes straight to the post on Instagram |
+| **Go to Tagged Product** | Goes to the tagged product page |
+| **No Action** | Decorative gallery, no click |
 
 ## Popup
 
@@ -92,11 +102,11 @@ general gallery into a buyable one without curating by hand.
 
 | Setting | Options | Default |
 | --- | --- | --- |
-| **Product Panel** | Overlay bottom, Beside the media, Hidden | Overlay bottom |
+| **Product Cards** | Overlay on the media, Below the media (bottom), Side panel (right), Hidden | Overlay on the media |
 | **Show Caption** | on / off | on with a detail pane |
 | **Show Date** | on / off | on with a detail pane |
 | **Show Permalink** | on / off | off |
-| **Follow Link Placement** | Centred on the media on hover, In the details bar, Hidden | Centred on the media |
+| **Follow Link Placement** | Centred on the media, on hover / In the details bar / Hidden | Centred on the media, on hover |
 
 ## Brand colours
 

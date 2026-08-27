@@ -14,7 +14,7 @@ width). Hovering a tile fades in the Instagram glyph — a link to the post when
 Optional overlays: caption, username, like and comment counts, and a tag badge
 when the post has products.
 
-![A four-column storefront grid with a tag badge on the posts that have products](/images/instagram-feeds/storefront-grid.webp)
+![A feed rendered on the storefront under its title, with the profile row and Follow link above the posts](/images/instagram-feeds/storefront-grid.webp)
 
 ## Slider
 

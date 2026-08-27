@@ -9,7 +9,7 @@ Turn your Instagram account into a shoppable gallery on your storefront. Posts
 sync on a schedule, you decide what goes live, tag products on any post, and see
 what the gallery earns.
 
-![A four-column Instagram grid on a Magento home page, two rows of posts with a Follow link](/images/instagram-feeds/storefront-grid.webp)
+![An Instagram feed on the storefront: the account's posts in a row under a heading, with the handle, post count and a Follow link, and badges marking shoppable and video posts](/images/instagram-feeds/storefront-grid.webp)
 
 - **Automatic sync** — Posts, Reels and carousels arrive on your schedule and are mirrored to your own media folder.
 - **You approve first** — Approve, reject, hide, pin and reorder. Nothing reaches the storefront unless you allow it.

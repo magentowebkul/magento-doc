@@ -16,6 +16,7 @@ Three things keep a feed current: cron, the queue consumers, and a valid token.
 | `wk_instagram_refresh_tokens` | 03:00 daily | Renews tokens expiring within 7 days |
 | `wk_instagram_purge_media` | 03:30 daily | Deletes posts past the retention window |
 | `wk_instagram_auto_tag_media` | Hourly at :15 | Suggests product tags |
+| `wk_instagram_refresh_product_gallery_urls` | Hourly | Renews the Instagram CDN links behind posts attached to product galleries, before they expire |
 
 **Sync Frequency** (Every 15 minutes / Hourly / Daily) rewrites the sync job's
 schedule when you save configuration.
@@ -76,6 +77,20 @@ it rather than hammering the API.
 Mirrored media lives in `pub/media/instagramfeed/`. Budget roughly the size of
 the posts you keep — 500 mixed image and short-video posts is usually under 1 GB.
 Retention is what bounds this over time.
+
+## Rebuilding category tags
+
+A **Category Context** feed matches posts to the category being viewed, using
+tags derived from each post's tagged products. Change a product's categories and
+those derived tags go stale until the next sync touches the post.
+
+```bash
+bin/magento webkul:instagramfeed:sync-category-tags
+```
+
+Rebuilds them for every post from its current product tags. Safe to re-run; it
+recalculates rather than appends. Worth running after a bulk catalog import or a
+category restructure.
 
 ## See also
 

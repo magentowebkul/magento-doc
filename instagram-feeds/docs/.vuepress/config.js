@@ -103,6 +103,7 @@ export default defineUserConfig({
                     children: [
                         { text: "Media Library", link: "/media-library" },
                         { text: "Shoppable Posts", link: "/shoppable" },
+                        { text: "Product Gallery", link: "/product-gallery" },
                         { text: "Storefront Display", link: "/storefront" },
                         { text: "Analytics", link: "/analytics" },
                     ],
