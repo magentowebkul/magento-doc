@@ -4,14 +4,6 @@ The **Magento 2 Store Optimization** extension is built to work seamlessly with 
 
 ---
 
-## Technical Highlights
-
-* **Alpine.js & Tailwind CSS Friendly**: Does not interfere with Hyvä's lightweight JavaScript state engine or utility CSS compilation.
-* **Intersection Observer Synchronization**: Integrates cleanly with Hyvä's native lazy loading and image rendering patterns.
-* **No Third-Party Library Bloat**: Maintains Hyvä's core philosophy of speed and minimal dependencies.
-
----
-
 ## Hyvä Storefront Feature Showcase
 
 All store optimization features function natively within the Hyvä Theme storefront layout:

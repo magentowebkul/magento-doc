@@ -22,7 +22,9 @@ With **Image Lazy Loader** enabled:
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Image Lazy Loader**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Image Lazy Loader**.
+:::
 
 | Setting | Field Type | Options | Description |
 |---|---|---|---|

@@ -19,6 +19,7 @@ Configure a cron job on your Linux server to run the CLI compression command per
 ```bash:no-line-numbers
 0 2 * * * php /var/www/html/bin/magento image:compress webp --path pub/media/catalog/product > /dev/null 2>&1
 ```
+<ExplainCode explanation="Schedules a daily cron job at 2:00 AM to automatically compress product catalog images to WebP format." />
 
 ---
 

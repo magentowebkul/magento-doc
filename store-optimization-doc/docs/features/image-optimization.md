@@ -8,7 +8,9 @@ Under **Image Optimization Settings**, the store administrator can configure ima
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Image Optimization Settings**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Image Optimization Settings**.
+:::
 
 | Setting | Field Type | Options | Description |
 |---|---|---|---|
@@ -48,6 +50,7 @@ Execute recursive image compression directly from your server SSH terminal:
 ```bash:no-line-numbers
 php bin/magento image:compress [type] --path [path_to_directory_or_file]
 ```
+<ExplainCode explanation="General CLI command syntax to recursively compress media images or specific files." />
 
 **Examples:**
 
@@ -55,10 +58,12 @@ php bin/magento image:compress [type] --path [path_to_directory_or_file]
   ```bash:no-line-numbers
   php bin/magento image:compress webp --path pub/media/catalog/product
   ```
+  <ExplainCode explanation="Converts all product catalog images in pub/media/catalog/product to WebP format." />
 * **Compress a Single Image File**:
   ```bash:no-line-numbers
   php bin/magento image:compress jpeg --path pub/media/banner.png
   ```
+  <ExplainCode explanation="Converts the specified image pub/media/banner.png into an optimized JPEG format." />
 
 ::: warning CLI & Admin Matching Requirement
 The `type` argument (`webp` or `jpeg`) passed in CLI **must match** the **Compression Type** configured in Admin.

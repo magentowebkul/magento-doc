@@ -22,7 +22,9 @@ With **Cache Warmer**:
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Warm-up Cache**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Warm-up Cache**.
+:::
 
 ![Cache Warmer Configuration Settings](/images/feature/cache-warmer/01.png)
 
@@ -45,9 +47,8 @@ Navigate to **Stores → Configuration → Webkul → Store Optimization Setting
 Execute the consumer daemon in your terminal or supervisor process:
 
 ```bash:no-line-numbers
-php bin/magento queue:consumers:start cache.warm.up
+php bin/magento queue:consumers:start cache.warm.up &
 ```
-
 <ExplainCode explanation="Processes background cache warming jobs published by Magento Admin or scheduled events." />
 
 **Log Inspection**
@@ -56,3 +57,4 @@ Review cache warming activity in real-time:
 ```bash:no-line-numbers
 tail -f var/log/cachewarmer.log
 ```
+<ExplainCode explanation="Monitors and streams real-time cache warming log output from the log file." />

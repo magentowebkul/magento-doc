@@ -2170,7 +2170,7 @@ main.vp-home>.vp-footer {
 }
 
 /* ============================================================
-   MERMAID DIAGRAMS — fit content width, no horizontal scroll
+   MERMAID DIAGRAMS — Responsive, scrollable, mobile-optimized
    ============================================================ */
 [vp-content] .mermaid-wrapper,
 [vp-content] .mermaid-content,
@@ -2183,11 +2183,14 @@ main.vp-home>.vp-footer {
   padding: 2.25rem 1.25rem 1.25rem 1.25rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   background: #fff;
   border: 1px solid var(--vp-c-border);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
 }
 
 [data-theme='dark'] [vp-content] .mermaid-wrapper,
@@ -2224,12 +2227,31 @@ main.vp-home>.vp-footer {
 [vp-content] .mermaid-content svg,
 [vp-content] .md-mermaid svg,
 [vp-content] .mermaid svg {
-  min-width: 680px !important;
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  [vp-content] .mermaid-wrapper,
+  [vp-content] .mermaid-content,
+  [vp-content] .md-mermaid,
+  [vp-content] .mermaid {
+    justify-content: flex-start !important;
+    padding: 2.75rem 0.75rem 1rem 0.75rem !important;
+  }
+
+  [vp-content] .mermaid-wrapper svg,
+  [vp-content] .mermaid-content svg,
+  [vp-content] .md-mermaid svg,
+  [vp-content] .mermaid svg {
+    min-width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }
 
 /* ============================================================

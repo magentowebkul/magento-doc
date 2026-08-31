@@ -18,14 +18,14 @@ The **Magento 2 Store Optimization** extension addresses these challenges by com
 ```mermaid
 flowchart TD
     Customer([Storefront Visitor]) --> Response[Magento HTML Response Body]
-    Response --> DeferJS[Defer Load JS: Move script tags to bottom]
-    Response --> ImageOpt[Image Optimizer: Convert PNG/JPEG to WebP]
-    Response --> LazyLoad[Image Lazy Loader: Defer offscreen media]
-    Response --> Quicklink[Quicklink Engine: Prefetch visible viewport links]
+    Response --> DeferJS["Defer Load JS:<br/>Move script tags to bottom"]
+    Response --> ImageOpt["Image Optimizer:<br/>Convert PNG/JPEG to WebP"]
+    Response --> LazyLoad["Image Lazy Loader:<br/>Defer offscreen media"]
+    Response --> Quicklink["Quicklink Engine:<br/>Prefetch visible viewport links"]
     
     Admin([Store Administrator]) --> CacheWarm[Trigger Cache Warmer]
-    CacheWarm --> Queue[Message Queue: cache.warm.up]
-    Queue --> Consumer[Queue Worker Crawls & Pre-warms FPC]
+    CacheWarm --> Queue["Message Queue:<br/>cache.warm.up"]
+    Queue --> Consumer["Queue Worker:<br/>Crawls & Pre-warms FPC"]
 ```
 
 ---

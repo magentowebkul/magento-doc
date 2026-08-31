@@ -16,7 +16,9 @@ Instead of requiring shoppers to click through numbered pagination links ("Page 
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Infinite Scroller**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Infinite Scroller**.
+:::
 
 | Setting | Field Type | Options | Description |
 |---|---|---|---|

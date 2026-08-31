@@ -17,7 +17,9 @@ Enabling **Defer Load JS** moves non-essential scripts to the bottom of your pag
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Defer Load Js Settings**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Defer Load Js Settings**.
+:::
 
 ::: note Defer Loading Concept
 Defer loading means loading visual page content before JavaScript scripts. Loading page content first significantly increases store performance.

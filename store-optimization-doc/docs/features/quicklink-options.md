@@ -22,7 +22,9 @@ Enabling **Quicklink** automates background prefetching:
 
 ## Admin Configuration
 
-Navigate to **Stores → Configuration → Webkul → Store Optimization Settings → Quicklink Listen Fields**.
+::: tip Admin Menu Location
+Navigate to **Stores** &rarr; **Configuration** &rarr; **Webkul** &rarr; **Store Optimization Settings** &rarr; **Quicklink Listen Fields**.
+:::
 
 ![Quicklink Listen Fields Configuration](/images/feature/quick-link/01.webp)
 

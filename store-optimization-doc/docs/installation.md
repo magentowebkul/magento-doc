@@ -29,6 +29,7 @@ Navigate to your Magento 2 root directory in your SSH terminal and run the compo
 ```bash:no-line-numbers
 composer require <component-name>:<version>
 ```
+<ExplainCode explanation="General command structure to require a package dependency via Composer." />
 
 For example, to install version `4.0.1` of this extension, run:
 

@@ -18,6 +18,7 @@ Common issues and resolution steps for **Magento 2 Store Optimization**.
   ```bash:no-line-numbers
   php -r "var_dump(function_exists('imagewebp'));"
   ```
+  <ExplainCode explanation="Checks whether the imagewebp function exists in the active PHP environment." />
   If `bool(false)` is returned, install the `php-webp` / `gd` package on your server.
 
 ---
@@ -27,5 +28,6 @@ Common issues and resolution steps for **Magento 2 Store Optimization**.
 **Symptom: Queue messages remain unprocessed in database**
 * **Solution**: Start the consumer worker:
   ```bash:no-line-numbers
-  php bin/magento queue:consumers:start cache.warm.up
+  php bin/magento queue:consumers:start cache.warm.up &
   ```
+  <ExplainCode explanation="Starts the queue consumer worker to process background cache warming jobs." />

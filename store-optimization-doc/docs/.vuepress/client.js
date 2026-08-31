@@ -183,9 +183,9 @@ const CustomMermaid = {
                     },
                     securityLevel: "loose",
                     fontSize: 16,
-                    flowchart: { useMaxWidth: false, htmlLabels: true },
+                    flowchart: { useMaxWidth: true, htmlLabels: true },
                     sequence: {
-                        useMaxWidth: false,
+                        useMaxWidth: true,
                         showSequenceNumbers: true,
                         actorFontSize: 16,
                         noteFontSize: 15,
