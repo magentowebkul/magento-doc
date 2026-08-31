@@ -60,6 +60,12 @@ const products = [
     title: "Magento 2 Store Optimization",
     description: "User guide for installing, configuring, and running the Store Optimization extension.",
   },
+  {
+    slug: "marketplace-adyen-payment-gateway",
+    dir: "marketplace-adyen-payment-gateway",
+    title: "Magento 2 Marketplace Adyen Payment Gateway",
+    description: "User guide for installing, configuring, and running the Marketplace Adyen Payment Gateway extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
