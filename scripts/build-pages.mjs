@@ -54,6 +54,12 @@ const products = [
     title: "Magento 2 Marketplace Restrict Vendor Product",
     description: "User guide for installing, configuring, and running the Restrict Vendor Product extension.",
   },
+  {
+    slug: "store-optimization-doc",
+    dir: "store-optimization-doc",
+    title: "Magento 2 Store Optimization",
+    description: "User guide for installing, configuring, and running the Store Optimization extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
