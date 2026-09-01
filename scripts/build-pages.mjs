@@ -77,7 +77,13 @@ const products = [
     dir: "aireviewtranslator",
     title: "Magento 2 OpenAI Review Translator",
     description: "Magento 2 AI Review Translator facilitates the admin to translate the customer’s product reviews.",
-  }
+  },
+  {
+    slug: "show-seller-on-category",
+    dir: "show-seller-on-category",
+    title: "Magento 2 Marketplace Show Seller on Category",
+    description: "User guide for installing, configuring, and running the Show Seller on Category extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
