@@ -72,8 +72,8 @@ actions:
       </div>
       <p>Configure Adyen API keys, merchant settings, webhook secrets, and seller payout modes.</p>
       <nav aria-label="Configure guides">
-        <a href="/general-configuration.html">General Configuration</a>
-        <a href="/payout-configuration.html">Payout Settings</a>
+        <a href="/features/general-configuration.html">General Configuration</a>
+        <a href="/features/payout-configuration.html">Payout Settings</a>
       </nav>
     </div>
     <div class="home-guide-card">
@@ -83,9 +83,9 @@ actions:
       </div>
       <p>Test credit card checkout, seller onboarding, automated split payouts, webhooks, and troubleshooting.</p>
       <nav aria-label="Verify and use guides">
-        <a href="/payment-workflows.html">Payment Workflows</a>
-        <a href="/payout-workflows.html">Payout Workflows</a>
-        <a href="/webhook-integration.html">Webhook Integration</a>
+        <a href="/features/payment-workflows.html">Payment Workflows</a>
+        <a href="/features/payout-workflows.html">Payout Workflows</a>
+        <a href="/features/webhook-integration.html">Webhook Integration</a>
         <a href="/help/troubleshooting.html">Troubleshooting</a>
         <a href="/help/faq.html">FAQ</a>
       </nav>
