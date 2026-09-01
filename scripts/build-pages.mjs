@@ -106,6 +106,9 @@ const rewriteProductUrls = (dir, slug) => {
     "service-worker",
     "workbox",
     "404",
+    "features",
+    "usage",
+    "configuration"
   ].join("|");
 
   const rewriteFile = (file) => {
