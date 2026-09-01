@@ -63,17 +63,17 @@ export default defineUserConfig({
           text: "Configuration Guides",
           collapsible: true,
           children: [
-            { text: "General Settings", link: "/general-configuration" },
-            { text: "Payout Settings", link: "/payout-configuration" },
+            { text: "General Settings", link: "/features/general-configuration" },
+            { text: "Payout Settings", link: "/features/payout-configuration" },
           ],
         },
         {
           text: "Features & Workflows",
           collapsible: true,
           children: [
-            { text: "Payment Workflows", link: "/payment-workflows" },
-            { text: "Payout Workflows", link: "/payout-workflows" },
-            { text: "Webhook Integration", link: "/webhook-integration" },
+            { text: "Payment Workflows", link: "/features/payment-workflows" },
+            { text: "Payout Workflows", link: "/features/payout-workflows" },
+            { text: "Webhook Integration", link: "/features/webhook-integration" },
           ],
         },
         {
