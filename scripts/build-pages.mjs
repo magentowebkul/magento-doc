@@ -66,6 +66,12 @@ const products = [
     title: "Magento 2 Marketplace Adyen Payment Gateway",
     description: "User guide for installing, configuring, and running the Marketplace Adyen Payment Gateway extension.",
   },
+  {
+    slug: "multishopify-mage-connect",
+    dir: "multishopify-mage-connect",
+    title: "Magento 2 Multi Shopify Connector",
+    description: "User guide for installing, configuring, and running the Multi Shopify Connector extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
