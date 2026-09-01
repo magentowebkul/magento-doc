@@ -84,6 +84,12 @@ const products = [
     title: "Magento 2 Marketplace Show Seller on Category",
     description: "User guide for installing, configuring, and running the Show Seller on Category extension.",
   },
+  {
+    slug: "email-marketing-doc",
+    dir: "email-marketing-doc",
+    title: "Magento 2 Email Marketing",
+    description: "User guide for installing, configuring, and running the Email Marketing extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
