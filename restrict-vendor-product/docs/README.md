@@ -72,12 +72,12 @@ actions:
       </div>
       <p>Manage product requests from the admin side, and allow vendors to submit requests for products.</p>
       <nav aria-label="Features guides">
-        <a href="/restrict-vendor-product/features/admin-manage-all-product-requests.html">Admin Manage All Product Requests</a>
-        <a href="/restrict-vendor-product/features/product-requests-for-vendor.html">Product Requests For Vendor</a>
-        <a href="/restrict-vendor-product/features/vendor-request-for-products.html">Vendor Request for Products</a>
-        <a href="/restrict-vendor-product/features/vendor-product-list.html">Vendor Product List</a>
-        <a href="/restrict-vendor-product/features/product-approval-email.html">Product Approval Email</a>
-        <a href="/restrict-vendor-product/features/hyva-theme-compatibility.html">Hyvä Theme Compatibility</a>
+        <a href="/features/admin-manage-all-product-requests.html">Admin Manage All Product Requests</a>
+        <a href="/features/product-requests-for-vendor.html">Product Requests For Vendor</a>
+        <a href="/features/vendor-request-for-products.html">Vendor Request for Products</a>
+        <a href="/features/vendor-product-list.html">Vendor Product List</a>
+        <a href="/features/product-approval-email.html">Product Approval Email</a>
+        <a href="/features/hyva-theme-compatibility.html">Hyvä Theme Compatibility</a>
       </nav>
     </div>
     <div class="home-guide-card">
@@ -87,8 +87,8 @@ actions:
       </div>
       <p>Explore troubleshooting guides, frequently asked questions, and resolve common issues quickly.</p>
       <nav aria-label="Use modules guides">
-        <a href="/restrict-vendor-product/help/troubleshooting.html">Troubleshooting</a>
-        <a href="/restrict-vendor-product/help/faq.html">FAQ</a>
+        <a href="/help/troubleshooting.html">Troubleshooting</a>
+        <a href="/help/faq.html">FAQ</a>
       </nav>
     </div>
   </div>
