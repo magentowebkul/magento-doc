@@ -40,4 +40,4 @@ Explore the documentation to set up and configure your payment gateway:
 
 - Review [Requirements](/requirements) for environment compatibility.
 - Follow [Installation Guide](/installation) for module installation steps.
-- Configure credentials in [General Configuration](/general-configuration).
+- Configure credentials in [General Configuration](/features/general-configuration).
