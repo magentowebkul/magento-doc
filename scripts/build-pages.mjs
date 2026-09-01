@@ -72,6 +72,12 @@ const products = [
     title: "Magento 2 Multi Shopify Connector",
     description: "User guide for installing, configuring, and running the Multi Shopify Connector extension.",
   },
+  {
+    slug: "ai-review-translator",
+    dir: "aireviewtranslator",
+    title: "Magento 2 OpenAI Review Translator",
+    description: "Magento 2 AI Review Translator facilitates the admin to translate the customer’s product reviews.",
+  }
 ];
 
 const run = (command, args, options = {}) => {
