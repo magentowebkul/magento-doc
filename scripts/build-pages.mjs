@@ -96,6 +96,12 @@ const products = [
     title: "Magento 2 Amazon Connector",
     description: "User guide for installing, configuring, and running the Amazon Connector extension.",
   },
+  {
+    slug: "push-notification",
+    dir: "push-notification",
+    title: "Magento 2 Push Notification",
+    description: "User guide for installing and configuring Magento 2 Push Notification.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
