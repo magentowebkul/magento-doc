@@ -90,6 +90,12 @@ const products = [
     title: "Magento 2 Email Marketing",
     description: "User guide for installing, configuring, and running the Email Marketing extension.",
   },
+  {
+    slug: "amazon-magento-connect",
+    dir: "amazon-magento-connect",
+    title: "Magento 2 Amazon Connector",
+    description: "User guide for installing, configuring, and running the Amazon Connector extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
