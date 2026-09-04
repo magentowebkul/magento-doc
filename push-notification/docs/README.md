@@ -5,7 +5,7 @@ heroText: Magento 2 Push Notification
 tagline: Send real-time push notifications to your customers.
 actions:
   - text: Get Started
-    link: /guide.html
+    link: /introduction
     type: primary
   - text: Live Demo
     link: https://magento2.webkul.com/magento2-push-notification/

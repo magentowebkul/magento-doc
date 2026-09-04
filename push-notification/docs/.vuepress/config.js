@@ -24,7 +24,7 @@ export default defineUserConfig({
     editLink: false,
     lastUpdated: false,
     contributors: false,
-    // sidebarDepth: 0 is removed so in-page headers appear in sidebar
+    sidebarDepth: 0,
 
     navbar: [
       { text: "Live Demo", link: "https://magento2.webkul.com/magento2-push-notification/" },
@@ -32,14 +32,36 @@ export default defineUserConfig({
       { text: "Support", link: "https://webkul.uvdesk.com/en/customer/create-ticket/" },
     ],
 
-    sidebar: [
-      {
-        text: "Getting Started",
-        children: [
-          "/guide.md"
-        ],
-      }
-    ],
+    sidebar: {
+      "/": [
+        {
+          text: "Getting Started",
+          collapsible: false,
+          children: [
+            { text: "Introduction",       link: "/introduction" },
+            { text: "Requirements",       link: "/requirements" },
+            { text: "Installation",       link: "/installation" },
+            { text: "Activate & Connect", link: "/activation" },
+          ],
+        },
+        {
+          text: "Configuration",
+          collapsible: true,
+          children: [
+            { text: "Overview", link: "/configuration/overview" },
+            { text: "Settings", link: "/configuration/settings" },
+          ],
+        },
+        {
+          text: "Help",
+          collapsible: false,
+          children: [
+            { text: "Troubleshooting", link: "/help/troubleshooting" },
+            { text: "FAQ",             link: "/help/faq" },
+          ],
+        },
+      ],
+    },
   }),
 
   plugins: [
