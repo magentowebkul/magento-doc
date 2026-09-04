@@ -102,6 +102,12 @@ const products = [
     title: "Magento 2 Push Notification",
     description: "User guide for installing and configuring Magento 2 Push Notification.",
   },
+  {
+    slug: "quote-system",
+    dir: "quote-system",
+    title: "Magento 2 Quote System",
+    description: "User guide for installing, configuring, and managing the Quote System extension — quote cart, guest quotes, conversation, workflow, and GraphQL.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
