@@ -18,7 +18,7 @@ export default defineUserConfig({
   bundler: webpackBundler(),
 
   theme: defaultTheme({
-    logo: "/images/webkul_logo-removebg-preview.png",
+    logo: "/images/webkul-logo.png",
 
     repo: null,
     editLink: false,
@@ -38,9 +38,9 @@ export default defineUserConfig({
           text: "Getting Started",
           collapsible: false,
           children: [
-            { text: "Introduction",       link: "/introduction" },
-            { text: "Requirements",       link: "/requirements" },
-            { text: "Installation",       link: "/installation" },
+            { text: "Introduction", link: "/introduction" },
+            { text: "Requirements", link: "/requirements" },
+            { text: "Installation", link: "/installation" },
             { text: "Activate & Connect", link: "/activation" },
           ],
         },
@@ -57,7 +57,7 @@ export default defineUserConfig({
           collapsible: false,
           children: [
             { text: "Troubleshooting", link: "/help/troubleshooting" },
-            { text: "FAQ",             link: "/help/faq" },
+            { text: "FAQ", link: "/help/faq" },
           ],
         },
       ],
