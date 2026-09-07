@@ -108,6 +108,12 @@ const products = [
     title: "Magento 2 Quote System",
     description: "User guide for installing, configuring, and managing the Quote System extension — quote cart, guest quotes, conversation, workflow, and GraphQL.",
   },
+  {
+    slug: "mp-campaign-docs",
+    dir: "mp-campaign-docs",
+    title: "Magento 2 Marketplace Campaign",
+    description: "User guide for installing, configuring, and managing Magento 2 Marketplace Campaign extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
