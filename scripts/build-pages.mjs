@@ -114,6 +114,12 @@ const products = [
     title: "Magento 2 Marketplace Campaign",
     description: "User guide for installing, configuring, and managing Magento 2 Marketplace Campaign extension.",
   },
+  {
+    slug: "service-fee",
+    dir: "service-fee",
+    title: "Magento 2 Service Fee",
+    description: "User guide for installing, configuring, and managing Magento 2 Service Fee extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
