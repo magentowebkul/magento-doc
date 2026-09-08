@@ -120,6 +120,12 @@ const products = [
     title: "Magento 2 Service Fee",
     description: "User guide for installing, configuring, and managing Magento 2 Service Fee extension.",
   },
+  {
+    slug: "recurring-plan-for-discount",
+    dir: "recurring-plan-for-discount",
+    title: "Magento 2 Recurring Plan For Discount",
+    description: "User guide for installing, configuring, and managing Magento 2 Recurring Plan For Discount extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
