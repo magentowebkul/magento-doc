@@ -1,0 +1,22 @@
+{
+  "name": "mp-catalog-translation-docs",
+  "version": "1.0.0",
+  "description": "User guide for Magento 2 Marketplace Catalog Translation",
+  "type": "module",
+  "scripts": {
+    "start": "vuepress dev docs --clean-cache --clean-temp -p 8085",
+    "build": "vuepress build docs",
+    "clean": "rm -rf docs/.vuepress/.cache docs/.vuepress/.temp docs/.vuepress/dist"
+  },
+  "devDependencies": {
+    "vuepress": "2.0.0-rc.20",
+    "@vuepress/bundler-webpack": "2.0.0-rc.20",
+    "@vuepress/theme-default": "2.0.0-rc.88",
+    "@vuepress/plugin-search": "2.0.0-rc.86",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.72",
+    "vue": "3.5.32",
+    "mermaid": "11.14.0",
+    "sass-embedded": "1.99.0",
+    "sass-loader": "16.0.7"
+  }
+}
