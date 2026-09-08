@@ -12,8 +12,9 @@ export default defineUserConfig({
   description: "User guide for installing, configuring, and using the Marketplace Catalog Translation extension for Magento 2.",
 
   head: [
-    ["link", { rel: "icon", href: "/images/webkul-logo.png", type: "image/png" }],
-    ["link", { rel: "shortcut icon", href: "/images/webkul-logo.png" }],
+    ["link", { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
+    ["link", { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" }],
+    ["link", { rel: "apple-touch-icon", href: "/favicon.png" }],
   ],
 
   bundler: webpackBundler({
@@ -58,7 +59,7 @@ export default defineUserConfig({
         },
         {
           text: "Configuration",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Overview",         link: "/configuration/overview.html" },
             { text: "Existing Content", link: "/configuration/existing-content.html" },
@@ -66,7 +67,7 @@ export default defineUserConfig({
         },
         {
           text: "Workflows",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Admin Workflow",    link: "/workflows/admin.html" },
             { text: "Seller Workflow",   link: "/workflows/seller.html" },

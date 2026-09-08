@@ -2,15 +2,15 @@
 
 Before installing the **Marketplace Catalog Translation for Magento 2** extension, review the system compatibility and prerequisites outlined below.
 
-## Magento 2 Version Compatibility
+## System Requirements
 
-The module is tested and supported across the following Adobe Commerce / Magento 2 versions:
-
-| Component | Requirement |
-| :--- | :--- |
-| **Magento Community / Enterprise** | 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.4.x |
-| **PHP Version** | Compatible with standard PHP releases for target Magento version |
-| **Base Marketplace Extension** | Webkul Magento 2 Multi-Vendor Marketplace (Required Add-on) |
+| Requirement | Supported Versions | Notes |
+| :--- | :--- | :--- |
+| **Magento** | `2.4.4` to `2.4.9+` | Open Source, Adobe Commerce, and B2B Editions |
+| **PHP** | `8.1`, `8.2`, `8.3`, `8.4` | `ext-json`, `ext-curl`, `ext-openssl`, `ext-gd` or `ext-imagick` |
+| **Base Marketplace Extension** | Webkul Multi-Vendor Marketplace | Core required add-on module |
+| **Google Cloud API** | Cloud Translation API | Active Google Cloud Project & API Key with billing enabled |
+| **Web Server** | Apache 2.4+ or Nginx 1.18+ | SSL Certificate (HTTPS) required for production |
 
 ---
 
