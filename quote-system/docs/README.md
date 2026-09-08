@@ -68,29 +68,47 @@ actions:
     <div class="home-guide-card">
       <div class="home-guide-card__head">
         <span class="home-guide-card__number">2</span>
-        <h2>Configure extension</h2>
+        <h2>Storefront Workflow</h2>
       </div>
-      <p>Set product rules, button placement, workflow, messaging, and emails.</p>
+      <p>Customer quote requests, quote cart, guest OTP, account dashboard, and checkout.</p>
+      <nav aria-label="Storefront workflow guides">
+        <a href="/using/requesting-a-quote.html">Requesting a quote</a>
+        <a href="/using/quote-cart.html">The quote cart</a>
+        <a href="/using/guest-quotes.html">Guest quotes &amp; verification</a>
+        <a href="/using/my-quotes.html">Customer account &amp; quotes</a>
+        <a href="/using/conversation.html">Buyer-seller conversation</a>
+        <a href="/using/purchasing.html">Purchasing approved quotes</a>
+        <a href="/using/hyva.html">Hyvä theme storefront</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">3</span>
+        <h2>Admin Workflow</h2>
+      </div>
+      <p>Catalog quotability, quote grid management, counter-offers, and order tracking.</p>
+      <nav aria-label="Admin workflow guides">
+        <a href="/using/enable-a-product.html">Enable quotable products</a>
+        <a href="/using/admin.html">Managing quote requests grid</a>
+        <a href="/using/admin-counter-offer.html">Reviewing &amp; counter-offering</a>
+        <a href="/using/conversation.html">Admin messaging panel</a>
+      </nav>
+    </div>
+    <div class="home-guide-card">
+      <div class="home-guide-card__head">
+        <span class="home-guide-card__number">4</span>
+        <h2>Configure Extension</h2>
+      </div>
+      <p>Store display rules, buttons, auto-approval workflows, dynamic forms, and emails.</p>
       <nav aria-label="Configure extension guides">
         <a href="/configuration/overview.html">Configuration overview</a>
         <a href="/configuration/general.html">General &amp; guest settings</a>
         <a href="/configuration/product-display.html">Product display &amp; pricing</a>
         <a href="/configuration/button-and-cart.html">Button &amp; cart</a>
         <a href="/configuration/workflow.html">Workflow &amp; auto-approve</a>
-      </nav>
-    </div>
-    <div class="home-guide-card">
-      <div class="home-guide-card__head">
-        <span class="home-guide-card__number">3</span>
-        <h2>Using the extension</h2>
-      </div>
-      <p>Enable products, submit quote carts, negotiate in admin, and convert to orders.</p>
-      <nav aria-label="Using the extension guides">
-        <a href="/using/enable-a-product.html">Enable a product</a>
-        <a href="/using/requesting-a-quote.html">Requesting a quote</a>
-        <a href="/using/quote-cart.html">The quote cart</a>
-        <a href="/using/admin.html">Managing quotes in admin</a>
-        <a href="/using/graphql.html">GraphQL API</a>
+        <a href="/configuration/attachments.html">Attachments &amp; uploads</a>
+        <a href="/configuration/dynamic-form.html">Dynamic custom fields</a>
+        <a href="/configuration/email.html">Email notifications</a>
       </nav>
     </div>
   </div>
