@@ -9,6 +9,8 @@ Turning an approved quote into an order.
 3. The lines are added to their shopping cart at the **offered price and quantity**.
 4. They check out as normal.
 
+![Customer Purchase Approved Quote](/images/customer-purchase-approved-quote.webp)
+
 Product options are replayed exactly as they were quoted, so a configurable bought from a quote
 is the same variant that was quoted, and a bundle keeps its selections.
 

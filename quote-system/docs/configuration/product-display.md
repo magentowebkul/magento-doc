@@ -4,6 +4,8 @@
 
 Controls how a quotable product appears on the storefront.
 
+![Product Display Configuration](/images/admin-config-product-display.webp)
+
 | Setting | Description |
 |---|---|
 | **Show Add to Cart** | Keep the normal Add to Cart button on quotable products. |

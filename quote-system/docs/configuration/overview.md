@@ -2,6 +2,8 @@
 
 All settings live in one place: **Stores → Configuration → Webkul → Quote System**.
 
+![Quote System Admin Configuration](/images/admin-config-settings.webp)
+
 The section is split into groups, each covered by its own page here.
 
 | Group | What it controls |

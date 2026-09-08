@@ -1,62 +1,88 @@
 # Managing Quotes in Admin
 
-**Webkul Quote System → Manage Quote Requests**
+Store administrators manage incoming quote requests, negotiate prices, converse with buyers, and track conversions from the Magento Admin Panel.
 
-## The grid
+Navigate to **Webkul Quote System → Manage Quote Requests**.
 
-Every request, newest first. Columns cover the quote number, the customer, the total, the status,
-the linked order and its status, when it was submitted, unread messages, and the expiry date.
+---
 
-Use the filters to work a queue — for example, status *Pending* sorted by oldest, or the unread
-column to find quotes where the customer is waiting on a reply.
+## The Merchant Management Workflow
 
-## The detail page
+```mermaid
+flowchart LR
+  A[1. Enable Quotable Products] --> B[2. Monitor Quote Grid]
+  B --> C[3. Open Quote Details]
+  C --> D[4. Counter-Offer & Edit]
+  D --> E[5. Message Buyer]
+  E --> F[6. Approve & Order Conversion]
+```
 
-Click a row to open it. The page has three parts.
+1. **Enable Quotable Products**: Turn on quoting for individual products or bulk-update entire categories via Catalog Products.
+2. **Monitor Quote Grid**: Review new incoming requests, filter by pending status, unread customer messages, or approaching expiry dates.
+3. **Open Quote Details**: Examine customer notes, requested unit prices, quantities, attachments, and dynamic form inputs.
+4. **Counter-Offer & Edit**: Formulate competitive counter-offers with offered prices and quantities, or accept the buyer's terms.
+5. **Message Buyer**: Clarify project specs or delivery windows using the built-in two-way conversation thread.
+6. **Approve & Order Conversion**: Approve the quote; when the customer completes checkout, the quote converts to **Ordered** status with a linked Magento Order ID.
 
-**The header** — customer, email, status, dates, and the linked order once there is one.
+---
 
-**The lines** — one row per product, showing what the customer asked for and what you are
-offering:
+## The Quote Requests Grid
 
-| Field | Editable |
+![Manage Quote Requests Grid](/images/admin-quote-grid.webp)
+
+The grid displays every quote submitted across your store views, sorted by newest first:
+
+| Column | Description |
 |---|---|
-| Product, options, custom-field answers, the customer's note | No |
-| Original price | No |
-| Requested price and quantity | No |
-| **Offered price** | **Yes** |
-| **Offered quantity** | **Yes** |
-| Line status | **Yes** — Requested, Approved, Declined, Ordered |
+| **Quote #** | The unique quote identifier (e.g., `#000000034`) |
+| **Customer Name** | Registered buyer name or guest contact |
+| **Customer Email** | Contact email address |
+| **Quote Total** | Current calculated total based on customer requested or admin offered prices |
+| **Status** | Current lifecycle state: `Pending`, `Processing`, `Approved`, `Declined`, `Ordered`, `Expired` |
+| **Order #** | Linked Magento Order ID once converted to an order |
+| **Order Status** | Status of the converted Magento order (Pending, Processing, Complete) |
+| **Submitted At** | Date and time the request was received |
+| **Unread Messages** | Notification count indicating pending customer replies |
+| **Expiry Date** | The date after which an approved offer lapses |
+| **Action** | Direct link to view and edit the quote |
 
-**The conversation** — messages with the customer, inline on the page.
+### Efficient Queue Filtering
 
-## Making an offer
+Use the grid filters to prioritize daily operations:
+- **Pending Quotes**: Filter `Status = Pending` and sort `Submitted At` ascending to respond to older requests first.
+- **Unread Conversations**: Filter by quotes with active unread messages to reply to buyers promptly.
+- **Expiring Quotes**: Filter `Status = Approved` with `Expiry Date` within 48 hours to send follow-up reminders before deals lapse.
 
-1. Set the **offered price** and **offered quantity** on each line.
-2. Set the quote status.
-3. Save.
+---
 
-The customer is emailed that their quote was updated, and sees your offer in My Quotes.
+## Inspecting and Formulating Offers
 
-## Statuses and what they do
+Clicking **View** on any row opens the detailed quote management screen:
 
-| Status | Effect |
+![Admin Quote Detail and Offer](/images/admin-quote-detail.webp)
+
+On this page, admins can:
+- Compare catalogue base prices against requested prices.
+- Enter custom **Offered Price** and **Offered Quantity** per item line.
+- Update line statuses (`Requested`, `Approved`, `Declined`).
+- Post replies in the **Conversation** thread with automated email dispatch.
+- Transition quote status to **Approved**, allowing the customer to purchase immediately.
+
+For a detailed step-by-step walkthrough of counter-offering, see [Reviewing & Counter-Offering](/using/admin-counter-offer).
+
+---
+
+## Status Reference
+
+| Status | Meaning & Impact |
 |---|---|
-| **Pending** | The default for a new request |
-| **Processing** | You are working on it — the customer sees you have picked it up |
-| **Approved** | The customer can buy at the offered prices |
-| **Declined** | Closed; the customer cannot purchase |
-| **Ordered** | Set automatically when the quote becomes an order |
-| **Expired** | Set automatically by cron once the expiry date passes |
+| **Pending** | Default status for new submissions awaiting admin review. |
+| **Processing** | Admin has opened the quote and is calculating custom pricing or freight. |
+| **Approved** | Admin has finalized the offer; customer can now click **Proceed to Purchase**. |
+| **Declined** | Proposal cannot be fulfilled; locked against further checkout. |
+| **Ordered** | Automatically assigned when the customer successfully checks out through Magento. |
+| **Expired** | Automatically set by Magento cron when the quote validity date passes without purchase. |
 
-::: tip
-Approving a quote without setting an offered price uses the price the customer asked for. That is
-what makes automatic approval possible, and it is a quick way to accept a reasonable request:
-open it, set the status to Approved, save.
+::: tip Reactivating Expired Quotes
+An expired quote can be reactivated at any time. Simply open the quote in admin, extend the expiry date, change status back to **Approved**, and save. The customer can immediately complete the purchase.
 :::
-
-## Working efficiently
-
-- Sort by **Submitted At** ascending to answer the oldest first.
-- Filter by **Unread** to find quotes where the customer has replied and is waiting.
-- Filter by **Expiry At** to catch approved quotes about to lapse and follow them up.

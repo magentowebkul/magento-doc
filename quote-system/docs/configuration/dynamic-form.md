@@ -2,6 +2,8 @@
 
 **Stores → Configuration → Webkul → Quote System → Dynamic Form**
 
+![Dynamic Form Configuration](/images/admin-config-dynamic-form.webp)
+
 Ask your own questions on the quote form. Useful when a price depends on something the catalogue
 does not capture — a delivery deadline, a site address, a finish, a licence number.
 

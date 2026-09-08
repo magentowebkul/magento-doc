@@ -2,6 +2,8 @@
 
 **Stores → Configuration → Webkul → Quote System → Workflow**
 
+![Workflow Configuration](/images/admin-config-workflow.webp)
+
 | Setting | Description |
 |---|---|
 | **Auto Approve** | Approve requests automatically when the discount asked for is small enough. |

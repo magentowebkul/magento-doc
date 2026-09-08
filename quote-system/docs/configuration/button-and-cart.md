@@ -2,6 +2,8 @@
 
 **Stores → Configuration → Webkul → Quote System → Button** and **→ Cart**
 
+![Button & Cart Configuration](/images/admin-config-button-cart.webp)
+
 | Setting | Description |
 |---|---|
 | **Separate Quote Cart** | Keep quote requests in their own cart, apart from the shopping cart. |

@@ -4,6 +4,8 @@ Signed-in customers track their requests under **My Account → My Quotes**.
 
 ## The list
 
+![Customer My Quotes Listing](/images/customer-my-quotes-list.webp)
+
 One row per request:
 
 | Column | Meaning |
@@ -20,6 +22,8 @@ One row per request:
 | **Action** | **View** |
 
 ## The detail page
+
+![Customer Quote Detail](/images/customer-quote-view.webp)
 
 Opening a quote shows its status, date, and any linked order, then a table of the lines:
 

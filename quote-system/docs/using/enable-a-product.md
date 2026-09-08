@@ -11,6 +11,8 @@ catalogue becomes negotiable by accident.
 3. Set it to **Yes**.
 4. Save.
 
+![Enable Request a Quote on Product](/images/admin-product-enable-raq.webp)
+
 ## Many products at once
 
 The attribute is available in the product grid, so you can set it in bulk:
