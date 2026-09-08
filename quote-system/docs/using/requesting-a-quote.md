@@ -1,62 +1,90 @@
 # Requesting a Quote
 
-What the shopper does.
+The Quote System allows shoppers to negotiate custom prices, volume discounts, or project rates directly from your Magento storefront.
 
-## From the product page
+---
 
-1. Open a quotable product.
-2. Choose any options the product needs — a size, a bundle selection, a custom option.
-3. Click **Add to Quote**.
-4. The **Enter Quote Details** form opens:
+## The Frontend Buyer Journey
 
-   | Field | Meaning |
+Before looking at individual product actions, here is the complete end-to-end flow from the customer's perspective:
+
+```mermaid
+flowchart LR
+  A[1. Browse Catalog] --> B[2. Add to Quote Modal]
+  B --> C[3. Quote Cart]
+  C --> D[4. Submit Request]
+  D --> E[5. Track in My Quotes]
+  E --> F[6. Live Conversation]
+  F --> G[7. Purchase Approved Quote]
+```
+
+1. **Browse Catalog**: Shopper finds a quotable item on category or product detail pages.
+2. **Add to Quote**: Shopper clicks "Add to Quote", configures variants, and enters target price and quantity in the popup modal.
+3. **Review Quote Cart**: Shopper reviews all requested items, updates notes, and attaches documents.
+4. **Submit Request**: Shopper submits the quote (with email OTP verification for guests if enabled).
+5. **Track Status**: Buyer monitors progress under **My Account → My Quotes**.
+6. **Negotiate**: Buyer and store admin exchange messages in the interactive conversation drawer.
+7. **Purchase**: Once approved, buyer clicks **Proceed to Purchase** and checks out with the negotiated rates.
+
+---
+
+## Adding to Quote from the Product Page
+
+1. Open any quotable product.
+2. Configure required options (size, color, bundle options, or custom options).
+3. Click the **Add to Quote** button next to Add to Cart.
+
+![Storefront Product Page - Add to Quote](/images/storefront-product-page.webp)
+
+4. The **Enter Quote Details** modal opens:
+
+![Enter Quote Details Modal](/images/storefront-quote-modal.webp)
+
+   | Field | Purpose |
    |---|---|
-   | **Quantity** | How many they want |
-   | **Price per Item** | The price they are asking for |
-   | **Note** | Anything they want to tell you about this line |
-   | *Your custom fields* | If you configured a [dynamic form](/configuration/dynamic-form) |
+   | **Quantity** | The requested number of units (defaults to product page quantity) |
+   | **Price per Item** | The target unit price proposed by the shopper |
+   | **Note** | Line-item requirements, packaging requests, or project notes |
+   | *Custom Form Fields* | Any custom dynamic fields configured by the admin (e.g. Delivery Date, Budget) |
 
-5. Click **Submit**. The item joins their quote cart and the header count goes up.
+5. Click **Submit**. The item is added to the customer's dedicated quote cart, and the header quote badge updates instantly.
 
-The product's options travel with the request exactly as they would with Add to Cart, so a
-configurable added as *Blue / Large* is quoted, approved and ordered as *Blue / Large*.
+The product's configured options travel with the quote request exactly as with a standard cart: a configurable product quoted as *Blue / Large* is quoted, approved, and purchased as *Blue / Large*.
 
-::: tip
-The quantity in the form starts from the quantity on the product page, so a shopper who has
-already set 10 does not have to type it twice.
+::: tip Automatic Quantity Sync
+The quote modal automatically inherits the quantity already selected on the product page, eliminating duplicate entries for volume buyers.
 :::
 
-## From a category or search page
+---
 
-Products that need no configuring can be added straight from the listing card — the same form
-opens over the page.
+## Adding from Category & Search Listings
 
-Products that need configuring first — configurable, bundle and grouped products, and anything
-with required custom options — show a link to the product page instead. There is nothing on a
-card to choose options with.
+- **Simple & Virtual Products** (with no required options) can be quoted directly from category grid cards — clicking **Add to Quote** opens the modal immediately over the listing.
+- **Configurable, Bundle & Grouped Products** (which require variant selection) automatically guide the shopper to the product detail page to choose options first.
 
-## By product type
+---
 
-| Type | What the shopper sees |
+## Supported Product Types
+
+| Product Type | Shopper Experience |
 |---|---|
-| Simple, Virtual | One quantity, price and note |
-| Downloadable | The same, after choosing the links they want |
-| Configurable | The same, after choosing the variant |
-| Bundle | The same, after building the bundle — the form sits with Add to Cart in the customisation panel |
-| Grouped | One block per child they gave a quantity to, each with its own price and note |
+| **Simple / Virtual** | Single quantity, target unit price, and note. |
+| **Downloadable** | Select downloadable links, then specify quantity and target price. |
+| **Configurable** | Select variants (size, color, material), then submit quote details. |
+| **Bundle** | Build bundle configuration; modal appears in the customization panel. |
+| **Grouped** | Individual quantity, price, and note inputs for each child item in the group. |
 
-Grouped products are the special case: because a group is several products bought together, the
-form asks for a price per child rather than one price for the group.
+---
 
-## Validation
+## Validation & Constraints
 
-The form will not submit if:
+The quote modal automatically validates:
+- **Required Options**: Shopper must choose all mandatory product variants.
+- **Minimum Quote Quantity**: Enforces the minimum item threshold set in [Product Display Configuration](/configuration/product-display).
+- **Minimum Quote Subtotal**: Prevents submission if `Quantity × Price` is below the configured store minimum.
 
-- a required product option has not been chosen — the shopper is asked to choose it first
-- the quantity is below your [minimum quantity](/configuration/product-display)
-- quantity × price is below your [minimum amount](/configuration/product-display)
+---
 
-## Submitting the request
+## Submitting the Quote
 
-Adding items builds the quote cart; it does not send anything. The shopper sends the request from
-the [quote cart](/using/quote-cart).
+Adding items builds the quote cart. To review line items, upload project attachments, and send the proposal to store admins, continue to [The Quote Cart](/using/quote-cart).
