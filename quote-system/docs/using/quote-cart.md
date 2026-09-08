@@ -5,6 +5,8 @@ separate from the shopping cart, and reached from the quote-cart icon in the hea
 
 ## What is on the page
 
+![Storefront Quote Cart](/images/storefront-quote-cart.webp)
+
 **The items table** — one row per product, with:
 
 | Column | Editable |

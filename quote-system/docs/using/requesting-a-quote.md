@@ -7,7 +7,12 @@ What the shopper does.
 1. Open a quotable product.
 2. Choose any options the product needs — a size, a bundle selection, a custom option.
 3. Click **Add to Quote**.
+
+![Storefront Product Page - Add to Quote](/images/storefront-product-page.webp)
+
 4. The **Enter Quote Details** form opens:
+
+![Enter Quote Details Modal](/images/storefront-quote-modal.webp)
 
    | Field | Meaning |
    |---|---|

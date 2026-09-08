@@ -4,6 +4,8 @@
 
 ## The grid
 
+![Manage Quote Requests Grid](/images/admin-quote-grid.webp)
+
 Every request, newest first. Columns cover the quote number, the customer, the total, the status,
 the linked order and its status, when it was submitted, unread messages, and the expiry date.
 
@@ -13,6 +15,8 @@ column to find quotes where the customer is waiting on a reply.
 ## The detail page
 
 Click a row to open it. The page has three parts.
+
+![Admin Quote Detail and Offer](/images/admin-quote-detail.webp)
 
 **The header** — customer, email, status, dates, and the linked order once there is one.
 
