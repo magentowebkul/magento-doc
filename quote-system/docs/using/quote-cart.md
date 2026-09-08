@@ -54,3 +54,5 @@ the two do not interfere.
 The header quote-cart icon shows a live count and a dropdown listing what is in the cart with the
 requested prices, so shoppers can check it from any page without navigating away.
 :::
+
+![Header Quote Cart Icon](/images/storefront-header-quote-icon.webp)

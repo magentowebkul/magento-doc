@@ -2,6 +2,8 @@
 
 **Stores → Configuration → Webkul → Quote System → Attachment**
 
+![Attachments Configuration](/images/admin-config-attachments.webp)
+
 Let customers attach files to a quote request — a drawing, a spec sheet, a list of what they need.
 
 | Setting | Description |

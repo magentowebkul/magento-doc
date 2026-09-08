@@ -8,6 +8,8 @@ leaving the store. Turn it on under [Conversation](/configuration/conversation).
 From **My Account → My Quotes**, open a quote and click **Conversation**. A panel slides in with
 the thread — oldest at the top, newest at the bottom — and a box to type a reply.
 
+![Storefront Conversation Drawer](/images/storefront-conversation-drawer.webp)
+
 A divider marks where the messages they have not read begin, so they can pick up where they left
 off. Scrolling to the top loads older messages.
 

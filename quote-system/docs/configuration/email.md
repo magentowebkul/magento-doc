@@ -2,6 +2,8 @@
 
 **Stores → Configuration → Webkul → Quote System → Email**
 
+![Email Configuration](/images/admin-config-email.webp)
+
 | Setting | Description |
 |---|---|
 | **Notification Email** | Where new quote requests are announced. |
