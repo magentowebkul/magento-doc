@@ -16,7 +16,24 @@ export default defineUserConfig({
 
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
 
-  bundler: webpackBundler(),
+  bundler: webpackBundler({
+    chainWebpack: (config) => {
+      config.merge({
+        ignoreWarnings: [
+          { message: /Future import deprecation is not yet active/ },
+          { message: /The Sass if\(\) syntax is deprecated/ },
+          { message: /Deprecation Warning/ },
+          { message: /sass-loader/ },
+        ],
+      });
+    },
+    scss: {
+      sassOptions: {
+        silenceDeprecations: ["if-function", "import"],
+        quietDeps: true,
+      },
+    },
+  }),
 
   theme: defaultTheme({
     logo: "/images/webkul-logo.png",

@@ -126,6 +126,12 @@ const products = [
     title: "Magento 2 Recurring Plan For Discount",
     description: "User guide for installing, configuring, and managing Magento 2 Recurring Plan For Discount extension.",
   },
+  {
+    slug: "price-drop-alert-docs",
+    dir: "price-drop-alert-docs",
+    title: "Magento 2 Price Drop Alert",
+    description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
