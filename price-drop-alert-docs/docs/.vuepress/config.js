@@ -8,8 +8,8 @@ export default defineUserConfig({
   base: process.env.VUEPRESS_BASE || "/",
 
   lang: "en-US",
-  title: "Magento 2 Push Notification",
-  description: "User guide for installing and configuring Magento 2 Push Notification.",
+  title: "Magento 2 Price Drop Alert",
+  description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
 
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
@@ -44,8 +44,8 @@ export default defineUserConfig({
     sidebarDepth: 0,
 
     navbar: [
-      { text: "Live Demo", link: "https://magento2.webkul.com/magento2-push-notification/" },
-      { text: "Buy Now", link: "https://store.webkul.com/magento2-push-notification.html" },
+      { text: "Live Demo", link: "https://store.webkul.com/magento2-price-drop-alert.html" },
+      { text: "Buy Now", link: "https://store.webkul.com/magento2-price-drop-alert.html" },
       { text: "Support", link: "https://webkul.uvdesk.com/en/customer/create-ticket/" },
     ],
 
@@ -67,6 +67,8 @@ export default defineUserConfig({
           children: [
             { text: "Overview", link: "/configuration/overview" },
             { text: "Settings", link: "/configuration/settings" },
+            { text: "Subscription Log", link: "/configuration/subscription-log" },
+            { text: "Customer Portal", link: "/configuration/customer-portal" },
           ],
         },
         {
