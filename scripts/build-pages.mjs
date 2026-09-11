@@ -144,6 +144,12 @@ const products = [
     title: "Magento 2 Table Rate Shipping",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Shipping Method with Price Range and Zip Range (Mage Table Rate) extension.",
   },
+  {
+    slug: "age-restriction",
+    dir: "age-restriction",
+    title: "Magento 2 Age Restriction",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Age Restriction (Verification) extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
