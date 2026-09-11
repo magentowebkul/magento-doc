@@ -161,6 +161,12 @@ const products = [
     dir: "age-restriction",
     title: "Magento 2 Age Restriction",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Age Restriction (Verification) extension.",
+  },
+  {
+    slug: "shopping-list",
+    dir: "shopping-list",
+    title: "Magento 2 Shopping List",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Shopping List extension.",
   }
 ];
 
