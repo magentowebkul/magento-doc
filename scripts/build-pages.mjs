@@ -133,6 +133,12 @@ const products = [
     description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
   },
   {
+    slug: "marketplace-usps-shipping",
+    dir: "marketplace-usps-shipping",
+    title: "Magento 2 Marketplace USPS Shipping",
+    description: "User guide for installing, configuring, and managing the Marketplace USPS Shipping extension for Magento 2 — real-time domestic and international USPS V3 rates, seller portal OAuth2 credentials, packaging slips, and shipping labels.",
+  },
+  {
     slug: "multi-wishlist",
     dir: "multi-wishlist",
     title: "Magento 2 Multi Wishlist",
