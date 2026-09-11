@@ -150,6 +150,12 @@ const products = [
     title: "Magento 2 Marketplace Size Chart",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Size Chart Template extension.",
   },
+  {
+    slug: "age-restriction",
+    dir: "age-restriction",
+    title: "Magento 2 Age Restriction",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Age Restriction (Verification) extension.",
+  }
 ];
 
 const run = (command, args, options = {}) => {
