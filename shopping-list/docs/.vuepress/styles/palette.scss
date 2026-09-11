@@ -1,0 +1,47 @@
+/* ===== Vercel-style neutral palette ===== */
+:root {
+  /* Accent — Vercel uses near-black for active states & links */
+  --vp-c-accent: #111111;
+  --vp-c-accent-bg: #111111;
+  --vp-c-accent-hover: #555555;
+  --vp-c-accent-text: #ffffff;
+
+  /* Backgrounds */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafafa;
+  --vp-c-bg-elv: #ffffff;
+
+  /* Text */
+  --vp-c-text: #171717;
+  --vp-c-text-mute: #666666;
+  --vp-c-text-subtle: #999999;
+
+  /* Borders (hairline) */
+  --vp-c-border: #eaeaea;
+  --vp-c-border-dark: #d4d4d4;
+  --vp-c-gutter: #eaeaea;
+
+  --vp-sidebar-width: 256px;
+  --sidebar-width: 16.5rem; /* 264px — matches Vercel */
+  --sidebar-width-mobile: 14rem;
+}
+
+html.dark,
+[data-theme='dark'] {
+  --vp-c-accent: #ededed;
+  --vp-c-accent-bg: #ededed;
+  --vp-c-accent-hover: #ffffff;
+  --vp-c-accent-text: #000000;
+
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: #0a0a0a;
+  --vp-c-bg-elv: #111111;
+
+  --vp-c-text: #ededed;
+  --vp-c-text-mute: #a1a1a1;
+  --vp-c-text-subtle: #666666;
+
+  --vp-c-border: #2a2a2a;
+  --vp-c-border-dark: #3a3a3a;
+  --vp-c-gutter: #2a2a2a;
+}

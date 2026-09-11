@@ -97,8 +97,8 @@ const products = [
     description: "User guide for installing, configuring, and running the Amazon Connector extension.",
   },
   {
-    slug: "push-notification",
-    dir: "push-notification",
+    slug: "push-notification-docs",
+    dir: "push-notification-docs",
     title: "Magento 2 Push Notification",
     description: "User guide for installing and configuring Magento 2 Push Notification.",
   },
@@ -108,6 +108,66 @@ const products = [
     title: "Magento 2 Quote System",
     description: "User guide for installing, configuring, and managing the Quote System extension — quote cart, guest quotes, conversation, workflow, and GraphQL.",
   },
+  {
+    slug: "mp-campaign-docs",
+    dir: "mp-campaign-docs",
+    title: "Magento 2 Marketplace Campaign",
+    description: "User guide for installing, configuring, and managing Magento 2 Marketplace Campaign extension.",
+  },
+  {
+    slug: "service-fee",
+    dir: "service-fee",
+    title: "Magento 2 Service Fee",
+    description: "User guide for installing, configuring, and managing Magento 2 Service Fee extension.",
+  },
+  {
+    slug: "recurring-plan-for-discount",
+    dir: "recurring-plan-for-discount",
+    title: "Magento 2 Recurring Plan For Discount",
+    description: "User guide for installing, configuring, and managing Magento 2 Recurring Plan For Discount extension.",
+  },
+  {
+    slug: "price-drop-alert-docs",
+    dir: "price-drop-alert-docs",
+    title: "Magento 2 Price Drop Alert",
+    description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
+  },
+  {
+    slug: "marketplace-usps-shipping",
+    dir: "marketplace-usps-shipping",
+    title: "Magento 2 Marketplace USPS Shipping",
+    description: "User guide for installing, configuring, and managing the Marketplace USPS Shipping extension for Magento 2 — real-time domestic and international USPS V3 rates, seller portal OAuth2 credentials, packaging slips, and shipping labels.",
+  },
+  {
+    slug: "multi-wishlist",
+    dir: "multi-wishlist",
+    title: "Magento 2 Multi Wishlist",
+    description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
+  },
+  {
+    slug: "magento2-table-rate",
+    dir: "magento2-table-rate",
+    title: "Magento 2 Table Rate Shipping",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Shipping Method with Price Range and Zip Range (Mage Table Rate) extension.",
+  },
+  {
+    slug: "marketplace-size-chart",
+    dir: "marketplace-size-chart",
+    title: "Magento 2 Marketplace Size Chart",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Size Chart Template extension.",
+  },
+  {
+    slug: "age-restriction",
+    dir: "age-restriction",
+    title: "Magento 2 Age Restriction",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Age Restriction (Verification) extension.",
+  },
+  {
+    slug: "shopping-list",
+    dir: "shopping-list",
+    title: "Magento 2 Shopping List",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Shopping List extension.",
+  }
 ];
 
 const run = (command, args, options = {}) => {
