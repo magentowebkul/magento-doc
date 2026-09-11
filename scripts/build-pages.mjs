@@ -133,6 +133,12 @@ const products = [
     description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
   },
   {
+    slug: "multi-wishlist",
+    dir: "multi-wishlist",
+    title: "Magento 2 Multi Wishlist",
+    description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
+  },
+  {
     slug: "magento2-table-rate",
     dir: "magento2-table-rate",
     title: "Magento 2 Table Rate Shipping",
