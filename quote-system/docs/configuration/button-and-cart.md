@@ -13,6 +13,12 @@
 | **Redirect to Quote Cart** | Send the shopper to the quote cart after adding, instead of leaving them on the page. |
 | **Allow Discount on Quote Items** | Whether cart and catalogue price rules apply to negotiated lines. |
 
+## Separate Quote Cart
+
+When set to **Yes** (default), quote requests are collected into a dedicated Quote Cart separate from the standard shopping cart. Customers can access it from the header quote-cart icon and the **My Account → Cart Quotes** menu.
+
+When set to **No**, quote requests operate directly without requiring the dedicated quote cart. The visibility of the **Add to Quote** button on quotable products remains independent of this option.
+
 ## Button Label
 
 Defaults to *Add to Quote*. Change it to match your store's language — *Request a Price*, *Ask
