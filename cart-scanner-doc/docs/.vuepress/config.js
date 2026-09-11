@@ -15,7 +15,24 @@ export default defineUserConfig({
     ["link", { rel: "icon", type: "image/png", href: "/favicon.png" }],
   ],
 
-  bundler: webpackBundler(),
+  bundler: webpackBundler({
+    chainWebpack: (config) => {
+      ['sass', 'scss'].forEach((rule) => {
+        ['vue-modules', 'vue', 'normal-modules', 'normal'].forEach((type) => {
+          const ruleOneOf = config.module.rule(rule).oneOf(type);
+          if (ruleOneOf.uses.has('sass-loader')) {
+            ruleOneOf.use('sass-loader').tap((options) => ({
+              ...options,
+              sassOptions: {
+                ...options?.sassOptions,
+                quietDeps: true,
+              },
+            }));
+          }
+        });
+      });
+    },
+  }),
 
   theme: defaultTheme({
     logo: "/images/webkul-logo.png",
@@ -46,7 +63,7 @@ export default defineUserConfig({
         },
         {
           text: "Admin Configuration",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Overview", link: "/configuration/overview.html" },
             { text: "General Settings", link: "/configuration/general-settings.html" },
@@ -57,7 +74,7 @@ export default defineUserConfig({
         },
         {
           text: "Storefront Workflow",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Workflow Overview", link: "/storefront/workflow-overview.html" },
             { text: "Mini-Cart QR Widget", link: "/storefront/mini-cart.html" },
@@ -71,14 +88,14 @@ export default defineUserConfig({
         },
         {
           text: "Analytics & Reports",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Scan Analytics Dashboard", link: "/reports/scan-analytics.html" },
           ],
         },
         {
           text: "Localization",
-          collapsible: true,
+          collapsible: false,
           children: [
             { text: "Multi-Lingual Config", link: "/localization/multi-lingual.html" },
             { text: "Language Translation", link: "/localization/language-translation.html" },
