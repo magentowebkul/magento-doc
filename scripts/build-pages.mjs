@@ -132,6 +132,12 @@ const products = [
     title: "Magento 2 Price Drop Alert",
     description: "User guide for installing, configuring, and managing Magento 2 Price Drop Alert extension.",
   },
+  {
+    slug: "multi-wishlist",
+    dir: "multi-wishlist",
+    title: "Magento 2 Multi Wishlist",
+    description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
