@@ -38,7 +38,7 @@ The grid displays every quote submitted across your store views, sorted by newes
 | **Customer Name** | Registered buyer name or guest contact |
 | **Customer Email** | Contact email address |
 | **Quote Total** | Current calculated total based on customer requested or admin offered prices |
-| **Status** | Current lifecycle state: `Pending`, `Processing`, `Approved`, `Declined`, `Ordered`, `Expired` |
+| **Status** | Current lifecycle state: `Awaiting Email Verification`, `Pending`, `Processing`, `Approved`, `Declined`, `Ordered`, `Expired` |
 | **Order #** | Linked Magento Order ID once converted to an order |
 | **Order Status** | Status of the converted Magento order (Pending, Processing, Complete) |
 | **Submitted At** | Date and time the request was received |
@@ -46,12 +46,13 @@ The grid displays every quote submitted across your store views, sorted by newes
 | **Expiry Date** | The date after which an approved offer lapses |
 | **Action** | Direct link to view and edit the quote |
 
-### Efficient Queue Filtering
+### Search, Filtering & Mass Actions
 
-Use the grid filters to prioritize daily operations:
-- **Pending Quotes**: Filter `Status = Pending` and sort `Submitted At` ascending to respond to older requests first.
-- **Unread Conversations**: Filter by quotes with active unread messages to reply to buyers promptly.
-- **Expiring Quotes**: Filter `Status = Approved` with `Expiry Date` within 48 hours to send follow-up reminders before deals lapse.
+Use the grid controls to manage high-volume RFQ operations:
+- **Search by Keyword**: Quickly locate requests by quote ID, customer name, or email address using the search bar.
+- **Field Filters**: Filter by lifecycle status (including quotes awaiting verification), date ranges, or order IDs.
+- **Mass Delete**: Select quotes via the checkboxes and select **Actions → Delete** to remove them in bulk.
+- **Mass Update Status**: Select multiple quotes and choose **Actions → Update Status → Approve** or **Decline** to process proposals rapidly.
 
 ---
 

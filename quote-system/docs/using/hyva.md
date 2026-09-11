@@ -50,10 +50,12 @@ Every stage of the quote workflow is rebuilt natively with Alpine.js and Tailwin
 - Supports unread message indicators, date stamps, and real-time reply submission.
 - Fully touch-friendly and responsive on mobile devices and tablets.
 
-### 6. Customer Account "My Quotes"
-- Responsive table inside **My Account → My Quotes**.
+### 6. Customer Account "My Quotes" & "Cart Quotes"
+- Responsive Tailwind table inside **My Account → My Quotes** with **View**, **Edit**, **Print** (PDF quotation), and **Delete** actions.
+- Dedicated customer quote editing interface built natively in Tailwind CSS and Alpine.js to adjust requested prices and quantities on pending requests.
 - Side-by-side pricing breakdown: **Original Price**, **Requested Price**, and **Admin Offered Price**.
-- Direct **Proceed to Purchase** button that moves approved quote lines into the Hyvä checkout cart at the agreed rate.
+- Detail page toolbar actions including **Proceed to Purchase**, **Print Quote**, **Edit Quote**, **Delete Quote**, and **Conversation**.
+- Quick-access **Cart Quotes** account navigation link leading straight to the active quote cart.
 
 ---
 
