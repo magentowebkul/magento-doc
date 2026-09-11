@@ -138,6 +138,12 @@ const products = [
     title: "Magento 2 Multi Wishlist",
     description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
   },
+  {
+    slug: "magento2-table-rate",
+    dir: "magento2-table-rate",
+    title: "Magento 2 Table Rate Shipping",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Shipping Method with Price Range and Zip Range (Mage Table Rate) extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
