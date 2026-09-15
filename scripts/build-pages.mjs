@@ -173,6 +173,12 @@ const products = [
     dir: "mp-gift-card-doc",
     title: "Magento 2 Marketplace Gift Card",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Gift Card extension.",
+  },
+  {
+    slug: "mp-mass-upload",
+    dir: "mp-mass-upload",
+    title: "Magento 2 Marketplace Mass Upload",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Mass Upload extension.",
   }
 ];
 
