@@ -167,6 +167,12 @@ const products = [
     dir: "shopping-list",
     title: "Magento 2 Shopping List",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Shopping List extension.",
+  },
+  {
+    slug: "mp-gift-card-doc",
+    dir: "mp-gift-card-doc",
+    title: "Magento 2 Marketplace Gift Card",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Gift Card extension.",
   }
 ];
 
