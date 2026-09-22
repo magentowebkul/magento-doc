@@ -173,6 +173,12 @@ const products = [
     dir: "mp-gift-card-doc",
     title: "Magento 2 Marketplace Gift Card",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Gift Card extension.",
+  },
+  {
+    slug: "ai-content-generator",
+    dir: "ai-content-generator",
+    title: "Magento 2 AI Content Generator",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 AI Content Generator.",
   }
 ];
 
