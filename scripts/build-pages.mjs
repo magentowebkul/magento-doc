@@ -179,6 +179,12 @@ const products = [
     dir: "ai-content-generator",
     title: "Magento 2 AI Content Generator",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 AI Content Generator.",
+  },
+  {
+    slug: "elasticsearch-doc",
+    dir: "elasticsearch-doc",
+    title: "Magento 2 Elasticsearch",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Elasticsearch Module.",
   }
 ];
 
