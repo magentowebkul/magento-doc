@@ -185,6 +185,12 @@ const products = [
     dir: "elasticsearch-doc",
     title: "Magento 2 Elasticsearch",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Elasticsearch Module.",
+  },
+  {
+    slug: "mp-rma-doc",
+    dir: "mp-rma-doc",
+    title: "Magento 2 Marketplace RMA System",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace RMA System Module.",
   }
 ];
 
