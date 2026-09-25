@@ -1,0 +1,37 @@
+{
+  "name": "magento2-ai-product-review-summary-docs",
+  "description": "User guide documentation for the Magento 2 ChatGPT Product Review Summary extension.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "vuepress dev docs --clean-cache --clean-temp -p 8080",
+    "docs": "vuepress dev docs --clean-cache --clean-temp",
+    "build": "vuepress build docs --clean-cache --clean-temp",
+    "build:site": "VUEPRESS_BASE=/ai-product-review-summary/ vuepress build docs --clean-cache --clean-temp",
+    "clean": "rm -rf docs/.vuepress/.cache docs/.vuepress/.temp docs/.vuepress/dist",
+    "fresh": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-webpack": "2.0.0-rc.20",
+    "@vuepress/plugin-search": "2.0.0-rc.86",
+    "@vuepress/theme-default": "2.0.0-rc.88",
+    "mermaid": "11.14.0",
+    "sass-embedded": "1.99.0",
+    "sass-loader": "16.0.7",
+    "vue": "3.5.32",
+    "vuepress": "2.0.0-rc.20",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.72",
+    "webpack": "5.109.2"
+  },
+  "dependencies": {
+    "html2canvas": "1.4.1",
+    "jspdf": "2.5.2"
+  },
+  "overrides": {
+    "webpack": "5.109.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
