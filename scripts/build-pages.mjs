@@ -191,6 +191,12 @@ const products = [
     dir: "mp-rma-doc",
     title: "Magento 2 Marketplace RMA System",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace RMA System Module.",
+  },
+  {
+    slug: "ai-product-review-summary",
+    dir: "ai-product-review-summary",
+    title: "Magento 2 ChatGPT Product Review Summary",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 ChatGPT Product Review Summary extension — AI-written \"Customers Say\" summaries of approved product reviews.",
   }
 ];
 
