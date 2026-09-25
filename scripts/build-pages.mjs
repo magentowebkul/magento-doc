@@ -197,6 +197,12 @@ const products = [
     dir: "ai-product-review-summary",
     title: "Magento 2 ChatGPT Product Review Summary",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 ChatGPT Product Review Summary extension — AI-written \"Customers Say\" summaries of approved product reviews.",
+  },
+  {
+    slug: "magento2-order-edit",
+    dir: "magento2-order-edit",
+    title: "Magento 2 Order Edit",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Order Edit extension.",
   }
 ];
 
