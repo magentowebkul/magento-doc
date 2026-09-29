@@ -139,12 +139,6 @@ const products = [
     description: "User guide for installing, configuring, and managing the Marketplace USPS Shipping extension for Magento 2 — real-time domestic and international USPS V3 rates, seller portal OAuth2 credentials, packaging slips, and shipping labels.",
   },
   {
-    slug: "multi-wishlist",
-    dir: "multi-wishlist",
-    title: "Magento 2 Multi Wishlist",
-    description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
-  },
-  {
     slug: "magento2-table-rate",
     dir: "magento2-table-rate",
     title: "Magento 2 Table Rate Shipping",
