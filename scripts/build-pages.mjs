@@ -203,6 +203,12 @@ const products = [
     dir: "magento2-order-edit",
     title: "Magento 2 Order Edit",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Order Edit extension.",
+  },
+  {
+    slug: "seller-subdomain-doc",
+    dir: "seller-subdomain-doc",
+    title: "Magento 2 Multi Vendor Seller Subdomain",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Vendor Seller Subdomain extension.",
   }
 ];
 
