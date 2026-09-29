@@ -46,7 +46,7 @@ Inside **My Account > Manage Wish List**, custom wishlists are displayed in clea
 ### 3. Shopping Cart Integration
 - **Move to Wishlist from Cart**: Adds a **Move to Wish List** action directly inside Hyvä shopping cart item renderers, allowing shoppers to move items from their active cart into any custom wishlist without navigating away.
 
-![Hyva Cart to wihslit](/images/hyva_cart_to_wishlist.webp)
+![Hyva Cart to Wishlist](/images/hyva_cart_to_wishlist.webp)
 
 ---
 
@@ -54,7 +54,7 @@ Inside **My Account > Manage Wish List**, custom wishlists are displayed in clea
 - Guest visitors browsing a Hyvä storefront can add items to temporary guest wishlists.
 - When the guest logs in or registers, their saved guest items automatically merge into their permanent customer account wishlist.
 
-![Hyva Cart to wihslit](/images/hyva_guest_wishlist.webp)
+![Hyva Guest Wishlist](/images/hyva_guest_wishlist.webp)
 
 ---
 

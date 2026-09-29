@@ -95,7 +95,7 @@ actions:
       </div>
       <p>Native Hyvä Theme integration, Alpine.js modals, Tailwind CSS layouts, and shopping cart triggers.</p>
       <nav aria-label="Hyva Theme guides">
-        <a href="/hyva-theme.html">Hyvä Theme Support</a>
+        <a href="/customer/hyva-theme.html">Hyvä Theme Support</a>
       </nav>
     </div>
     <div class="home-guide-card">

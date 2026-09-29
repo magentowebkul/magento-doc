@@ -76,7 +76,7 @@ export default defineUserConfig({
           text: "Hyvä Theme Compatibility",
           collapsible: false,
           children: [
-            { text: "Hyvä Theme Support", link: "/hyva-theme" },
+            { text: "Hyvä Theme Support", link: "/customer/hyva-theme" },
           ],
         },
         {
