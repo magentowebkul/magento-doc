@@ -209,6 +209,12 @@ const products = [
     dir: "seller-subdomain-doc",
     title: "Magento 2 Multi Vendor Seller Subdomain",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Vendor Seller Subdomain extension.",
+  },
+  {
+    slug: "multi-wishlist",
+    dir: "multi-wishlist",
+    title: "Magento 2 Multiple Wishlist",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multiple Wishlist extension.",
   }
 ];
 
@@ -252,7 +258,9 @@ const rewriteProductUrls = (dir, slug) => {
     "404",
     "features",
     "usage",
-    "configuration"
+    "configuration",
+    "admin",
+    "customer"
   ].join("|");
 
   const rewriteFile = (file) => {
