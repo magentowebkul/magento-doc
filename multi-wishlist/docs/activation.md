@@ -14,7 +14,7 @@ The Multi Wishlist extension requires license verification via **Webkul Base**:
 4. Enter your purchase order details and license key provided in your Webkul account.
 5. Click **Save Config**.
 
-![Module License](/images/module_license.png)
+![Module License](/images/module_license.webp)
 
 ---
 
@@ -24,7 +24,7 @@ The Multi Wishlist extension requires license verification via **Webkul Base**:
 2. Set **Enabled** to `Yes`.
 3. Click **Save Config** to save settings.
 
-![Module Configuration](/images/module_config.png)
+![Module Configuration](/images/module_config.webp)
 
 4. Flush the Magento cache under **System > Cache Management**.
 
@@ -32,6 +32,6 @@ The Multi Wishlist extension requires license verification via **Webkul Base**:
 
 ---
 
-::: tip Status Path
-The store configuration path checked by system logic is `multiwishlist/general_settings/status`. When set to `1` (Enable), multi-wishlist modal buttons, dropdowns, and features appear on product detail pages, category listings, and customer accounts.
+::: tip Activation Note
+When **Enabled** is set to `Yes`, multi-wishlist buttons, selection modals, and features will immediately appear on product detail pages, category listings, and customer accounts.
 :::

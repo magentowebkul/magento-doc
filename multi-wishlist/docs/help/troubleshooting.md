@@ -16,6 +16,7 @@ The "Add to Wishlist" button still uses Magento's default behavior, or custom wi
    ```bash:no-line-numbers
    php bin/magento cache:flush
    ```
+   <ExplainCode explanation="Flushes Magento application caches to apply new configurations." />
 
 ---
 
@@ -29,12 +30,19 @@ Clicking "Add to Wishlist" on a Hyvä storefront results in a JS error or fails 
    ```bash:no-line-numbers
    php bin/magento module:status Webkul_MultiWishlistHyva
    ```
+   <ExplainCode explanation="Checks whether the Hyvä compatibility module is enabled in Magento." />
+
 2. Verify that `Hyva_CompatModuleFallback` is enabled and registered in `etc/module.xml`.
 3. Re-compile dependency injection and purge cache:
    ```bash:no-line-numbers
    php bin/magento setup:di:compile
+   ```
+   <ExplainCode explanation="Re-compiles dependency injection definitions and generated classes." />
+
+   ```bash:no-line-numbers
    php bin/magento cache:flush
    ```
+   <ExplainCode explanation="Flushes Magento application caches to clear outdated layout assets." />
 
 ---
 
@@ -50,3 +58,4 @@ Items added to the wishlist while browsing as a guest disappear after logging in
    ```bash:no-line-numbers
    php bin/magento indexer:reindex
    ```
+   <ExplainCode explanation="Reindexes catalog and wishlist data to ensure immediate visibility across all tables." />
