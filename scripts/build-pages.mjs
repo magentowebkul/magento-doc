@@ -209,6 +209,12 @@ const products = [
     dir: "multi-wishlist",
     title: "Magento 2 Multiple Wishlist",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multiple Wishlist extension.",
+  },
+  {
+    slug: "openstreetmap-address-autocomplete",
+    dir: "openstreetmap-address-autocomplete",
+    title: "Magento 2 OpenStreetMap Address AutoComplete",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 OpenStreetMap Address AutoComplete extension — fast, accurate, and cost-effective address suggestions powered by OpenStreetMap Nominatim.",
   }
 ];
 
