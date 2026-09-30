@@ -209,7 +209,13 @@ const products = [
     dir: "multi-wishlist",
     title: "Magento 2 Multiple Wishlist",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multiple Wishlist extension.",
-  }
+  },
+  {
+    slug: "mp-saas-doc",
+    dir: "mp-saas-doc",
+    title: "Magento 2 Marketplace Multi Company SaaS",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Multi Company SaaS extension.",
+  },
 ];
 
 const run = (command, args, options = {}) => {
