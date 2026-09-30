@@ -215,6 +215,12 @@ const products = [
     dir: "openstreetmap-address-autocomplete",
     title: "Magento 2 OpenStreetMap Address AutoComplete",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 OpenStreetMap Address AutoComplete extension — fast, accurate, and cost-effective address suggestions powered by OpenStreetMap Nominatim.",
+  },
+  {
+    slug: "smart-device-base-promotion-doc",
+    dir: "smart-device-base-promotion-doc",
+    title: "Magento 2 Smart Device Based Promotion",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Smart Device Based Promotion.",
   }
 ];
 
