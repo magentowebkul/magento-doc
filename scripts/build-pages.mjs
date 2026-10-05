@@ -227,6 +227,12 @@ const products = [
     dir: "make-an-offer-doc",
     title: "Magento 2 Make An Offer",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Make An Offer.",
+  },
+  {
+    slug: "quickbooks-connect",
+    dir: "quickbooks-connect",
+    title: "Magento 2 Quickbooks Connect",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Quickbooks Connect.",
   }
 ];
 
