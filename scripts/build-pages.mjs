@@ -221,6 +221,12 @@ const products = [
     dir: "smart-device-base-promotion-doc",
     title: "Magento 2 Smart Device Based Promotion",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Smart Device Based Promotion.",
+  },
+  {
+    slug: "make-an-offer-doc",
+    dir: "make-an-offer-doc",
+    title: "Magento 2 Make An Offer",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Make An Offer.",
   }
 ];
 
