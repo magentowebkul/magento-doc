@@ -1,62 +1,37 @@
-# Troubleshooting
+# Troubleshooting Guide
 
-If you encounter issues while configuring or using the Webkul Push Notification module for Magento 2, please refer to the common problems and solutions below.
-
----
-
-## 1. Installation Issues
-
-**Problem:** Module is not visible or causes an error after installation.
-
-**Solutions:**
-- **File Placement:** Ensure that you have created the `Webkul` (vendor) and `PushNotification` (module) folders inside your `magento/app/code/` directory, and moved all files to `app/code/Webkul/PushNotification/`.
-- **Composer Dependency:** The module requires `google/auth`. Ensure you have run `composer require google/auth` before upgrading the setup.
-- **Commands:** Make sure you have run the following commands sequentially:
-  ```bash
-  php bin/magento setup:upgrade
-  php bin/magento setup:di:compile
-  php bin/magento setup:static-content:deploy
-  ```
-- **Cache:** Flush the cache and reindex all data.
+Common issues encountered when setting up Web Push Notifications and step-by-step solutions.
 
 ---
 
-## 2. Notifications Are Not Being Received
+## 1. Permission Prompt Not Appearing on Storefront
 
-**Problem:** Users are not seeing the push notification prompt or receiving notifications.
+### Symptom
+Visitors browse the store, but the browser notification permission prompt never appears.
 
-**Solutions:**
-- **Module Disabled:** Check if the module is enabled. Navigate to **Stores > Configuration > Push Notification > General > Enabled** and ensure it is set to **Yes**.
-- **SSL Certificate Required:** Web push notifications require an active SSL certificate. Ensure your website is loaded over HTTPS.
-- **FCM V1 API Credentials:** Starting from version 5.0.5, the module uses the FCM V1 API. Ensure your Firebase credentials are correct and updated.
-- **Browser Compatibility:** The module works well with Chrome and Mozilla Firefox. Ensure the user's browser supports push notifications and they haven't blocked notifications for your site.
-
----
-
-## 3. GraphQL API Errors
-
-**Problem:** Errors encountered while trying to register or unregister push tokens via GraphQL.
-
-**Solutions:**
-- **Missing Required Fields:** Ensure that `token`, `platform`, and `channel` are provided in the `RegisterPushTokenInput`.
-- **App Specific Requirements:** `device_id` is required when using the `DEVICE` or `BOTH` channels for mobile apps.
-- **Authentication:** If registering a token for an existing customer, ensure you pass the `Authorization: Bearer <customer_token>` header. For guests, no header is required.
-- **"Module is disabled" Error:** Enable the module from the Magento admin configuration.
+### Solutions
+- **Check SSL (HTTPS):** Ensure your website is served over an active HTTPS connection with a valid SSL certificate. Browsers block Web Push APIs on HTTP.
+- **Check Browser Settings:** If the user previously clicked *Block* or *Never Allow*, reset site permissions by clicking the lock icon in the browser address bar.
+- **Verify Configuration:** Ensure **Enable Mp Push Notification** is set to `Yes` in Magento Admin (*Stores > Configuration > Webkul > MP Push Notification*).
 
 ---
 
-## 4. Notifications Not Delivered Automatically
+## 2. Push Notifications Not Received After Dispatch
 
-**Problem:** Scheduled or automatic notifications are not being sent as expected.
+### Symptom
+Notifications are sent from Admin/Seller panel, but subscribers do not receive alerts.
 
-**Solutions:**
-- **Cron Jobs:** Ensure that your Magento cron jobs are configured and running properly, as they may be responsible for dispatching scheduled notifications.
-- **Timezone Settings:** Check your Magento timezone settings. Notification delivery was optimized according to the timezone in version 5.0.2.
+### Solutions
+- **Verify FCM Credentials:** Ensure the **Web API Key**, **Sender ID**, and **VAPID Public Key** match your Firebase Console project settings.
+- **Verify Service Account JSON:** Ensure you uploaded a valid `.json` private key file under **FCM Auth Domain Auth JSON File**.
+- **Check Device State:** Ensure the subscriber's browser application is open or running in the background.
 
 ---
 
-## 5. Support & Refund Policies
+## 3. Image/Logo Not Displaying in Push Alert
 
-If the above troubleshooting steps do not resolve your issue, please refer to our policies:
-- **Support:** [Support Policy](https://store.webkul.com/support.html/)
-- **Refunds:** [Refund Policy](https://store.webkul.com/refund-policy.html/)
+### Symptom
+The push notification is received, but the custom logo or image icon is broken or missing.
+
+### Solution
+- Ensure logo images uploaded in templates use absolute valid image URLs or reside in accessible web media directories.
