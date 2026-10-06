@@ -962,6 +962,11 @@ html.dark .vp-navbar {
         width: 100% !important;
         border-color: #111 !important;
         box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06) !important;
+        background-color: #fff !important;
+        background-repeat: no-repeat !important;
+        background-position: 13px center !important;
+        background-size: 16px 16px !important;
+        outline: none !important;
       }
     }
 
@@ -1129,6 +1134,11 @@ html.dark {
         &:focus {
           border-color: #737373 !important;
           box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.08) !important;
+          background-color: var(--doc-bg-soft) !important;
+          background-repeat: no-repeat !important;
+          background-position: 13px center !important;
+          background-size: 16px 16px !important;
+          outline: none !important;
         }
       }
 
