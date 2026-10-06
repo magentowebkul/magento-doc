@@ -53,7 +53,7 @@ textarea {
     font-family: inherit;
     border-radius: 8px;
     border: 1px solid var(--vp-c-border);
-    background: var(--vp-c-bg-alt);
+    background-color: var(--vp-c-bg-alt);
     color: var(--vp-c-text);
     width: 13rem;
     transition: width 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
@@ -62,7 +62,7 @@ textarea {
     &:focus {
       width: 17rem;
       border-color: var(--vp-c-accent);
-      background: var(--vp-c-bg);
+      background-color: var(--vp-c-bg);
       outline: none;
     }
   }

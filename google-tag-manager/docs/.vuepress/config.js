@@ -13,7 +13,10 @@ export default defineUserConfig({
     shouldPrefetch: false,
     head: [
         ["link", { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") }],
-        ["meta", { name: "theme-color", content: "#b0894a" }],
+        ["link", { rel: "alternate icon", type: "image/x-icon", href: withBase("/favicon.ico") }],
+        ["link", { rel: "icon", type: "image/png", sizes: "192x192", href: withBase("/favicon-192.png") }],
+        ["link", { rel: "apple-touch-icon", sizes: "180x180", href: withBase("/apple-touch-icon.png") }],
+        ["meta", { name: "theme-color", content: "#2149f3" }],
         [
             "script",
             { type: "application/ld+json" },

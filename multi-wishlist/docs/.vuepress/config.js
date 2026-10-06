@@ -29,7 +29,7 @@ export default defineUserConfig({
   }),
 
   theme: defaultTheme({
-    logo: "/images/logo.png",
+    logo: "/images/logo.webp",
 
     repo: null,
     editLink: false,
@@ -56,18 +56,31 @@ export default defineUserConfig({
           ],
         },
         {
-          text: "Features",
+          text: "Store Configuration & Admin",
           collapsible: false,
           children: [
-            { text: "Managing Wishlists",      link: "/features/manage-wishlists" },
-            { text: "Sharing & Guest Sync",    link: "/features/sharing-wishlists" },
-            { text: "Admin Management",        link: "/features/admin-management" },
-            { text: "GraphQL API",             link: "/features/graphql-api" },
-            { text: "Hyvä Theme Compatibility", link: "/features/hyva-theme-compatibility" },
+            { text: "Module Configuration",   link: "/admin/configuration" },
+            { text: "Admin Wishlist Management", link: "/admin/manage-wishlists" },
           ],
         },
         {
-          text: "Help",
+          text: "Customer Storefront Experience",
+          collapsible: false,
+          children: [
+            { text: "Customer Wishlist Management", link: "/customer/wishlists" },
+            { text: "Guest Wishlist & Sync",        link: "/customer/guest-wishlist" },
+            { text: "Wishlist Sharing & Social",     link: "/customer/sharing" },
+          ],
+        },
+        {
+          text: "Hyvä Theme Compatibility",
+          collapsible: false,
+          children: [
+            { text: "Hyvä Theme Support", link: "/customer/hyva-theme" },
+          ],
+        },
+        {
+          text: "Help & Support",
           collapsible: false,
           children: [
             { text: "Troubleshooting", link: "/help/troubleshooting" },

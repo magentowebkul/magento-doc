@@ -139,12 +139,6 @@ const products = [
     description: "User guide for installing, configuring, and managing the Marketplace USPS Shipping extension for Magento 2 — real-time domestic and international USPS V3 rates, seller portal OAuth2 credentials, packaging slips, and shipping labels.",
   },
   {
-    slug: "multi-wishlist",
-    dir: "multi-wishlist",
-    title: "Magento 2 Multi Wishlist",
-    description: "User guide for installing, configuring, and managing Magento 2 Multi Wishlist extension.",
-  },
-  {
     slug: "magento2-table-rate",
     dir: "magento2-table-rate",
     title: "Magento 2 Table Rate Shipping",
@@ -203,6 +197,54 @@ const products = [
     dir: "zoho-sso",
     title: "Magento 2 Zoho SSO",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Zoho SSO extension — let customers sign in or sign up with their Zoho account on login, registration, and checkout.",
+  },
+  {
+    slug: "magento2-order-edit",
+    dir: "magento2-order-edit",
+    title: "Magento 2 Order Edit",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Order Edit extension.",
+  },
+  {
+    slug: "seller-subdomain-doc",
+    dir: "seller-subdomain-doc",
+    title: "Magento 2 Multi Vendor Seller Subdomain",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Vendor Seller Subdomain extension.",
+  },
+  {
+    slug: "multi-wishlist",
+    dir: "multi-wishlist",
+    title: "Magento 2 Multiple Wishlist",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multiple Wishlist extension.",
+  },
+  {
+    slug: "openstreetmap-address-autocomplete",
+    dir: "openstreetmap-address-autocomplete",
+    title: "Magento 2 OpenStreetMap Address AutoComplete",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 OpenStreetMap Address AutoComplete extension — fast, accurate, and cost-effective address suggestions powered by OpenStreetMap Nominatim.",
+  },
+  {
+    slug: "smart-device-base-promotion-doc",
+    dir: "smart-device-base-promotion-doc",
+    title: "Magento 2 Smart Device Based Promotion",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Smart Device Based Promotion.",
+  },
+  {
+    slug: "make-an-offer-doc",
+    dir: "make-an-offer-doc",
+    title: "Magento 2 Make An Offer",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Make An Offer.",
+  },
+  {
+    slug: "quickbooks-connect",
+    dir: "quickbooks-connect",
+    title: "Magento 2 Quickbooks Connect",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Quickbooks Connect.",
+  },
+  {
+    slug: "zoho-sso",
+    dir: "zoho-sso",
+    title: "Magento 2 Zoho SSO",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Zoho SSO extension — let customers sign in or sign up with their Zoho account on login, registration, and checkout.",
   }
 ];
 
@@ -246,7 +288,9 @@ const rewriteProductUrls = (dir, slug) => {
     "404",
     "features",
     "usage",
-    "configuration"
+    "configuration",
+    "admin",
+    "customer"
   ].join("|");
 
   const rewriteFile = (file) => {

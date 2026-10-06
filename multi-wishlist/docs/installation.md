@@ -80,16 +80,16 @@ The module supports multiple languages, including both RTL (Right-to-Left) and L
 
 1. Navigate to the module's i18n directory: `app/code/Webkul/MultiWishlist/i18n` (or the equivalent path in your installation).
 
-![Translation](/images/translation-first.png)
+![Translation](/images/translation-first.webp)
 
 2. Edit the `en_US.csv` file.
 3. Rename the CSV file to match your target locale, for example, `de_DE.csv` for German.
 
-![Translation](/images/translation-second.png)
+![Translation](/images/translation-second.webp)
 
 4. Translate all content on the right side of the comma into your target language.
 
-![Translation](/images/translation-third.png)
+![Translation](/images/translation-third.webp)
 
 5. Save the file.
 6. Upload the translated CSV file to the `app/code/Webkul/MultiWishlist/i18n` path on your server.
