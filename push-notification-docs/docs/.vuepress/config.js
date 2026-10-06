@@ -8,14 +8,17 @@ export default defineUserConfig({
   base: process.env.VUEPRESS_BASE || "/",
 
   lang: "en-US",
-  title: "Magento 2 Push Notification",
-  description: "User guide for installing and configuring Magento 2 Push Notification.",
+  title: "Magento 2 Multi Vendor Web Push Notification",
+  description: "User guide for installing, configuring, and managing Web Push Notifications in Magento 2 Marketplace.",
 
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.ico", type: "image/x-icon" }],
+    ["link", { rel: "shortcut icon", href: "/favicon.ico", type: "image/x-icon" }],
+    ["link", { rel: "apple-touch-icon", href: "/favicon.png" }],
   ],
 
   bundler: webpackBundler({
+<<<<<<< Updated upstream
     chainWebpack: (config) => {
       config.merge({
         ignoreWarnings: [
@@ -29,6 +32,15 @@ export default defineUserConfig({
     scss: {
       sassOptions: {
         silenceDeprecations: ["if-function", "import"],
+=======
+    scss: {
+      sassOptions: {
+        quietDeps: true,
+      },
+    },
+    sass: {
+      sassOptions: {
+>>>>>>> Stashed changes
         quietDeps: true,
       },
     },
@@ -36,17 +48,17 @@ export default defineUserConfig({
 
   theme: defaultTheme({
     logo: "/images/webkul-logo.png",
+    sidebarDepth: 0,
 
     repo: null,
     editLink: false,
     lastUpdated: false,
     contributors: false,
-    sidebarDepth: 0,
 
     navbar: [
-      { text: "Live Demo", link: "https://magento2.webkul.com/magento2-push-notification/" },
-      { text: "Buy Now", link: "https://store.webkul.com/magento2-push-notification.html" },
-      { text: "Support", link: "https://webkul.uvdesk.com/en/customer/create-ticket/" },
+      { text: "Live Demo", link: "https://mp-push-notification-marketplace-magento2.webkul.in/demomanagement/viewdemo/index/demoid/33/" },
+      { text: "Buy Now",   link: "https://store.webkul.com/magento2-multi-vendor-push-notifications.html" },
+      { text: "Support",   link: "https://webkul.uvdesk.com/" },
     ],
 
     sidebar: {
@@ -55,26 +67,48 @@ export default defineUserConfig({
           text: "Getting Started",
           collapsible: false,
           children: [
-            { text: "Introduction", link: "/introduction" },
-            { text: "Requirements", link: "/requirements" },
-            { text: "Installation", link: "/installation" },
-            { text: "Activate & Connect", link: "/activation" },
+            { text: "Introduction",   link: "/introduction.html" },
+            { text: "Requirements",   link: "/requirements.html" },
+            { text: "Installation",   link: "/installation.html" },
+            { text: "Firebase Setup", link: "/firebase-setup.html" },
           ],
         },
         {
           text: "Configuration",
-          collapsible: true,
+          collapsible: false,
           children: [
-            { text: "Overview", link: "/configuration/overview" },
-            { text: "Settings", link: "/configuration/settings" },
+            { text: "Admin Configuration", link: "/configuration/admin-config.html" },
+            { text: "i18n Translation",    link: "/configuration/translation.html" },
+          ],
+        },
+        {
+          text: "Admin Management",
+          collapsible: false,
+          children: [
+            { text: "Notification Templates",  link: "/admin/templates.html" },
+            { text: "Subscribers & Sending",   link: "/admin/subscribers.html" },
+          ],
+        },
+        {
+          text: "Seller Management",
+          collapsible: false,
+          children: [
+            { text: "Seller Dashboard & Push", link: "/seller/overview.html" },
+          ],
+        },
+        {
+          text: "Customer Experience",
+          collapsible: false,
+          children: [
+            { text: "Storefront Alerts",       link: "/customer/experience.html" },
           ],
         },
         {
           text: "Help",
           collapsible: false,
           children: [
-            { text: "Troubleshooting", link: "/help/troubleshooting" },
-            { text: "FAQ", link: "/help/faq" },
+            { text: "Troubleshooting", link: "/help/troubleshooting.html" },
+            { text: "FAQ & Support",   link: "/help/faq.html" },
           ],
         },
       ],

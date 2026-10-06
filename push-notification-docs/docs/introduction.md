@@ -1,43 +1,34 @@
 # Introduction
 
-Magento 2 Push Notification extension allows you to send real-time push notifications to your customers.
+## Overview
 
-The subscribed users can see the push notifications on their web browser. The advantage of using push notifications is that it delivers the message immediately.
+The **Magento 2 Multi Vendor Web Push Notification** extension empowers store administrators and marketplace sellers to send real-time browser push notifications directly to subscribed customers.
 
-Unlike emails that sometimes fail to deliver or go to the spam folder, Web push notifications are always delivered and seen by the users.
+Unlike traditional email marketing, which is often subject to inbox delivery delays or spam filters, web push notifications deliver instant pop-up notifications directly onto desktop and mobile screens. Subscribed shoppers receive alerts even when they are not actively browsing your store, as long as their web browser is open.
 
-As long as the browser is running, a subscribed user will get a message even without opening up your website. This improves user engagement and retention.
+---
 
-::: tip
-If you want to check Magento 2 push notifications on your smartwatch then use our [Magento 2 Watch app](https://webkul.com/blog/magento2-watch-app-documentation/) for the same.
+## Core Capabilities
+
+- **Instant Real-Time Engagement:** High visibility alerts delivered directly to browser notification trays.
+- **Firebase Cloud Messaging (FCM):** Enterprise-grade notification delivery engine.
+- **Zero Monthly Subscription Fees:** Unlimited notifications with no third-party per-message costs.
+- **Unlimited Subscribers:** Store unlimited subscriber registration tokens.
+- **Seller Management:** Empowers marketplace sellers to create custom templates and target their subscribers.
+- **Rich Media & Custom Action Links:** Include custom logos, icons, and redirect URLs to drive sales traffic.
+- **Cross-Browser & Multi-Device:** Fully compatible with Google Chrome and Mozilla Firefox on Desktop and Mobile.
+
+---
+
+## Key Benefits
+
+| Benefit | Description |
+| :--- | :--- |
+| **Higher Click-Through Rates (CTR)** | Direct desktop and mobile pop-ups achieve significantly higher engagement than email campaigns. |
+| **Zero Recurring Costs** | Eliminate monthly SaaS fees by using your own Firebase project. |
+| **Marketplace Seller Empowerment** | Sellers can re-engage buyers who expressed interest in their products. |
+| **Automated Notification Rules** | Schedule automated web push alerts based on custom store rules. |
+
+::: info Next Steps
+Proceed to the [Requirements](/requirements.html) page to ensure your server and Magento installation satisfy all prerequisites before installing.
 :::
-
-### Features
-
-- It is very well integrated with Magento 2 Platform.
-- Compatible with Mozilla Firefox, Google Chrome web browser, and mobile browsers.
-- Designed to work with the **SSL** (Secure Sockets Layer) certificate websites.
-- There is no monthly subscription required to notify customers.
-- The admin can view the subscribed users list.
-- There is no limitation on the number of subscribed users.
-- The admin can create, edit and delete notification messages in the back end.
-- A custom icon and target URL for their notification message can be set.
-- Notifications can be sent to either all registered users or selected users.
-
-### Web Push Notification – Front-End view
-
-After the installation of the module, the user will see a push notification on their website.
-
-The users have to click the **Allow** button to receive notifications from your website. Please refer to the below screenshot:
-
-![Visible webstore frontend notification](/images/Screenshot-from-2017-01-23-11-19-16-1.webp)
-
-#### Sample Push Notification
-
-![Sample push notification](/images/web-push-notification-frontend-1.webp)
-
-You can check how the sent push notification will appear on the webstore front-end. Template Title, Template Logo, Template Message, and the Redirect URL are visible to the users.
-
-#### Sample Push Notification (Mobile browser)
-
-![Web Push notification mobile](/images/extract-500x1024.webp)

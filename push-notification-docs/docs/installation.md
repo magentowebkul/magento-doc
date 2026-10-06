@@ -1,51 +1,66 @@
-# Installation
+# Installation Guide
 
-Follow these steps to install the Magento 2 Push Notification extension.
+Follow these steps to install the **Magento 2 Multi Vendor Web Push Notification** extension on your server.
 
-### Installation Process
+---
 
-1. Initially, download the **zip file** and extract its content on your computer. The extracted folder will have a folder named **src**, inside this folder, you will find an **app** folder.
-2. Copy this **app** folder into the **Magento 2** root directory on the server as shown below.
+## Step 1: Extract and Upload Extension Files
 
-![Installation Of Magento2](/images/Move-app-folder-2.webp)
+1. Download the module ZIP package from your Webkul Store account.
+2. Extract the ZIP file on your local machine.
+3. Locate the `src/app/` folder inside the extracted directory.
+4. Upload/transfer the `app` directory into your Magento 2 root installation folder on your server.
 
-### Run Commands
+![Upload App Folder](/images/image.png)
 
-After the successful installation, you need to run the following commands in the Magento 2 root directory.
-
-```bash
-composer require google/auth
-php bin/magento setup:upgrade
-php bin/magento setup:di:compile
-php bin/magento setup:static-content:deploy
+```text
+<Magento_Root>/
+└── app/
+    └── code/
+        └── Webkul/
+            └── MpPushNotification/
 ```
 
-After running these commands, you need to flush the cache from the Magento admin panel. Navigate through **System -> Cache management**.
+---
 
-After flushing the Cache storage, you will get a confirmation message as shown below.
+## Step 2: Run Deployment CLI Commands
 
-![Flush Cache](/images/Flush-Cache-1.webp)
+Connect to your server via SSH, navigate to your Magento 2 root folder, and execute the following deployment commands:
 
-### Multi-Lingual Configuration
+### 1. Upgrade Database Schema
+Updates module status and creates push notification database tables:
 
-For Multilingual support, please navigate to **Store > Configuration > General > Locale Options**. Select your desired language from the **Locale** option.
+```bash
+php bin/magento setup:upgrade
+```
 
-![change language-magento 2 locale](/images/change-language-magento-2-locale.webp)
+### 2. Compile Dependency Injection
+Compiles generated code and dependency injection classes:
 
-### Language Translation
+```bash
+php bin/magento setup:di:compile
+```
 
-If you need to do module translation, please navigate to the following path in your system: `app/code/Webkul/PushNotification/i18n`.
+### 3. Deploy Static View Content
+Deploys storefront and admin static assets:
 
-1. Open the file named **en_US.CSV** for editing as shown in the below screenshot.
+```bash
+php bin/magento setup:static-content:deploy -f
+```
 
-![Magento2 Change CSV language file](/images/22-3.webp)
+---
 
-2. Replace the words after the **comma(,)** on the right with your translated words.
+## Step 3: Flush Magento Cache
 
-![Magento2 Change Language](/images/33-2.webp)
+1. Log in to the Magento 2 Admin Panel.
+2. Navigate to **System > Tools > Cache Management**.
+3. Select all cache items and click **Flush Magento Cache**.
 
-3. After editing and translating the CSV file, save the translated file name according to your region language and country code, such as `de_DE.CSV`.
+![Flush Magento Cache](/images/image-1.png)
 
-4. Upload the translated file to the same folder from where you obtained it. Now your module translation is complete.
-
-![Magento2 Change CSV Language file](/images/2016-05-02_16-25-34-3.webp)
+::: info Verification
+To confirm successful installation:
+1. Log in to your Magento Admin Panel.
+2. Check the side menu under **Marketplace Management**.
+3. Verify that **Push Notification Manager** is visible.
+:::

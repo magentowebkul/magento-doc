@@ -1,75 +1,40 @@
-# Requirements
+# Requirements & Prerequisites
 
-Before installing the Push Notification extension, ensure that your system meets the following prerequisites.
+Before installing the **Magento 2 Multi Vendor Web Push Notification** extension, review the system compatibility and prerequisites outlined below.
 
-### Supported Framework Versions
-- **Magento 2.0.x, 2.1.x, 2.2.x, 2.3.x, 2.4.x**
+## System Requirements
 
-### Firebase API Credentials
+| Requirement | Supported Versions | Notes |
+| :--- | :--- | :--- |
+| **Magento** | `2.4.4` to `2.4.9+` | Open Source, Adobe Commerce, and B2B Editions |
+| **PHP** | `8.1`, `8.2`, `8.3`, `8.4`, `8.5` | Standard PHP extensions matching target Magento release |
+| **Base Marketplace Extension** | Webkul Multi-Vendor Marketplace | Core required add-on module |
+| **Messaging Backend** | Google Firebase Cloud Messaging (FCM) | Active Firebase Project & Cloud Messaging API Key / Credentials |
+| **Web Server / SSL** | HTTPS (SSL Certificate) Mandatory | Browser Push Notification APIs (`PushManager`, `ServiceWorker`) require secure HTTPS context |
 
-To use **Magento 2 Push Notification**, you need to have Firebase Project Credentials. This is required during module configuration.
+---
 
-Please click **[here](https://console.firebase.google.com/)** and **create a new project** with your **Google** account.
+## Required Modules & Compatibility
 
-1. After opening the Firebase page, create a project by clicking **Get Started with a Firebase project**.
+::: warning Add-On Requirement
+This module is an add-on for **Webkul’s Magento 2 Multi-Vendor Marketplace**. You MUST have the core Marketplace module installed and active on your Magento 2 system prior to running setup for this extension.
+:::
 
-![firebase interface](/images/web-push-notification-1.webp)
+::: warning HTTPS / SSL Requirement
+Web Push Notifications (Service Workers) require an active **HTTPS / SSL Certificate** on your Magento 2 site. Web push prompts will not display on HTTP connections (except `localhost` for local development).
+:::
 
-2. Create a new project, enter the name of the project, and click continue.
+---
 
-![web-push-notification](/images/web-push-notification-2.webp)
+## Firebase Cloud Messaging Setup
 
-3. (Optional) Enable Google Analytics for your project, then follow the prompts to select or create a Google Analytics account. If you don’t want to set google analytics, disable the toggle button or click “Continue”.
+To send web push notifications, you need a free [Google Firebase](https://console.firebase.google.com/) account to generate FCM credentials (API Key, Sender ID, Server Key, and Service Account JSON). Proceed to the [Firebase Setup](/firebase-setup.html) guide for step-by-step instructions.
 
-![web-push-notification](/images/web-push-notification-3.webp)
+---
 
-4. Accept the Google Analytics Terms of Use and create a project. The process only takes a few seconds. When finished, click “Continue”.
+## Browser Compatibility
 
-![push notification](/images/push-notification-5-1.webp)
-
-5. After creating your new project, click on the **Settings** cog icon. Then select the **Project Settings** option.
-
-![push-notification-7](/images/push-notification-7-1.webp)
-
-6. Navigate through **Project Settings > General** to find the Firebase Project Credentials under web apps.
-
-![general settings](/images/push-notification-8-1.webp)
-
-7. Click on the web app option, enter the new web app name and proceed further. After that, add Firebase SDK as required.
-
-![push-notification-6](/images/push-notification-6.webp)
-
-![notification](/images/push-notification.webp)
-
-8. Tap **Continue to console** to view your credentials.
-
-You will need these credentials for the admin configuration:
-- Web API Key
-- FCM Auth Domain
-- FCM Project ID
-- FCM Storage Bucket
-- Messaging Sender ID
-- FCM App ID
-- Measurement ID
-
-9. Go to the **Cloud Messaging** option to find your **Project Credentials**.
-
-![push-notification-9](/images/push-notification-9-2.webp)
-
-To create the key, click the Generate Key pair button.
-
-![web-push-notification](/images/web-push-notification-12-1.webp)
-
-### How to Get – Auth JSON file
-
-1. Navigate to your project’s settings section and go to the **Service Accounts** tab.
-
-![push-notification-8](/images/push-notification-8.webp)
-
-2. Tap the **Generate New Private Key** button, continue on the popup, and download the JSON file.
-
-![push-notification-9](/images/push-notification-9.webp)
-
-3. The file will be downloaded to your system and will contain the credentials formatted as JSON.
-
-![firebase creds](/images/firebase-creds.webp)
+- **Google Chrome** (Desktop & Mobile)
+- **Mozilla Firefox** (Desktop & Mobile)
+- **Apple Safari** (macOS 13+ & iOS 16.4+)
+- **Microsoft Edge** (Desktop & Mobile)
