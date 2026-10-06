@@ -34,7 +34,7 @@ export default defineUserConfig({
 
     navbar: [
       { text: "Live Demo", link: "https://demo.example.com/magento2-openstreetmap-address-autocomplete" },
-      { text: "User Guide", link: "https://webkul.com/blog/magento2-openstreetmap-address-autocomplete/" },
+      { text: "Buy Now", link: "https://store.webkul.com/magento2-openstreetmap-address-autocomplete.html" },
       { text: "Support", link: "https://webkul.uvdesk.com/" },
     ],
 
