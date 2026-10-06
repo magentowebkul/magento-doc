@@ -123,11 +123,11 @@ const createZoomer = () => {
         paneInner.style.backgroundSize = `${bgW}px ${bgH}px`;
         paneInner.style.backgroundPosition = `${-lensX * ZOOM_FACTOR}px ${-lensY * ZOOM_FACTOR}px`;
 
-        let paneX = rect.right + window.scrollX + PANE_GAP;
-        const maxPaneX = window.scrollX + window.innerWidth - PANE_WIDTH - 16;
-        if (paneX > maxPaneX) {
-          paneX = maxPaneX;
-        }
+        const spaceRight = window.innerWidth - rect.right;
+        const placeLeft = spaceRight < PANE_WIDTH + PANE_GAP * 2;
+        const paneX = placeLeft
+            ? rect.left + window.scrollX - PANE_WIDTH - PANE_GAP
+            : rect.right + window.scrollX + PANE_GAP;
         const paneY = rect.top + window.scrollY;
 
         pane.style.left = `${Math.max(8, paneX)}px`;
@@ -1775,7 +1775,7 @@ const exportAsPdf = async () => {
       <div class="meta">
         <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
         <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-        <div><strong>Publisher:</strong> Magento 2 Multi Vendor Web Push Notification · User Guide</div>
+        <div><strong>Publisher:</strong> Adornment Jewelry Theme · User Guide</div>
       </div>
     `;
     root.appendChild(cover);
@@ -1968,14 +1968,14 @@ const exportAsDocx = async () => {
         <div class="meta">
           <div><strong>Source:</strong> ${escapeHtml(window.location.href)}</div>
           <div><strong>Exported:</strong> ${escapeHtml(stamp)}</div>
-          <div><strong>Publisher:</strong> Magento 2 Multi Vendor Web Push Notification · User Guide</div>
+          <div><strong>Publisher:</strong> Adornment Jewelry Theme · User Guide</div>
         </div>
       </section>
     `;
 
     const footer = `
       <footer class="doc-export-footer">
-        <p>Document exported from Magento 2 Canva Connector documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
+        <p>Document exported from Adornment Jewelry Theme documentation. URL: ${escapeHtml(window.location.href)} · Generated: ${escapeHtml(stamp)}</p>
       </footer>
     `;
 

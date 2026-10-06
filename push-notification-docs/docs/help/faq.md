@@ -1,36 +1,22 @@
-# FAQ & Support
+# FAQ
 
-Frequently Asked Questions and technical support resources for **Magento 2 Multi Vendor Web Push Notification**.
+Here are the answers to the most frequently asked questions about the Magento 2 Push Notification extension.
 
----
+### Q: How many promotional campaigns can be created using this module?
+The admin can create multiple campaigns using the Marketplace Campaign Extension For Magento 2.
 
-## Frequently Asked Questions
 
-### Q1: Are there any monthly charges or per-message fees?
-No. The extension uses your free Google Firebase Cloud Messaging (FCM) account, allowing you to send unlimited push notifications without monthly SaaS charges.
+### Q: How does the seller can join the campaign?
+The admin can send the campaign joining request to the sellers via e-mail. Also, the seller can join the campaign from the marketplace seller dashboard.
 
-### Q2: Does the extension work on mobile devices?
-Yes, push notifications are delivered to desktop browsers (Chrome, Firefox) and mobile browsers (Chrome on Android).
 
-### Q3: Can marketplace sellers send notifications to their own subscribers?
-Yes. Sellers have access to a dedicated Push Notification menu in their seller dashboard where they can create custom templates and dispatch notifications.
+### Q: Can the admin remove the sellers from the existing campaign?
+Yes, the admin reserved all the rights to remove the seller from an existing campaign.
 
-### Q4: Is an SSL certificate required?
-Yes. Modern browser security policies require an SSL certificate (`https://`) to enable Web Push Notification permission prompts.
 
----
+### Q: Can the seller add their own products to the campaign?
+Of course, the seller can easily add their own products to the campaign.
 
-## Technical Specifications
 
-- **Current Version:** `5.0.5`
-- **Supported Magento Versions:** `2.0.x`, `2.1.x`, `2.2.x`, `2.3.x`, `2.4.x`
-- **Prerequisite Module:** Webkul Magento 2 Multi Vendor Marketplace
-
----
-
-## Contact & Support Links
-
-- **Buy Extension:** [Webkul Store - Magento 2 Multi Vendor Push Notifications](https://store.webkul.com/magento2-multi-vendor-push-notifications.html)
-- **Live Demo & User Guide:** [Live Demo](https://mp-push-notification-marketplace-magento2.webkul.in/demomanagement/viewdemo/index/demoid/33/)
-- **Support Ticket:** [Webkul UVDesk Support Desk](https://webkul.uvdesk.com/)
-- **Email Support:** `support@webkul.com`
+### Q: Where can a customer find the campaign details?
+The customer can see the campaign details in the offers menu of the website.
