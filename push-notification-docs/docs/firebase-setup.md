@@ -59,5 +59,5 @@ The extension uses **Firebase Cloud Messaging (FCM)** to send web push notificat
 3. Save the downloaded `.json` file. You will upload this JSON file in Magento Admin configuration under *FCM Auth Domain Auth JSON File*.
 
 ::: info Next Steps
-Proceed to the [Admin Configuration](/configuration/admin-config.html) page to enter these Firebase API credentials into your Magento Admin.
+Proceed to the [Configuration Overview](/configuration/overview.html) page to enter these Firebase API credentials into your Magento Admin.
 :::

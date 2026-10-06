@@ -18,6 +18,21 @@ export default defineUserConfig({
   ],
 
   bundler: webpackBundler({
+<<<<<<< Updated upstream
+    chainWebpack: (config) => {
+      config.merge({
+        ignoreWarnings: [
+          { message: /Future import deprecation is not yet active/ },
+          { message: /The Sass if\(\) syntax is deprecated/ },
+          { message: /Deprecation Warning/ },
+          { message: /sass-loader/ },
+        ],
+      });
+    },
+    scss: {
+      sassOptions: {
+        silenceDeprecations: ["if-function", "import"],
+=======
     scss: {
       sassOptions: {
         quietDeps: true,
@@ -25,6 +40,7 @@ export default defineUserConfig({
     },
     sass: {
       sassOptions: {
+>>>>>>> Stashed changes
         quietDeps: true,
       },
     },
