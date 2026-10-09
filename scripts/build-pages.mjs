@@ -245,6 +245,12 @@ const products = [
     dir: "zoho-sso",
     title: "Magento 2 Zoho SSO",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Zoho SSO extension — let customers sign in or sign up with their Zoho account on login, registration, and checkout.",
+  },
+  {
+    slug: "adobe-commerce-egsma-multi-vendor",
+    dir: "adobe-commerce-egsma-multi-vendor",
+    title: "Adobe Commerce EGSMA Multi-Vendor Marketplace",
+    description: "User guide for installing, configuring, and using the EGSMA Multi-Vendor Marketplace Integration for Adobe Commerce with Adobe App Builder.",
   }
 ];
 
