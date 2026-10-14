@@ -263,6 +263,12 @@ const products = [
     dir: "etsy-magento-connect",
     title: "Magento 2 Marketplace Etsy Connector",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Etsy Connector extension.",
+  },
+  {
+    slug: "hipercalzado-connector",
+    dir: "hipercalzado-connector",
+    title: "Magento 2 Hipercalzado Connector",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Hipercalzado Connector extension.",
   }
 ];
 
