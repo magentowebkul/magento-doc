@@ -257,6 +257,12 @@ const products = [
     dir: "akeneo-connector",
     title: "Magento 2 Akeneo PIM Connector",
     description: "Comprehensive user guide and technical documentation for integrating, configuring, and operating the Webkul Akeneo PIM Connector for Magento 2.",
+  },
+  {
+    slug: "etsy-magento-connect",
+    dir: "etsy-magento-connect",
+    title: "Magento 2 Marketplace Etsy Connector",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Etsy Connector extension.",
   }
 ];
 
