@@ -245,6 +245,12 @@ const products = [
     dir: "zoho-sso",
     title: "Magento 2 Zoho SSO",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Zoho SSO extension — let customers sign in or sign up with their Zoho account on login, registration, and checkout.",
+  },
+  {
+    slug: "mp-web-push-notification",
+    dir: "mp-web-push-notification",
+    title: "Magento 2 Marketplace Web Push Notification",
+    description: "User guide for installing, configuring, and managing the Marketplace Web Push Notification extension for Magento 2",
   }
 ];
 
