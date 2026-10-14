@@ -269,6 +269,12 @@ const products = [
     dir: "hipercalzado-connector",
     title: "Magento 2 Hipercalzado Connector",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Hipercalzado Connector extension.",
+  },
+  {
+    slug: "mp-catalog-translation-doc",
+    dir: "mp-catalog-translation-doc",
+    title: "Magento 2 Marketplace Catalog Translation",
+    description: "User guide for installing, configuring, and using the Marketplace Catalog Translation extension for Magento 2.",
   }
 ];
 
