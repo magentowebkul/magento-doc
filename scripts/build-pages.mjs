@@ -251,6 +251,12 @@ const products = [
     dir: "mp-web-push-notification",
     title: "Magento 2 Marketplace Web Push Notification",
     description: "User guide for installing, configuring, and managing the Marketplace Web Push Notification extension for Magento 2",
+  },
+  {
+    slug: "akeneo-connector",
+    dir: "akeneo-connector",
+    title: "Magento 2 Akeneo PIM Connector",
+    description: "Comprehensive user guide and technical documentation for integrating, configuring, and operating the Webkul Akeneo PIM Connector for Magento 2.",
   }
 ];
 
