@@ -251,6 +251,12 @@ const products = [
     dir: "mp-web-push-notification",
     title: "Magento 2 Marketplace Web Push Notification",
     description: "User guide for installing, configuring, and managing the Marketplace Web Push Notification extension for Magento 2",
+  },
+  {
+    slug: "etsy-magento-connect",
+    dir: "etsy-magento-connect",
+    title: "Magento 2 Marketplace Etsy Connector",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Etsy Connector extension.",
   }
 ];
 

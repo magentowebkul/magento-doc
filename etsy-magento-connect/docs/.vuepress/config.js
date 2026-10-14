@@ -1,0 +1,82 @@
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "@vuepress/theme-default";
+import { webpackBundler } from "@vuepress/bundler-webpack";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+
+export default defineUserConfig({
+  base: process.env.VUEPRESS_BASE || "/",
+
+  lang: "en-US",
+  title: "Magento 2 Marketplace Etsy Connector",
+  description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Etsy Connector extension.",
+
+  head: [
+    ["link", { rel: "icon", href: "/images/logo.png" }],
+    ["link", { rel: "shortcut icon", href: "/favicon.ico" }],
+  ],
+
+  bundler: webpackBundler({
+    scss: {
+      sassOptions: {
+        silenceDeprecations: ["if-function", "legacy-js-api", "import", "global-builtin"],
+      },
+    },
+  }),
+
+  theme: defaultTheme({
+    logo: "/images/logo.png",
+    repo: null,
+    editLink: false,
+    lastUpdated: false,
+    contributors: false,
+    sidebarDepth: 0,
+
+    navbar: [
+      { text: "Live Demo", link: "https://webkul.com/blog/magento2-marketplace-etsy-connector/" },
+      { text: "Buy Now", link: "https://store.webkul.com/Magento2-Marketplace-Etsy-Connector.html" },
+      { text: "Support", link: "https://webkul.uvdesk.com/" },
+    ],
+
+    sidebar: {
+      "/": [
+        {
+          text: "Getting Started",
+          collapsible: false,
+          children: [
+            { text: "Introduction", link: "/introduction" },
+            { text: "Requirements", link: "/requirements" },
+            { text: "Installation", link: "/installation" },
+            { text: "Activate & Connect", link: "/activation" },
+          ],
+        },
+        {
+          text: "Configuration & Management",
+          collapsible: false,
+          children: [
+            { text: "Module Overview & Workflow", link: "/configuration/overview" },
+            { text: "Admin Settings & Global App", link: "/configuration/settings" },
+            { text: "Etsy Account Management", link: "/configuration/accounts" },
+            { text: "Category Mapping", link: "/configuration/category-mapping" },
+            { text: "Product Synchronization", link: "/configuration/product-sync" },
+            { text: "Order Import & Shipping", link: "/configuration/order-sync" },
+            { text: "Release Notes & Changelog", link: "/configuration/changelog" },
+          ],
+        },
+        {
+          text: "Help",
+          collapsible: false,
+          children: [
+            { text: "Troubleshooting", link: "/help/troubleshooting" },
+            { text: "FAQ", link: "/help/faq" },
+          ],
+        },
+      ],
+    },
+  }),
+
+  plugins: [
+    searchPlugin({ maxSuggestions: 10 }),
+    mdEnhancePlugin({ mermaid: true }),
+  ],
+});
