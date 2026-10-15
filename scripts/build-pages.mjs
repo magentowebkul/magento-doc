@@ -281,6 +281,12 @@ const products = [
     dir: "mp-mass-upload",
     title: "Magento 2 Marketplace Mass Upload",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Mass Upload extension.",
+  },
+  {
+    slug: "two-factor-auth",
+    dir: "two-factor-auth",
+    title: "Magento 2 Two Factor Authentication",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Two Factor Authentication extension.",
   }
 ];
 
