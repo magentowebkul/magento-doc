@@ -275,6 +275,12 @@ const products = [
     dir: "mp-catalog-translation-doc",
     title: "Magento 2 Marketplace Catalog Translation",
     description: "User guide for installing, configuring, and using the Marketplace Catalog Translation extension for Magento 2.",
+  },
+  {
+    slug: "mp-mass-upload",
+    dir: "mp-mass-upload",
+    title: "Magento 2 Marketplace Mass Upload",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Mass Upload extension.",
   }
 ];
 
@@ -320,7 +326,10 @@ const rewriteProductUrls = (dir, slug) => {
     "usage",
     "configuration",
     "admin",
-    "customer"
+    "customer",
+    "seller-management",
+    "admin-management",
+    "storefront"
   ].join("|");
 
   const rewriteFile = (file) => {
