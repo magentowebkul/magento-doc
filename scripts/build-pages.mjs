@@ -287,6 +287,12 @@ const products = [
     dir: "two-factor-auth",
     title: "Magento 2 Two Factor Authentication",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Two Factor Authentication extension.",
+  },
+  {
+    slug: "parcelperfect-shipping",
+    dir: "parcelperfect-shipping",
+    title: "Magento 2 ParcelPerfect Shipping",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 ParcelPerfect Shipping extension.",
   }
 ];
 
