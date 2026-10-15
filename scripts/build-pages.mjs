@@ -293,6 +293,12 @@ const products = [
     dir: "parcelperfect-shipping",
     title: "Magento 2 ParcelPerfect Shipping",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 ParcelPerfect Shipping extension.",
+  },
+  {
+    slug: "mp-saas",
+    dir: "mp-saas",
+    title: "Magento 2 Marketplace Multi Company SaaS",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Multi Company SaaS extension.",
   }
 ];
 
