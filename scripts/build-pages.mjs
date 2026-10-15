@@ -299,6 +299,18 @@ const products = [
     dir: "mp-saas",
     title: "Magento 2 Marketplace Multi Company SaaS",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Multi Company SaaS extension.",
+  },
+  {
+    slug: "mp-custom-option",
+    dir: "mp-custom-option",
+    title: "Magento 2 Marketplace Custom Option",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Custom Option extension.",
+  },
+  {
+    slug: "purchase-management",
+    dir: "purchase-management",
+    title: "Magento 2 Purchase Order Management",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Purchase Order Management extension.",
   }
 ];
 
