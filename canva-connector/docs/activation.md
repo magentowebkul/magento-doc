@@ -10,9 +10,9 @@ Once the Magento extension and Canva Developer Portal applications are created, 
 2. Navigate to **Stores > Configuration > Webkul > Canva Connect Settings**.
 3. Under the **General Settings** section:
    - Set **Enable Module** to `Yes`.
-   - In **Canva App ID**, enter your Canva App ID from the Canva Developer Portal.
-   - In **Client ID**, enter your Canva Connect Integration Client ID.
-   - In **Client Secret**, enter your Canva Connect Integration Client Secret.
+   - In **Canva App ID**, enter your Canva App ID from your app's **Overview** screen.
+   - In **Client ID**, enter your Client ID from **Outside Canva > Configuration**.
+   - In **Client Secret**, enter your Client Secret generated from **Outside Canva > Configuration**.
 4. Copy the automatically generated **Redirect URI** and **Return Navigation URI** displayed on the screen and verify they match your Canva Developer Portal settings exactly.
 5. Click **Save Config**.
 

@@ -1,69 +1,89 @@
-# Canva Connect REST API Setup
+# Outside Canva (REST API & OAuth 2.0) Setup
 
-The **Canva Connect Integration** handles the backend server-to-server connection between Magento and Canva. It uses OAuth 2.0 with PKCE to authenticate, uploads product images directly to Canva asset storage, and generates new Canva designs dynamically when you click "Design with Canva" in the Magento product grid.
+The **Outside Canva** configuration handles the secure server-to-server connection between Magento 2 and Canva. It uses OAuth 2.0 with PKCE to authenticate, uploads product images directly to Canva asset storage, and dynamically creates design canvases when you click **Design with Canva** in Magento Admin.
 
 ---
 
 ## Step-by-Step Instructions
 
-### Step 1: Create an Integration
+### Step 1: Open Outside Canva Configuration
 
-1. In the [Canva Developer Portal](https://www.canva.com/developers/apps), select **Your integrations** (under Canva Connect APIs) from the top navigation.
-2. Click **Create an integration**.
-3. Enter an Integration Name (e.g. `magento 2 connect`).
-4. Click **Create**.
-
-![Your Integrations in Canva Developer Portal](/images/canva/canva-your-integrations.webp)
+1. In the [Canva Developer Portal](https://www.canva.com/developers/apps), select your app.
+2. In the left navigation menu under **Build**, click **Outside Canva** (or click **Start integrating**).
+3. Click **Configuration**.
 
 ---
 
-### Step 2: Configure OAuth 2.0 URIs
+### Step 2: Generate & Copy Credentials
 
-Under the **Authentication / OAuth 2.0** settings:
+Under the **Credentials** card:
 
-1. In **Redirect URLs**, paste the Redirect URI from your Magento Admin (**Stores > Configuration > Webkul > Canva Connect Settings**):
-   ```
-   https://your-magento-domain.com/canva/auth/callback
-   ```
-2. In **Return Navigation URLs**, paste the Return Navigation URI from your Magento Admin:
-   ```
-   https://your-magento-domain.com/canva/auth/return
-   ```
-3. Click **Save Changes**.
+1. Click **Copy** next to **Client ID**.
+2. Under **Client secret**, click **Generate secret** (or **Generate another secret**).
+3. A modal warning will appear: *"Copy your secret now and save it in a safe space. This is your only chance to do so."*
+4. Click **Copy** next to the generated Client Secret.
+5. In your Magento Admin Panel, go to:
+   **Stores > Configuration > Webkul > Canva Connect Settings**
+6. Paste the **Client ID** and **Client Secret** into the respective fields under **General Settings**.
 
-![Configuring Authorized Redirects in Canva Integration](/images/canva/canva-integration-oauth.webp)
-
-::: warning URL Matching
-The Redirect URI and Return Navigation URI must match your Magento store domain exactly (including `https://` protocol and path). Mismatches will cause OAuth error `redirect_uri_mismatch`.
+::: warning Keep Client Secret Secure
+Canva masks the Client Secret once you leave or refresh the page. Always copy and save it into Magento Admin immediately after generation.
 :::
 
----
-
-### Step 3: Configure Integration Scopes
-
-Under **Permissions / Scopes**, enable the following required scopes:
-
-| Scope | Description |
-|---|---|
-| `design:content:read` | Read design content metadata |
-| `design:content:write` | Create and modify designs |
-| `design:meta:read` | Read design entity metadata |
-| `asset:read` | Read uploaded image assets |
-| `asset:write` | Upload product images to Canva Asset storage |
-
-Click **Save Changes**.
-
-![Setting Scopes for Canva Connect Integration](/images/canva/canva-integration-scopes.webp)
+![Outside Canva Client Credentials](/images/canva/canva-outside-credentials.webp)
 
 ---
 
-### Step 4: Copy Client ID & Secret
+### Step 3: Configure Redirect URLs
 
-1. Under **Configuration > Credentials**, locate your:
-   - **Client ID**
-   - **Client secret**
-2. Copy both values.
-3. In Magento Admin, paste them into **Stores > Configuration > Webkul > Canva Connect Settings** under **Client ID** and **Client Secret**.
-4. Click **Save Config**.
+1. In the left navigation menu under **Outside Canva**, click **Redirect URLs**.
+2. Copy the **Redirect URI** from your Magento Admin (**Stores > Configuration > Webkul > Canva Connect Settings**):
+   ```text
+   https://your-magento-domain.com/canva/auth/callback
+   ```
+3. In the Canva Developer Portal, enter this URL into the **URL 1 (Default)** field.
+4. Click outside or press Enter to ensure the URL is saved.
 
-![Canva Connect Integration Credentials Client ID and Secret](/images/canva/canva-integration-credentials.webp)
+::: warning Exact Domain Matching
+The Redirect URI must match your Magento URL scheme and path exactly (including `https://` protocol). Any discrepancy will trigger an OAuth `redirect_uri_mismatch` error during authorization.
+:::
+
+![Outside Canva Redirect URLs](/images/canva/canva-outside-redirect-urls.webp)
+
+---
+
+### Step 4: Configure Canva REST APIs & Scopes (Critical)
+
+1. Return to **Outside Canva > Configuration**.
+2. Scroll down to **Integration methods** and ensure **Canva REST APIs** is toggled **ON**.
+3. Under **Scopes**, enable the following required permissions:
+
+| Scope | Read | Write | Description |
+|---|:---:|:---:|---|
+| **`asset`** | ☑ | ☑ | Allows Magento to upload product images into Canva asset storage and read asset metadata. |
+| **`design:content`** | ☑ | ☑ | Allows Magento to create new design canvases on behalf of the merchant and read canvas content. |
+| **`design:meta`** | ☑ | — | Allows Magento to read design entity metadata and synchronization logs. |
+
+::: danger Authentication Denied (invalid_scope) Error
+If the above scopes are not enabled under **Outside Canva > Configuration > Scopes**, Canva will reject Magento's OAuth authorization request with:
+```text
+Authentication Denied
+Canva authorization was denied or failed. error=invalid_scope&error_description=Requested scopes are invalid.
+```
+Always verify that both **Read** and **Write** are checked for `asset` and `design:content`, and **Read** is checked for `design:meta`.
+:::
+
+![Outside Canva REST API Scopes](/images/canva/canva-outside-scopes.webp)
+
+---
+
+### Step 5: Test Authorization Flow
+
+1. In Magento Admin, click **Save Config** to persist all credentials.
+2. Flush Magento cache if prompted (**System > Cache Management > Flush Magento Cache**).
+3. Navigate to **Catalog > Products**.
+4. In the thumbnail column of any product with an image, click **Design with Canva**.
+5. Canva presents the OAuth consent screen:
+   - *"App would like access to your Canva account: Read your design content, Create designs, Read your design metadata, Read your asset metadata, Upload, modify and delete your assets."*
+6. Click **Allow**.
+7. Canva exchanges tokens securely, creates a new design canvas with your product photo, and redirects you into the Canva editor.

@@ -87,8 +87,8 @@ export default defineUserConfig({
                     collapsible: false,
                     children: [
                         { text: "Setup Overview", link: "/developer-portal/overview" },
-                        { text: "Canva App (Sidebar UI)", link: "/developer-portal/canva-app" },
-                        { text: "Canva Connect REST API", link: "/developer-portal/connect-api" },
+                        { text: "Inside Canva (Sidebar UI)", link: "/developer-portal/canva-app" },
+                        { text: "Outside Canva (REST API & OAuth)", link: "/developer-portal/connect-api" },
                     ],
                 },
                 {
