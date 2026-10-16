@@ -14,17 +14,7 @@ Before installing and configuring the **Webkul Magento 2 Canva Connector** exten
 | **npm** | `9.x` or `10.x` | Package manager for Node dependencies |
 | **Web Server** | Apache 2.4+ or Nginx 1.18+ | SSL Certificate (HTTPS) required for production |
 
----
 
-## Core Module Dependencies
-
-The Canva Connector relies on Webkul's shared licensing and base utilities:
-
-- **`Webkul_Base`**: Must be installed and registered in `app/code/Webkul/Base` or via Composer.
-
-::: tip
-The `Webkul_Base` module is included automatically with the extension package or when downloading from the Webkul Store.
-:::
 
 ---
 

@@ -17,7 +17,6 @@ magento-root/
 └── app/
     └── code/
         └── Webkul/
-            ├── Base/
             └── CanvaConnector/
 ```
 
