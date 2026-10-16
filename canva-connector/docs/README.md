@@ -68,13 +68,13 @@ actions:
     <div class="home-guide-card">
       <div class="home-guide-card__head">
         <span class="home-guide-card__number">2</span>
-        <h2>Canva setup &amp; config</h2>
+        <h2>Canva Developer Portal</h2>
       </div>
-      <p>Create Canva App &amp; Connect APIs, configure backend endpoints, and sync environment.</p>
-      <nav aria-label="Canva setup and configuration guides">
+      <p>Set up unified Canva App, configure Inside Canva sidebar UI, and connect Outside Canva REST APIs with OAuth.</p>
+      <nav aria-label="Canva Developer Portal guides">
         <a href="/developer-portal/overview.html">Developer Portal overview</a>
-        <a href="/developer-portal/canva-app.html">Canva App (Sidebar)</a>
-        <a href="/developer-portal/connect-api.html">Canva Connect REST API</a>
+        <a href="/developer-portal/canva-app.html">Inside Canva (Sidebar UI)</a>
+        <a href="/developer-portal/connect-api.html">Outside Canva (REST API &amp; OAuth)</a>
         <a href="/configuration/overview.html">Configuration settings</a>
       </nav>
     </div>
