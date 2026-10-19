@@ -59,10 +59,10 @@ actions:
       </div>
       <p>Add the extension, configure Canva credentials, and activate the connection.</p>
       <nav aria-label="Install and connect guides">
-        <a href="/introduction.html">Introduction</a>
-        <a href="/requirements.html">Requirements</a>
-        <a href="/installation.html">Installation</a>
-        <a href="/activation.html">Activate &amp; connect</a>
+        <RouteLink to="/introduction.html">Introduction</RouteLink>
+        <RouteLink to="/requirements.html">Requirements</RouteLink>
+        <RouteLink to="/installation.html">Installation</RouteLink>
+        <RouteLink to="/activation.html">Activate &amp; connect</RouteLink>
       </nav>
     </div>
     <div class="home-guide-card">
@@ -72,10 +72,10 @@ actions:
       </div>
       <p>Set up unified Canva App, configure Inside Canva sidebar UI, and connect Outside Canva REST APIs with OAuth.</p>
       <nav aria-label="Canva Developer Portal guides">
-        <a href="/developer-portal/overview.html">Developer Portal overview</a>
-        <a href="/developer-portal/canva-app.html">Inside Canva (Sidebar UI)</a>
-        <a href="/developer-portal/connect-api.html">Outside Canva (REST API &amp; OAuth)</a>
-        <a href="/configuration/overview.html">Configuration settings</a>
+        <RouteLink to="/developer-portal/overview.html">Developer Portal overview</RouteLink>
+        <RouteLink to="/developer-portal/canva-app.html">Inside Canva (Sidebar UI)</RouteLink>
+        <RouteLink to="/developer-portal/connect-api.html">Outside Canva (REST API &amp; OAuth)</RouteLink>
+        <RouteLink to="/configuration/overview.html">Configuration settings</RouteLink>
       </nav>
     </div>
     <div class="home-guide-card">
@@ -85,10 +85,10 @@ actions:
       </div>
       <p>Launch editor from catalog, customize graphics with product variations, and export high-res media.</p>
       <nav aria-label="Design and export workflow guides">
-        <a href="/frontend-service/setup.html">Frontend Node service</a>
-        <a href="/workflow/overview.html">Workflow overview</a>
-        <a href="/workflow/editor-sidebar.html">In-editor sidebar</a>
-        <a href="/workflow/export-save.html">Export &amp; save to gallery</a>
+        <RouteLink to="/frontend-service/setup.html">Frontend Node service</RouteLink>
+        <RouteLink to="/workflow/overview.html">Workflow overview</RouteLink>
+        <RouteLink to="/workflow/editor-sidebar.html">In-editor sidebar</RouteLink>
+        <RouteLink to="/workflow/export-save.html">Export &amp; save to gallery</RouteLink>
       </nav>
     </div>
   </div>
