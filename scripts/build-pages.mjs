@@ -311,6 +311,12 @@ const products = [
     dir: "purchase-management",
     title: "Magento 2 Purchase Order Management",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Purchase Order Management extension.",
+  },
+  {
+    slug: "mp-vendor-dropship",
+    dir: "mp-vendor-dropship",
+    title: "Magento 2 Marketplace Multi Vendor Dropship",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Multi Vendor Dropship extension.",
   }
 ];
 
