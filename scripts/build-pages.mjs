@@ -317,6 +317,12 @@ const products = [
     dir: "mp-vendor-dropship",
     title: "Magento 2 Marketplace Multi Vendor Dropship",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Multi Vendor Dropship extension.",
+  },
+  {
+    slug: "marketplace-vendor-attribute",
+    dir: "marketplace-vendor-attribute",
+    title: "Magento 2 Marketplace Vendor Attribute Manager",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Vendor Attribute Manager.",
   }
 ];
 
@@ -365,7 +371,8 @@ const rewriteProductUrls = (dir, slug) => {
     "customer",
     "seller-management",
     "admin-management",
-    "storefront"
+    "storefront",
+    "vendor"
   ].join("|");
 
   const rewriteFile = (file) => {
