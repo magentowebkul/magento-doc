@@ -323,6 +323,12 @@ const products = [
     dir: "marketplace-vendor-attribute",
     title: "Magento 2 Marketplace Vendor Attribute Manager",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Vendor Attribute Manager.",
+  },
+  {
+    slug: "seller-invitation",
+    dir: "seller-invitation",
+    title: "Magento 2 Marketplace Seller Invitation",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Seller Invitation extension.",
   }
 ];
 
