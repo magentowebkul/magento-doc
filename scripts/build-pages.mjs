@@ -283,6 +283,12 @@ const products = [
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Marketplace Mass Upload extension.",
   },
   {
+    slug: "mp-recurring-payment",
+    dir: "mp-recurring-payment",
+    title: "Magento 2 Multi Vendor Recurring Payments & Subscription",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Multi Vendor Recurring Payments & Subscription extension.",
+  },
+  {
     slug: "two-factor-auth",
     dir: "two-factor-auth",
     title: "Magento 2 Two Factor Authentication",
@@ -329,6 +335,12 @@ const products = [
     dir: "seller-invitation",
     title: "Magento 2 Marketplace Seller Invitation",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Seller Invitation extension.",
+  },
+  {
+    slug: "mp-recurring-payment",
+    dir: "mp-recurring-payment",
+    title: "Magento 2 Marketplace Multi-Vendor Recurring Subscription",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Multi-Vendor Recurring Subscription extension.",
   }
 ];
 
