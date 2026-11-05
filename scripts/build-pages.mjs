@@ -241,12 +241,6 @@ const products = [
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Quickbooks Connect.",
   },
   {
-    slug: "zoho-sso",
-    dir: "zoho-sso",
-    title: "Magento 2 Zoho SSO",
-    description: "User guide for installing, configuring, and using the Webkul Magento 2 Zoho SSO extension — let customers sign in or sign up with their Zoho account on login, registration, and checkout.",
-  },
-  {
     slug: "mp-web-push-notification",
     dir: "mp-web-push-notification",
     title: "Magento 2 Marketplace Web Push Notification",
@@ -337,10 +331,10 @@ const products = [
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Seller Invitation extension.",
   },
   {
-    slug: "mp-recurring-payment",
-    dir: "mp-recurring-payment",
-    title: "Magento 2 Marketplace Multi-Vendor Recurring Subscription",
-    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Multi-Vendor Recurring Subscription extension.",
+    slug: "marketplace-canadapost-shipping",
+    dir: "marketplace-canadapost-shipping",
+    title: "Magento 2 Marketplace Canadapost Shipping",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Canadapost Shipping extension.",
   }
 ];
 
@@ -390,7 +384,8 @@ const rewriteProductUrls = (dir, slug) => {
     "seller-management",
     "admin-management",
     "storefront",
-    "vendor"
+    "vendor",
+    "seller"
   ].join("|");
 
   const rewriteFile = (file) => {
