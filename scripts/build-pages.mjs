@@ -347,6 +347,12 @@ const products = [
     dir: "sales-rep",
     title: "Magento 2 Sales Representative",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Sales Representative extension.",
+  },
+  {
+    slug: "video-player",
+    dir: "video-player",
+    title: "Magento 2 Video Player",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Video Player extension.",
   }
 ];
 
@@ -403,7 +409,8 @@ const rewriteProductUrls = (dir, slug) => {
     "quotation",
     "team",
     "pricelist",
-    "graphql"
+    "graphql",
+    'frontend'
   ].join("|");
 
   const rewriteFile = (file) => {
