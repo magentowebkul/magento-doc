@@ -341,6 +341,12 @@ const products = [
     dir: "magento2-shippo-shipping",
     title: "Magento 2 Shippo Shipping",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Shippo Shipping extension.",
+  },
+  {
+    slug: "sales-rep",
+    dir: "sales-rep",
+    title: "Magento 2 Sales Representative",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Sales Representative extension.",
   }
 ];
 
@@ -392,7 +398,12 @@ const rewriteProductUrls = (dir, slug) => {
     "storefront",
     "vendor",
     "seller",
-    "hyva"
+    "hyva",
+    "dashboard",
+    "quotation",
+    "team",
+    "pricelist",
+    "graphql"
   ].join("|");
 
   const rewriteFile = (file) => {
