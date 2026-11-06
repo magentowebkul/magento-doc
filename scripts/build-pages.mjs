@@ -335,6 +335,12 @@ const products = [
     dir: "marketplace-canadapost-shipping",
     title: "Magento 2 Marketplace Canadapost Shipping",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 Marketplace Canadapost Shipping extension.",
+  },
+  {
+    slug: "magento2-shippo-shipping",
+    dir: "magento2-shippo-shipping",
+    title: "Magento 2 Shippo Shipping",
+    description: "User guide for installing, configuring, and managing the Webkul Magento 2 Shippo Shipping extension.",
   }
 ];
 
@@ -385,7 +391,8 @@ const rewriteProductUrls = (dir, slug) => {
     "admin-management",
     "storefront",
     "vendor",
-    "seller"
+    "seller",
+    "hyva"
   ].join("|");
 
   const rewriteFile = (file) => {
