@@ -353,6 +353,12 @@ const products = [
     dir: "video-player",
     title: "Magento 2 Video Player",
     description: "User guide for installing, configuring, and managing the Webkul Magento 2 Video Player extension.",
+  },
+  {
+    slug: "ai-mp-content-generator",
+    dir: "ai-mp-content-generator",
+    title: "Magento 2 Marketplace AI Content Generator",
+    description: "User guide for configuring and using the Webkul Magento 2 Marketplace AI Content Generator for admins and sellers.",
   }
 ];
 
