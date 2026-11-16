@@ -79,9 +79,9 @@ actions:
     <div class="home-guide-card">
       <div class="home-guide-card__head">
         <span class="home-guide-card__number">3</span>
-        <h2>Admin Content Generation</h2>
+        <h2>Admin Guide</h2>
       </div>
-      <p>Generate content for products, categories, and CMS pages one at a time or in bulk from the admin grids.</p>
+      <p>Create products with Magic Content, and generate content for products, categories, and CMS pages one at a time or in bulk.</p>
       <nav aria-label="Admin content guides">
         <a href="/admin/product-content.html">Product Content</a>
         <a href="/admin/category-cms-content.html">Category &amp; CMS Content</a>
@@ -93,7 +93,7 @@ actions:
         <span class="home-guide-card__number">4</span>
         <h2>Seller Guide</h2>
       </div>
-      <p>Sellers connect their own LLM or use the admin's, manage prompt templates, and generate product content.</p>
+      <p>Sellers connect their own LLM or use the admin's, manage prompt templates, and create products with Magic Content.</p>
       <nav aria-label="Seller guides">
         <a href="/seller/configuration.html">AI Configuration</a>
         <a href="/seller/prompt-templates.html">My Prompt Templates</a>
@@ -104,11 +104,10 @@ actions:
     <div class="home-guide-card">
       <div class="home-guide-card__head">
         <span class="home-guide-card__number">5</span>
-        <h2>Features</h2>
+        <h2>Developers</h2>
       </div>
-      <p>Fill many product fields from one prompt with Magic Content, or generate content headlessly through GraphQL.</p>
-      <nav aria-label="Feature guides">
-        <a href="/features/magic-content.html">Magic Content Generation</a>
+      <p>Generate product content headlessly for a storefront or seller app through GraphQL.</p>
+      <nav aria-label="Developer guides">
         <a href="/features/graphql.html">GraphQL API</a>
       </nav>
     </div>

@@ -15,7 +15,7 @@ Go to **Marketplace > AI Marketplace Content Generator > Prompt Templates**.
 
 The grid shows **ID**, **Template Title**, **Category**, **Sub Category**, **Template**, **Created At**, and **Updated At**. The **Prompt** column is hidden by default. Turn it on from **Columns**.
 
-![Marketplace AIContentGenerator Prompt Templates grid](/images/admin/admin-prompt-template-form.webp)
+![Marketplace AIContentGenerator Prompt Templates grid](/images/admin/admin-prompt-template-list.webp)
 
 ### Create a template
 
@@ -31,7 +31,7 @@ The grid shows **ID**, **Template Title**, **Category**, **Sub Category**, **Tem
    * **Prompt Template** — the final text sent to the AI.
 5. Click **Save Template**.
 
-![Add Marketplace AIContentGenerator Prompt Template form](/images/admin/admin-add-new-prompt-template-form.webp)
+![Add Marketplace AIContentGenerator Prompt Template form](/images/admin/admin-prompt-template-new-form.webp)
 
 The message **"Prompt Template saved successfully."** confirms the save.
 
@@ -52,7 +52,7 @@ Write an SEO-friendly product description for {{importContentFor}} in 150 words.
 2. Change the fields.
 3. Click **Save Template**.
 
-![Edit Marketplace AIContentGenerator Prompt Template form](/images/admin/admin-edit-prompt-template-form.webp)
+![Edit Marketplace AIContentGenerator Prompt Template form](/images/admin/admin-prompt-template-edit-form.webp)
 
 ### Use the template
 

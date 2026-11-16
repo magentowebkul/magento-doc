@@ -4,6 +4,19 @@ The **Magento 2 Marketplace AI Content Generator** (`Webkul_AIMpContentGenerator
 
 The admin connects one LLM provider for the whole marketplace. Each seller can then either connect their own LLM account or use the admin's connection, with a configurable request limit.
 
+This guide is for store admins and marketplace sellers.
+
+---
+
+## In This Guide
+
+1. **Getting Started** — [Introduction](/introduction.md), [Requirements](/requirements.md), [Installation](/installation.md), [Activation](/activation.md).
+2. **Admin Configuration** — [General Settings](/admin/configuration.md), [Prompt Templates](/admin/prompt-templates.md).
+3. **Admin Guide** — [Product Content and Magic Content](/admin/product-content.md), [Category & CMS Content](/admin/category-cms-content.md), [Bulk Generation](/admin/bulk-generation.md).
+4. **Seller Guide** — [AI Configuration](/seller/configuration.md), [My Prompt Templates](/seller/prompt-templates.md), [Product Content and Magic Content](/seller/product-content.md), [Bulk Generation](/seller/bulk-generation.md).
+5. **Developers** — [GraphQL API](/features/graphql.md).
+6. **Help** — [Troubleshooting](/help/troubleshooting.md), [FAQ](/help/faq.md).
+
 ---
 
 ## Supported LLM Providers

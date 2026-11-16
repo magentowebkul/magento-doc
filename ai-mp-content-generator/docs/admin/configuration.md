@@ -11,11 +11,15 @@ Use either path:
 * **Stores > Configuration > Webkul > Marketplace AI Content Generator**
 * **Marketplace > AI Marketplace Content Generator > Seller's AI Configuration Setting**
 
-![AI Marketplace Content Generator admin menu](/images/admin/menu.webp)
+![AI Marketplace Content Generator admin menu](/images/admin/admin-menu.webp)
 
 ---
 
 ## 1. Connect the LLM
+
+Set **Enable Module** to **Yes** first, as described in [Activation](/activation.md#_3-enable-the-module). The other fields stay hidden while it is **No**.
+
+![Enable Module field in General Settings](/images/admin/admin-config-enable-module.webp)
 
 | Field | What it does |
 |---|---|
@@ -37,7 +41,7 @@ Follow these steps in order:
 5. Select a model from **LLM Model**.
 6. Click **Save Config**.
 
-![LLM provider, model, and validated API key](/images/admin/config-llm-setting.webp)
+![LLM provider, model, and validated API key](/images/admin/admin-config-llm-setting.webp)
 
 During validation, the module asks the provider for the models your key can use. It lists only chat models. Audio, realtime, embedding, image, and transcription models are left out. It then sends a short test prompt to confirm the model answers.
 
@@ -66,7 +70,7 @@ How the limit works:
 * It applies only to sellers using the admin LLM configuration. Sellers on their own API key have no limit.
 * A seller who goes over the limit sees **"Rate limit exceeded. Please try again after some time."**
 
-![Admin credentials for sellers and rate limit](/images/admin/config-allow-seller-to-use-admin-config.webp)
+![Admin credentials for sellers and rate limit](/images/admin/admin-config-seller-admin-credentials.webp)
 
 ---
 
@@ -86,7 +90,7 @@ If **Allowed Content Generation Attributes** is empty, AI generation for product
 
 **Allowed Content Generation Attributes** lists text, text area, text editor, and Page Builder attributes. System attributes such as `sku`, `url_key`, and layout fields are excluded.
 
-![Content generation attributes and SEO settings](/images/admin/config-content-generation.webp)
+![Content generation attributes and SEO settings](/images/admin/admin-config-content-settings.webp)
 
 ---
 
@@ -100,6 +104,8 @@ If **Allowed Content Generation Attributes** is empty, AI generation for product
 | **CMS Page Prompt Template** | Template for CMS page content. |
 
 The template lists show admin templates only. Create them in [Prompt Templates](/admin/prompt-templates.md).
+
+![Allow LLM Providers for Vendors and prompt template settings](/images/admin/admin-config-vendor-providers-prompt-templates.webp)
 
 ---
 

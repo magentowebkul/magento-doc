@@ -69,7 +69,7 @@ export default defineUserConfig({
           ],
         },
         {
-          text: "Admin Content Generation",
+          text: "Admin Guide",
           collapsible: false,
           children: [
             { text: "Product Content",        link: "/admin/product-content" },
@@ -88,11 +88,10 @@ export default defineUserConfig({
           ],
         },
         {
-          text: "Features",
+          text: "Developers",
           collapsible: false,
           children: [
-            { text: "Magic Content Generation", link: "/features/magic-content" },
-            { text: "GraphQL API",              link: "/features/graphql" },
+            { text: "GraphQL API", link: "/features/graphql" },
           ],
         },
         {
