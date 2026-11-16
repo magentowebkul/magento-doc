@@ -87,26 +87,6 @@ php bin/magento queue:consumers:start webkul.pwa.notification_send &
 ```
 <ExplainCode explanation="Starts a background helper that automatically sends out scheduled push notifications to your shoppers." />
 
-::: tip Production Systemd Service
-In production environments, we recommend running the queue consumer using **Systemd** or **Supervisord** to ensure it restarts automatically if stopped:
-
-```ini
-[Unit]
-Description=Magento PWA Notification Queue Consumer
-After=network.target
-
-[Service]
-Type=simple
-User=www-data
-ExecStart=/usr/bin/php /home/users/shashikant.bharti/www/html/m2/bin/magento queue:consumers:start webkul.pwa.notification_send
-Restart=always
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-```
-:::
-
 ---
 
 ## Option B — Install with Composer
