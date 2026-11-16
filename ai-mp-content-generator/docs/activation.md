@@ -29,12 +29,12 @@ php bin/magento setup:upgrade
 4. Enter your license key in the row.
 5. Click **Save & Verify**.
 
-![Enter the license key](/images/activation/enter-key.webp)
+![Webkul_AIMpContentGenerator license key row in Module License](/images/activation/license-key-verified.webp)
 
 6. In the **License Validation Consent** pop-up, select **I agree to license validation as described above.**
 7. Click **Agree & Verify**.
 
-![License Validation Consent pop-up](/images/activation/consent-popup.webp)
+![License Validation Consent pop-up](/images/activation/license-consent-popup.webp)
 
 The row status changes to **VERIFIED**. If the status changes later, click **Re-verify**.
 
@@ -47,7 +47,7 @@ The row status changes to **VERIFIED**. If the status changes later, click **Re-
 3. Set **Enable Module** to **Yes**.
 4. Click **Save Config**.
 
-![Enable Module in General Settings](/images/admin/config-general-setting.webp)
+For a screenshot of this field, see [Admin Configuration](/admin/configuration.md#_1-connect-the-llm).
 
 The other fields appear only after **Enable Module** is set to **Yes**. The **Marketplace > AI Marketplace Content Generator** admin menu also appears only when the module is enabled.
 
