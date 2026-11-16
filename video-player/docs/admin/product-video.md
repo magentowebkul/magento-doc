@@ -35,10 +35,6 @@ Select **Upload** from the **Video Source** dropdown menu to host video files di
   * **MP4 (`.mp4`)**: MPEG-4 Part 14 container with universal cross-browser desktop and mobile playback support.
   * **WebM (`.webm`)**: Modern royalty-free web video format optimized for HTML5 browsers.
   * **MOV (`.mov`)**: Apple QuickTime movie format recorded natively on iPhone, iPad, and macOS cameras.
-  * **WMV (`.wmv`)**: Windows Media Video format commonly used across Windows systems.
-  * **FLV (`.flv`)**: Flash video format for legacy multimedia video assets.
-  * **MKV (`.mkv`)**: Matroska open container format supporting high-definition video streams.
-  * **3GP (`.3gp`)**: 3GPP mobile video format designed for captured mobile camera clips.
 * **Title**: Enter a descriptive title for the video. This title appears in the storefront video info modal and search metadata.
 * **Description**: Enter an overview of what the video demonstrates (e.g., product features, unboxing, assembly tutorial).
 * **Preview Image**: Upload a high-resolution poster thumbnail. This image is displayed before playback begins and serves as the video placeholder in the gallery carousel.
