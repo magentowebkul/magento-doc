@@ -361,6 +361,12 @@ const products = [
     description: "User guide for configuring and using the Webkul Magento 2 Marketplace AI Content Generator for admins and sellers.",
   },
   {
+    slug: "web-to-print",
+    dir: "web-to-print",
+    title: "Magento 2 Web To Print",
+    description: "User guide for installing, configuring, and using the Webkul Magento 2 / Adobe Commerce Web To Print extension.",
+  },
+  {
     slug: "pwa",
     dir: "pwa",
     title: "Magento 2 Progressive Web Application",
