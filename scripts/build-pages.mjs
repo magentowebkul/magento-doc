@@ -365,6 +365,12 @@ const products = [
     dir: "web-to-print",
     title: "Magento 2 Web To Print",
     description: "User guide for installing, configuring, and using the Webkul Magento 2 / Adobe Commerce Web To Print extension.",
+  },
+  {
+    slug: "pwa",
+    dir: "pwa",
+    title: "Magento 2 Progressive Web Application",
+    description: "User guide for configuring and using the Webkul Magento 2 Progressive Web Application.",
   }
 ];
 
@@ -422,7 +428,9 @@ const rewriteProductUrls = (dir, slug) => {
     "team",
     "pricelist",
     "graphql",
-    'frontend'
+    "frontend",
+    "credentials",
+    "firebase"
   ].join("|");
 
   const rewriteFile = (file) => {

@@ -10,7 +10,7 @@
     "build": "vuepress build docs --clean-cache --clean-temp",
     "build:site": "VUEPRESS_BASE=/ai-mp-content-generator/ vuepress build docs --clean-cache --clean-temp",
     "deploy:cloudflare": "npm run build:site && npx wrangler pages deploy docs/.vuepress/dist --project-name magento-doc --branch main --commit-dirty=true",
-    "start": "vuepress dev docs --clean-cache --clean-temp --host 127.0.0.1 -p 8099",
+    "start": "vuepress dev docs --clean-cache --clean-temp --host 192.168.15.159 -p 8099",
     "docs": "vuepress dev docs --clean-cache --clean-temp",
     "clean": "rm -rf docs/.vuepress/.cache docs/.vuepress/.temp docs/.vuepress/dist",
     "fresh": "npm run clean && npm run build",
