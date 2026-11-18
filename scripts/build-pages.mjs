@@ -371,6 +371,12 @@ const products = [
     dir: "pwa",
     title: "Magento 2 Progressive Web Application",
     description: "User guide for configuring and using the Webkul Magento 2 Progressive Web Application.",
+  },
+  {
+    slug: "split-and-merge-order",
+    dir: "split-and-merge-order",
+    title: "Magento 2 Order Split & Merge",
+    description: "User guide for configuring and using the Webkul Magento 2 Order Split & Merge.",
   }
 ];
 
