@@ -377,6 +377,12 @@ const products = [
     dir: "split-and-merge-order",
     title: "Magento 2 Order Split & Merge",
     description: "User guide for configuring and using the Webkul Magento 2 Order Split & Merge.",
+  },
+  {
+    slug: "address-auto-complete",
+    dir: "address-auto-complete",
+    title: "Magento 2 Google Address Auto Complete",
+    description: "User guide for configuring and using the Webkul Magento 2 Google Address Auto Complete.",
   }
 ];
 
