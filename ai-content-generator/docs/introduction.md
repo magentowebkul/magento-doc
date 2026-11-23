@@ -9,6 +9,7 @@ This guide covers the entire setup, configuration, and storefront workflows:
 * [Configure general AI model settings](/features/general-configuration.html)
 * [Manage product settings](/features/product-configuration.html)
 * [Manage category settings](/features/category-configuration.html)
+* [Explore AI-powered Magic Content Generator](/features/magic-content-generator.html)
 * [Design dynamic prompt templates](/features/prompt-templates.html)
 * Check workflows: [Product Workflows](/features/product-workflows.html), [Category Workflows](/features/category-workflows.html), and [CMS Page Workflows](/features/cms-page-workflows.html)
 
@@ -16,6 +17,7 @@ This guide covers the entire setup, configuration, and storefront workflows:
 
 ## Key Capabilities
 
+* **AI-powered Magic Content Generator**: Generate descriptions, short descriptions, SEO metadata, and custom attributes simultaneously from a single modal on the product edit form, supported by visual reference image analysis and live attribute selector chips.
 * **Multi-Provider Support**: Switch seamlessly between dedicated self-hosted AI servers and top cloud LLM APIs (Gemini, OpenAI, Anthropic Claude, etc.) via a unified service abstraction.
 * **Dynamic Prompt Templating**: Build, manage, and assign custom templates to replace standard prompts. Supports variables like `{{importContentFor}}` and description-context pass-throughs.
 * **Scalable Bulk Queue Processing**: Utilize Magento's asynchronous Message Queue framework to generate content for thousands of products/categories in the background, preventing timeout crashes.

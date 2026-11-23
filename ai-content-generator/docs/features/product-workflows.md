@@ -1,12 +1,44 @@
 # Product Workflows
 
-The AI Content Generator module supports both individual, on-demand content creation and large-scale bulk updates for products.
+The AI Content Generator module supports comprehensive content generation for products via three distinct modalities:
+1. **[AI-powered Magic Content Generator](#1-ai-powered-magic-content-generator)**: Interactive multi-attribute, multi-modal generation with reference image support and live PageBuilder synchronization.
+2. **[Individual Field Generation](#2-individual-field-generation)**: Dedicated on-demand buttons for Descriptions, Short Descriptions, and SEO metadata.
+3. **[Bulk Content Generation](#3-product-bulk-generation-asynchronous-queue)**: Large-scale catalog generation via asynchronous message queues or synchronous browser profiler.
 
 ---
 
-## 1. Individual Product Generation
+## 1. AI-powered Magic Content Generator
 
-Store managers can generate tailored copy directly while editing individual products in the Magento Admin Panel.
+The **Magic Content Generator** is an interactive, all-in-one content creation tool located directly in the top action toolbar of the Product Edit and New Product creation forms.
+
+::: tip Detailed User Guide
+For complete architectural details, security sanitization specs, and step-by-step guidance, see the dedicated [AI-powered Magic Content Generator Guide](/features/magic-content-generator.html).
+:::
+
+### How to Use Magic Content Generation
+1. Navigate to **Catalog** &rarr; **Products** and open any product (or click **Add Product**).
+2. Click the **Magic Content Generation** button in the header action bar.
+
+![Magic Content Generation Button in Product Toolbar](/images/magic-button.png)
+
+3. In the modal:
+   * **Describe your product**: Provide custom instructions, key features, or tone guidelines (up to 2,000 characters).
+   * **Reference Images (Optional)**: Attach up to 5 product photos (JPG, PNG, GIF, WebP up to 5MB each) to supply visual metadata to the AI model.
+   * **Fields to Fill**: Check between 1 and 10 attribute chips (e.g., `Description`, `Short Description`, `Meta Title`, `Meta Keywords`, `Meta Description`, or custom text attributes).
+
+![Magic Content Generator Modal](/images/admin-magic-content-prompt-filled.png)
+
+4. Click **Generate**.
+5. Once the generation finishes, review the summary alert. The generated content is injected in memory directly into your form (automatically re-initializing PageBuilder and TinyMCE stages where applicable).
+6. Review and edit the populated fields on the form, then click **Save** to persist the changes.
+
+---
+
+## 2. Individual Field Generation
+
+Store managers can also generate tailored copy directly while editing individual products in the Magento Admin Panel.
+
+![Individual Content Generation Action](/images/individual-content-generation.webp)
 
 ### Description & Short Description
 * **Description / Short Description**: Click the **Fill description with AI Content Generator** button located directly beneath the WYSIWYG editors.

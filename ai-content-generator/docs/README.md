@@ -84,6 +84,7 @@ actions:
       </div>
       <p>Execute product content generation, category generation, CMS page generation, prompt templates, and troubleshooting.</p>
       <nav aria-label="Verify and use guides">
+        <RouteLink to="/features/magic-content-generator.html">Magic Content Generator</RouteLink>
         <RouteLink to="/features/prompt-templates.html">Prompt Templates</RouteLink>
         <RouteLink to="/features/product-workflows.html">Product Workflows</RouteLink>
         <RouteLink to="/features/category-workflows.html">Category Workflows</RouteLink>

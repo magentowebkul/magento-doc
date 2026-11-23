@@ -72,6 +72,7 @@ export default defineUserConfig({
           text: "Features & Workflows",
           collapsible: false,
           children: [
+            { text: "Magic Content Generator", link: "/features/magic-content-generator" },
             { text: "Prompt Templates", link: "/features/prompt-templates" },
             { text: "Product Workflows", link: "/features/product-workflows" },
             { text: "Category Workflows", link: "/features/category-workflows" },
