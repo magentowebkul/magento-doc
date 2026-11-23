@@ -2229,7 +2229,8 @@ html[data-theme="dark"] [vp-content] .mermaid {
   display: block;
   margin: 0 auto;
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 640px !important;
+  max-height: 520px !important;
   height: auto !important;
 }
 
