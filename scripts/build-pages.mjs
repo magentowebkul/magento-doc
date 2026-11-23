@@ -383,6 +383,12 @@ const products = [
     dir: "address-auto-complete",
     title: "Magento 2 Google Address Auto Complete",
     description: "User guide for configuring and using the Webkul Magento 2 Google Address Auto Complete.",
+  },
+  {
+    slug: "ai-product-recommendation",
+    dir: "ai-product-recommendation",
+    title: "Magento 2 AI Product Recommendation",
+    description: "User guide for configuring and using the Webkul Magento 2 AI Product Recommendation.",
   }
 ];
 
