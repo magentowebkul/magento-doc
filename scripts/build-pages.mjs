@@ -389,6 +389,12 @@ const products = [
     dir: "ai-product-recommendation",
     title: "Magento 2 AI Product Recommendation",
     description: "User guide for configuring and using the Webkul Magento 2 AI Product Recommendation.",
+  },
+  {
+    slug: "dropship",
+    dir: "dropship",
+    title: "Magento 2 Dropship",
+    description: "User guide for configuring and using the Webkul Magento 2 Dropship.",
   }
 ];
 
