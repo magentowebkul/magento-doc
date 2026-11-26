@@ -395,6 +395,12 @@ const products = [
     dir: "dropship",
     title: "Magento 2 Dropship",
     description: "User guide for configuring and using the Webkul Magento 2 Dropship.",
+  },
+  {
+    slug: "gift-card",
+    dir: "gift-card",
+    title: "Magento 2 Gift Card Extension",
+    description: "User guide for configuring and using the Webkul Magento 2 Gift Card Extension.",
   }
 ];
 
